@@ -1,0 +1,6 @@
+.placeholder {
+  background: var(--colour-placeholder-bg);
+  color: var(--colour-placeholder-text);
+  outline: 1px dashed currentColor;
+  padding: 0 0.25em;
+}

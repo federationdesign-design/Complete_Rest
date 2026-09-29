@@ -1,69 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import HeaderSentinel from '../components/HeaderSentinel/HeaderSentinel';
+import styles from './page.module.css';
 
+// Temporary home page used to check the layout shell (step 2).
+// Replaced by the home template in step 3.
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      <section className={styles.hero}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          className={styles.heroImage}
+          src="/images/hoempage-image.jpg"
+          alt=""
+          fill
           priority
+          sizes="100vw"
         />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className={styles.heroText}>
+          <h1>The Complete Restoration company</h1>
+          <p>A professional and comprehensive service for the restoration of period buildings</p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+      <HeaderSentinel />
+      <div className={styles.body}>
+        <p>
+          The Complete Restoration Company are award winning experts in the field of building restoration and
+          conservation. Our high quality work can be seen all over Hertfordshire and London.
+        </p>
+      </div>
+    </>
   );
 }

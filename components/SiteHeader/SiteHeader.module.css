@@ -1,0 +1,384 @@
+/* Skip link */
+
+.skipLink {
+  position: absolute;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--colour-text);
+  color: var(--colour-white);
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+
+.skipLink:focus-visible {
+  transform: none;
+}
+
+/* Full header, in normal flow so its height is always reserved */
+
+.header {
+  height: var(--header-full-height);
+  background: var(--colour-brick);
+  color: var(--colour-white);
+}
+
+.strip {
+  height: var(--header-strip-height);
+  background: var(--colour-white);
+  color: var(--colour-text);
+  font-size: 0.8125rem;
+}
+
+.stripInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--tap-gap);
+  height: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.tagline {
+  display: none;
+  margin: 0 auto 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.stripLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding: 0 0.25rem;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.stripLink:hover {
+  text-decoration: underline;
+}
+
+.stripIcon {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.email {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+/* Icon only on the narrowest phones; the link keeps its accessible name. */
+.emailText {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (min-width: 23.5em) {
+  .emailText {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+.findUs {
+  display: none;
+}
+
+.panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: var(--header-panel-height);
+  padding: 0 var(--space-sm);
+  background: var(--colour-brick) url('/images/mobile_completerestoration_header_bricks_bg.svg') center / cover no-repeat;
+}
+
+.logoLink {
+  grid-column: 2;
+  display: block;
+  padding: var(--space-xs);
+}
+
+.logo {
+  width: clamp(11.5rem, 58vw, 16rem);
+  height: auto;
+}
+
+.menuButton {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.125rem;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--colour-white);
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  border-color: var(--colour-white);
+}
+
+.panelMenuButton {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.menuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menuLabel {
+  font-size: 0.75rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav {
+  display: none;
+}
+
+/* Compact bar, fixed to the top once the visitor scrolls past the hero */
+
+.compact {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--tap-gap);
+  height: var(--header-compact-height);
+  padding: 0 var(--space-sm);
+  background: var(--colour-brick) url('/images/mobile_completerestoration_header_bricks_bg.svg') center / cover no-repeat;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+  transform: translateY(-110%);
+  visibility: hidden;
+  transition:
+    transform var(--transition),
+    visibility 0s linear 200ms;
+}
+
+.compact[data-visible='true'] {
+  transform: none;
+  visibility: visible;
+  transition:
+    transform var(--transition),
+    visibility 0s;
+}
+
+.compactLogoLink {
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.compactLogo {
+  width: 9.5rem;
+  height: auto;
+}
+
+/* Menu panel */
+
+.dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0 var(--space-sm) var(--space-md);
+  overflow-y: auto;
+  border: 0;
+  background: var(--colour-footer);
+  color: var(--colour-white);
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-compact-height);
+  margin-bottom: var(--space-sm);
+  border-bottom: 1px solid rgb(255 255 255 / 0.25);
+}
+
+.dialogList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dialogLink {
+  display: flex;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0 var(--space-xs);
+  border-bottom: 1px solid rgb(255 255 255 / 0.15);
+  color: inherit;
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dialogLink:hover,
+.dialogLink[aria-current='page'] {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.dialogContact {
+  display: grid;
+  gap: var(--tap-gap);
+  margin-top: var(--space-md);
+}
+
+.dialogAction {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-height: var(--tap);
+  padding: 0.5rem var(--space-sm);
+  border: 1px solid var(--colour-white);
+  color: inherit;
+  text-decoration: none;
+}
+
+.dialogAction:hover {
+  background: var(--colour-white);
+  color: var(--colour-footer);
+}
+
+/* Tablet up: bigger brand panel with the desktop brick motif, and the
+   navigation bar replaces the menu button in the full header. */
+
+@media (min-width: 48em) {
+  .panel {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-image: url('/images/header_bricks_bg.svg');
+  }
+
+  .logoLink {
+    grid-column: 1;
+  }
+
+  .logo {
+    width: clamp(16rem, 30vw, 20rem);
+  }
+
+  .panelMenuButton {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    height: var(--header-nav-height);
+    background: var(--colour-nav);
+    border-top: 1px solid rgb(255 255 255 / 0.6);
+    border-bottom: 1px solid rgb(255 255 255 / 0.6);
+  }
+
+  .navList {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 var(--gutter);
+    list-style: none;
+  }
+
+  .navItem {
+    position: relative;
+  }
+
+  .navItem + .navItem::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 50%;
+    border-left: 1px solid rgb(255 255 255 / 0.6);
+  }
+
+  .navLink {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: var(--tap);
+    padding: 0 clamp(0.75rem, 1.6vw, 1.75rem);
+    color: var(--colour-white);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .navLink:hover,
+  .navLink[data-section='true'] {
+    text-decoration: underline;
+    text-underline-offset: 0.35em;
+  }
+
+  .compact {
+    padding: 0 var(--gutter);
+    background-image: url('/images/header_bricks_bg.svg');
+  }
+
+  .compactLogo {
+    width: 11rem;
+  }
+
+  .dialog {
+    width: min(26rem, 100%);
+    margin: 0 0 0 auto;
+    padding-inline: var(--space-md);
+  }
+}
+
+@media (min-width: 64em) {
+  .stripInner {
+    justify-content: flex-end;
+    gap: var(--space-sm);
+  }
+
+  .tagline {
+    display: block;
+  }
+
+  .stripLink {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+  }
+
+  .findUs {
+    display: inline-flex;
+  }
+}

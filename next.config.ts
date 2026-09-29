@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Every WordPress URL ends in a slash; keep them identical.
+  trailingSlash: true,
 };
 
 export default nextConfig;
