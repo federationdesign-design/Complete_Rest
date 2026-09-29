@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { company } from '../../lib/company';
 import { footerMenus, siteName } from '../../lib/site';
+import CookieSettingsButton from '../CookieSettingsButton/CookieSettingsButton';
 import FooterMenu from './FooterMenu';
 import Placeholder from '../Placeholder/Placeholder';
 import styles from './SiteFooter.module.css';
@@ -27,6 +28,9 @@ export default function SiteFooter() {
         </div>
 
         <div className={styles.legal}>
+          <p>
+            <CookieSettingsButton className={styles.cookieButton} />
+          </p>
           <p>
             {siteName} is the trading name of <Placeholder fact={company.legalName} />, a company registered in
             England and Wales with company number <Placeholder fact={company.companyNumber} />.

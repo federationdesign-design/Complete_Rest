@@ -124,6 +124,18 @@
   text-align: center;
 }
 
+.cookieButton {
+  min-height: var(--tap);
+  padding: 0 var(--space-sm);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: var(--text-base);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
 .legal p {
   max-width: var(--measure);
   margin-inline: auto;

@@ -16,3 +16,12 @@ Every fact the build needs from Steve. Each one renders on the site as a highlig
 | `ENQUIRY_STORAGE` | Whether enquiries are also stored anywhere, and where (brief 10.7) | `lib/enquiry/deliver.ts`; privacy notice | Nothing is stored at present; enquiries are only emailed. |
 | `ENQUIRY_RETENTION` | How long enquiry data is kept (brief 10.8) | Privacy notice (step 7) | |
 | `MARKETING_EMAILS` | Whether the client sends marketing emails (brief 10.5) | `SHOW_MARKETING_OPT_IN` in `lib/enquiry/schema.ts` | The optional, unticked checkbox is shown until confirmed. Set the flag to `false` to remove it if they do not send marketing. |
+| `ICO_REGISTRATION_NUMBER` | ICO registration number, if the client holds one (brief 10.3) | Privacy notice, section 1 (`lib/legal.ts`) | If they do not hold one, remove the line. Most businesses that process personal data must pay the ICO data protection fee. |
+| `LEGAL_LAST_UPDATED` | Date the legal pages are signed off | Top of the privacy notice, cookie policy and website terms | |
+| `EMAIL_PROVIDER_LOCATION` | Where the chosen email provider processes data | Privacy notice, section 5 | |
+| `TRANSFER_SAFEGUARDS` | The safeguard for transfers outside the UK (Vercel Inc. is in the US, and possibly the email provider) | Privacy notice, section 5 | For example the UK Extension to the EU-US Data Privacy Framework, if the provider is certified, or the UK International Data Transfer Addendum. |
+| `CORRESPONDENCE_RETENTION` | How long emails and notes of calls are kept | Privacy notice, section 6 | |
+| `MARKETING_RETENTION` | How long a record of marketing consent and unsubscribes is kept | Privacy notice, section 6 | Only shown while the marketing checkbox is shown. |
+| `HOSTING_LOG_RETENTION` | How long Vercel keeps request logs on the chosen plan | Privacy notice, section 6 | |
+| `ANALYTICS_TOOL` | Which analytics tool, if any, the client wants (brief 10.4, 7.5) | `lib/consent/config.ts`; privacy notice section 2; cookie policy | None at present. Google Analytics would go behind consent. An exempt first-party tool would still be listed with an off switch. |
+| `MARKETING_TAGS` | Whether any advertising or social pixels are wanted (brief 7.6) | `lib/consent/config.ts` | None at present; the live page source showed none. |

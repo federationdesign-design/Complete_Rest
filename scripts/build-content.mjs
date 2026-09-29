@@ -20,7 +20,12 @@ const SITE_HOST = /^https?:\/\/(www\.)?completerestoration\.co\.uk/i;
 
 // Pages that exist on the live site but are redirected (see NOTES_FOR_STEVE.md).
 const SKIP = new Set(['/site-map/']);
-const LEGAL = new Set(['/contact-us/privacy-policy/', '/contact-us/cookies-policy/', '/contact-us/disclaimer/']);
+// Legal pages are redrafted (components/legal/); the live copy is not carried over.
+const LEGAL = new Map([
+  ['/contact-us/privacy-policy/', 'Privacy notice'],
+  ['/contact-us/cookies-policy/', 'Cookie policy'],
+  ['/contact-us/disclaimer/', 'Website terms'],
+]);
 
 const warnings = [];
 const warn = (page, msg) => warnings.push(`${page}: ${msg}`);
@@ -302,10 +307,7 @@ function buildContact(raw, $) {
 
 function buildLegal(raw, $) {
   const page = base(raw, 'legal');
-  const $inner = $('.content-inner').first();
-  page.heading = text($inner.find('h1').first());
-  $inner.find('h1').first().remove();
-  page.bodyHtml = cleanHtml($, $inner, raw.path).html || null;
+  page.heading = LEGAL.get(raw.path);
   page.members = members($);
   return page;
 }

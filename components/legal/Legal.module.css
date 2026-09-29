@@ -1,0 +1,93 @@
+.legal {
+  width: 100%;
+  max-width: 46rem;
+  overflow-wrap: break-word;
+}
+
+.legal > * + * {
+  margin-top: var(--space-sm);
+}
+
+.legal p,
+.legal ul,
+.legal dl {
+  margin-bottom: 0;
+}
+
+.legal h2 {
+  margin: var(--space-md) 0 0;
+  font-size: var(--text-xl);
+}
+
+.legal ul {
+  padding-left: 1.25rem;
+}
+
+.legal li + li {
+  margin-top: 0.375rem;
+}
+
+.legal a {
+  color: var(--colour-text-muted);
+  text-underline-offset: 0.2em;
+}
+
+.updated {
+  color: var(--colour-text-muted);
+  font-size: var(--text-sm);
+}
+
+/* Wide tables scroll inside their own container (brief 6.10). */
+.tableWrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table caption {
+  padding-bottom: var(--space-xs);
+  font-weight: 700;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--colour-rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th {
+  background: var(--colour-footer);
+  color: var(--colour-white);
+}
+
+.definitions dt {
+  font-weight: 700;
+}
+
+.definitions dd {
+  margin: 0 0 var(--space-xs);
+}
+
+.button {
+  min-height: var(--tap);
+  padding: 0.625rem 1.5rem;
+  border: 2px solid var(--colour-footer);
+  background: var(--colour-footer);
+  color: var(--colour-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--colour-white);
+  color: var(--colour-footer);
+}

@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import type { Page } from '../../lib/content';
 import EnquiryForm from '../EnquiryForm/EnquiryForm';
+import { legalDrafts } from '../legal/drafts';
 import CardGrid from '../page/CardGrid';
 import Gallery from '../page/Gallery';
 import Hero from '../page/Hero';
@@ -68,12 +69,10 @@ function Body({ page }: { page: Page }) {
           )}
         </>
       );
-    case 'legal':
-      return (
-        <div className={`${styles.container} ${styles.legal}`}>
-          {page.bodyHtml && <Prose html={page.bodyHtml} />}
-        </div>
-      );
+    case 'legal': {
+      const Draft = legalDrafts[page.path];
+      return <div className={`${styles.container} ${styles.legal}`}>{Draft && <Draft />}</div>;
+    }
     default:
       return (
         <>
