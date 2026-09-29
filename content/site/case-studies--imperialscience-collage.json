@@ -1,0 +1,43 @@
+{
+  "path": "/case-studies/imperialscience-collage/",
+  "kind": "caseStudy",
+  "title": "Imperial Science Collage",
+  "seo": {
+    "title": "Imperial Science Collage - Complete restoration company",
+    "description": null,
+    "ogImage": "/images/imperial-img2.png"
+  },
+  "hero": {
+    "src": "/images/imperial-img2.png",
+    "width": 2098,
+    "height": 1396,
+    "alt": ""
+  },
+  "heading": "Imperial Science Collage",
+  "subheading": "As one of the foremost teaching and research institutions, the Imperial College of Science wanted to restore the foyer and staircase back to its original beauty and to retain its grandeur.",
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": "<p>On this project, The Complete Restoration Company had many different substrates and surfaces to restore, each requiring their own very specific treatment.</p>\n<p>Our versatile <a href=\"/services/doff/\">Doff machine</a> was used to clean a number of surfaces – the hot water blasting treatment helped bring the Portland stone treads and risers back to their best, and its steam setting helped us clean and polish the glazed bricks in the foyer.</p>\n<p>The terrazzo floors in reception were carefully cut back to their original finish and then re-polished.</p>\n<p>Next to be restored were the bronze balustrades that lined the four flights of stairs. They hadn’t been cleaned for some time, but a good polish and re-lacquer soon made them look as good as new.</p>\n<p>And finally, the top landings and flight of stairs had been finished in a parquet floor that had been neglected for years. <a href=\"/\">The Complete Restoration Company</a> re-fitted any loose blocks, sanded then polished them with three coats of a polytec hard wax oil.</p>",
+  "gallery": [
+    {
+      "src": "/images/imperial-img3.png",
+      "width": 2090,
+      "height": 1570,
+      "alt": ""
+    },
+    {
+      "src": "/images/imperial-img1.png",
+      "width": 2096,
+      "height": 1390,
+      "alt": ""
+    }
+  ],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true,
+  "date": "2019-02-14T12:52:49"
+}

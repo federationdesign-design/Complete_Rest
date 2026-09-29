@@ -1,0 +1,78 @@
+{
+  "path": "/",
+  "kind": "home",
+  "title": "Home",
+  "seo": {
+    "title": "Building Contractors London | The Complete Restoration Company",
+    "description": "London Building contractors providing services in period restoration & conservation solutions. We pride ourselves on our high standards over 35 years.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/hoempage-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "The Complete Restoration company",
+  "subheading": "A professional and comprehensive service for the restoration of period buildings",
+  "introHtml": "<p>The Complete Restoration Company are award winning experts in the field of building restoration and conservation. Our high quality work can be seen all over Hertfordshire and London.</p>",
+  "lead": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "bodyHtml": "<p>From <a href=\"/services/floor-restoration/\">floor restoration</a> to <a href=\"/services/shot-blasting/\">shot blasting</a>, we use a wide range of techniques to undertake a broad range of restoration work on all types of building restoration and architectural features.</p><p>Take a look at our website and discover the type of work we undertake and some examples of work we’ve done in the past. If you’ve got a specific project that you would like advice on or help with, then please feel free to get in touch</p>",
+  "gallery": [],
+  "cards": [
+    {
+      "title": "Building Restoration",
+      "href": "/services/building-restoration/",
+      "excerpt": "We specialise in house restoration, working with our clinets to offer a bespoke service that allows the beautiy of the property to shine though.",
+      "label": "Confirm",
+      "image": {
+        "src": "/images/building-restoration-alt.jpg",
+        "width": 2000,
+        "height": 876,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Internal",
+      "href": "/internal/",
+      "excerpt": "For the complete restoration of your property, call us to provide details on how we can create amazing rooms for you to enjoy.",
+      "label": "Confirm",
+      "image": {
+        "src": "/images/internal-image.jpg",
+        "width": 2000,
+        "height": 918,
+        "alt": ""
+      }
+    },
+    {
+      "title": "External",
+      "href": "/external/",
+      "excerpt": "Sympathetic and knowledgeable building facade restoration is a specialised skill encompassing several highly prized trades",
+      "label": "Confirm",
+      "image": {
+        "src": "/images/building-restoration-page-image.jpg",
+        "width": 2000,
+        "height": 857,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Floor restoration",
+      "href": "/services/floor-restoration/",
+      "excerpt": "More and more of us are preferring natural wood floors in our homes - they're easier to clean, won't stain and don't harbour dust mites.",
+      "label": "Confirm",
+      "image": {
+        "src": "/images/floor-restoration3.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    }
+  ],
+  "quote": {
+    "title": "Get Quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

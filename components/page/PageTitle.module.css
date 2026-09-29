@@ -1,0 +1,27 @@
+.title {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--gutter) var(--space-sm);
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: min(100%, 36rem);
+  margin: var(--space-md) auto 0;
+  border-top: 2px solid var(--colour-rule);
+}
+
+.heading {
+  margin-bottom: var(--space-xs);
+  font-size: var(--text-2xl);
+}
+
+.subheading {
+  max-width: 40rem;
+  margin: 0 auto;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+}

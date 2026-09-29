@@ -1,0 +1,64 @@
+{
+  "path": "/external/",
+  "kind": "section",
+  "title": "External",
+  "seo": {
+    "title": "External - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/building-restoration-page-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "External Restoration by Complete Restoration",
+  "subheading": "Sympathetic and knowledgeable building facade restoration is a specialised skill encompassing several highly prized trades",
+  "introHtml": "<p>From hand-carving stone and the replacement of sections worn away through years of exposure to the elements, to the installation of new timber around long decayed window frames. Metal, brick or stone – whatever the material, time and weather will eventually wear it away. At Complete Restoration we have these highly specialised trades that can bring period beauty back to life.</p>",
+  "lead": null,
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [
+    {
+      "title": "Brickwork",
+      "href": "/external/brickwork/",
+      "excerpt": "Specialists in; painted walls, removal of moss, algae, Ivy Carbon Deposits and the cleaning of natur...",
+      "label": "more",
+      "image": {
+        "src": "/images/shotblasting.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Sash Window Restoration",
+      "href": "/external/sash-window-restoration/",
+      "excerpt": "Sash windows are a fabulous feature of any period home but like any other feature, they can begin to...",
+      "label": "more",
+      "image": {
+        "src": "/images/sash-windows.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Structural",
+      "href": "/external/structural/",
+      "excerpt": "Movement in old buildings can be seasonal, dictated by temperature changes. It could also be histori...",
+      "label": "more",
+      "image": {
+        "src": "/images/structual.jpg",
+        "width": 2000,
+        "height": 950,
+        "alt": ""
+      }
+    }
+  ],
+  "quote": null,
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

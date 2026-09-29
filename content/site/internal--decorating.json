@@ -1,0 +1,29 @@
+{
+  "path": "/internal/decorating/",
+  "kind": "inner",
+  "title": "Decorating",
+  "seo": {
+    "title": "Decorating - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/decoration-image.jpg",
+    "width": 2000,
+    "height": 900,
+    "alt": ""
+  },
+  "heading": "Decorating by Complete Restoration",
+  "subheading": "Complete Restoration undertakes a wide range of interior decorating and finishing work.",
+  "introHtml": null,
+  "lead": "We have specialist skills in many areas your project will always be completed with a guarantee of high quality workmanship. Below is an example of some of the work areas we specialise in.",
+  "bodyHtml": "<p>High quality preparation and lining of walls to reinstate perfect surfaces as an alternative to plastering.&nbsp;Liming, graining and waxing.&nbsp;Marbling, ageing and distressing of timbers</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

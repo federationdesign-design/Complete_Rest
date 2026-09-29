@@ -1,0 +1,15 @@
+.band {
+  padding: var(--space-lg) var(--gutter);
+  background: var(--colour-nav) url('/images/testimonialbackgroundimage.png') center / cover;
+  color: var(--colour-white);
+}
+
+.text {
+  max-width: 44rem;
+  margin: 0 auto;
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  line-height: 1.35;
+  text-align: center;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 0.6);
+}

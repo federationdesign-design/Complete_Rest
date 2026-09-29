@@ -1,0 +1,29 @@
+{
+  "path": "/external/brickwork/",
+  "kind": "inner",
+  "title": "Brickwork",
+  "seo": {
+    "title": "Brickwork - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/shotblasting.jpg",
+    "width": 2000,
+    "height": 900,
+    "alt": ""
+  },
+  "heading": "Brickwork",
+  "subheading": "by Complete Restoration",
+  "introHtml": null,
+  "lead": "Specialists in; painted walls, removal of moss, algae, Ivy Carbon Deposits and the cleaning of natural stone and tiled floors.",
+  "bodyHtml": "<p>PAINTED WALLS<br>\nSome painted walls, particularly old walls, can be very delicate to deal with depending on the type of brick they were built from. When it comes to removing paint from the surface, The Complete Restoration Company looks at each wall individually and assesses which paint stripping process will be the most suitable, from sand blasting to chemical cleaning.</p><p>If we detect that the bricks are hard, we remove the paint by carefully shot blasting the brick back to the natural surface. However, if the bricks or stone are soft we use a specific chemical process as shot blasting will damage the brick or stone beyond repair.</p><p>We then neutralise the chemicals on the surface of the wall, re-point any mortar that has disintegrated over the years, ready for you to enjoy it in all its natural splendour.</p><p>MOSS, ALGAE &amp; IVY<br>\nIf you have a wall that has borne the brunt of a gutter leak or has over hanging trees dripping sap on to it, then it’s probably covered in moss and algae.</p><p>We’ll remove any ivy or foliage that may be growing on it, scrape and steam all the algae off, treat it with algae repellent and re-point any old or damaged pointing for you.</p><p>CARBON DEPOSITS<br>\nWalls that have been polluted by acid rain or have a layer of carbon build-up can make your property dark and tired. In fact you won’t believe what a difference removing it will make to the look of it, and it will also increase the value of your property!</p><p>We assess exactly what type of brickwork is underneath the polluted area and choose the correct technique to remove all traces of the dirt.</p><p>Take a look at the difference we can make to your walls.</p><p>NATURAL STONE AND TILED FLOORS<br>\nWhen tile floors become dirty, tired and faded you lose the natural beauty of the original stone. The Complete Restoration Company reconditions all types of natural flagstones and tiles including York stone and Portland limestone, slate, marble, terracotta or terrazzo.</p><p>We re-cut and grout them, then polish them using a series of compound abrasives and finally seal them, leaving your tiles clean and to the finish of your choice.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

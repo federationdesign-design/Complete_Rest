@@ -1,0 +1,29 @@
+{
+  "path": "/services/brick-and-stone-cleaning/",
+  "kind": "inner",
+  "title": "Brick and Stone Cleaning",
+  "seo": {
+    "title": "Brick & Stone Restoration Services London | Complete Restoration",
+    "description": "Brick and Stone Cleaning restoration services across London. We remove paint using several specialist techniques. Get in contact today for a free quote.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/stone-image.jpg",
+    "width": 2000,
+    "height": 918,
+    "alt": ""
+  },
+  "heading": "Brick and Stone Cleaning",
+  "subheading": "by Complete Restoration",
+  "introHtml": null,
+  "lead": "It always seems a shame to see natural brick and stone covered in paint, when just beneath the surface is a far more natural finish that will be more in keeping with the traditional building, and will always increase the value of your property.",
+  "bodyHtml": "<p>The Complete Restoration Company removes the paint from brick and stone using a number of specialist techniques. If we detect that the bricks are hard, we remove the paint by carefully shot blasting the brick back to the natural surface. If we identify that the bricks are soft, we use a specialist chemical process as shot blasting will damage the brick or stone beyond repair.</p><p>We then neutralise the chemicals on the surface of the wall, re-point any mortar that has disintegrated over the years, ready for you to enjoy it in all its natural splendour. We can also refurbish walls that have been polluted by acid rain or have a layer of carbon build up on them</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "contact": null,
+  "members": true
+}

@@ -1,0 +1,112 @@
+{
+  "path": "/services/",
+  "kind": "section",
+  "title": "Services",
+  "seo": {
+    "title": "Building Conservation Services UK | Complete Restoration Company",
+    "description": "Utilising a wide range of building restoration techniques to undertake all types of work across London and around the UK. Get in touch with us today.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/services-page-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "Our Services",
+  "subheading": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "introHtml": "<p>From floor restoration to shot blasting, we use a wide range of techniques to undertake a broad range of restoration work on all types of building restoration, architectural features and period furniture.</p><p>Take a look at our website and discover the type of work we undertake and some examples of work we’ve done in the past. If you’ve got a specific project that you would like advice on or help with, then please feel free to get in touch.</p>",
+  "lead": null,
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [
+    {
+      "title": "Floor restoration",
+      "href": "/services/floor-restoration/",
+      "excerpt": "More and more of us are preferring natural wood floors in our homes - they're easier to clean, won't...",
+      "label": "more",
+      "image": {
+        "src": "/images/floor-restoration3.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Sash Window Restoration",
+      "href": "/external/sash-window-restoration/",
+      "excerpt": "Sash windows are a fabulous feature of any period home but like any other feature, they can begin to...",
+      "label": "more",
+      "image": {
+        "src": "/images/sash-windows.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Shot Blasting",
+      "href": "/services/shot-blasting/",
+      "excerpt": "This is an essential part of preparation work, as it removes all contamination such as rust and corr...",
+      "label": "more",
+      "image": {
+        "src": "/images/shotblasting-prepped.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Metal Polishing",
+      "href": "/services/metal-polishing/",
+      "excerpt": "The Complete Restoration Company can bring your architectural or antique piece back to its original ...",
+      "label": "more",
+      "image": {
+        "src": "/images/Metal-Polishing.jpg",
+        "width": 2000,
+        "height": 837,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Brick and Stone Cleaning",
+      "href": "/services/brick-and-stone-cleaning/",
+      "excerpt": "It always seems a shame to see natural brick and stone covered in paint, when just beneath the surfa...",
+      "label": "more",
+      "image": {
+        "src": "/images/stone-image.jpg",
+        "width": 2000,
+        "height": 918,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Doff",
+      "href": "/services/doff/",
+      "excerpt": "Specifically, we have been accredited to use the chemical-free and eco-friendly pressure wash system...",
+      "label": "more",
+      "image": {
+        "src": "/images/doff-image.jpg",
+        "width": 2000,
+        "height": 922,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Hand Stripping",
+      "href": "/services/hand-stripping/",
+      "excerpt": "The Complete Restoration Company with establish what process needs to be used and professionally rem...",
+      "label": "more",
+      "image": {
+        "src": "/images/Hand-stripping-prepped.jpg",
+        "width": 2000,
+        "height": 889,
+        "alt": ""
+      }
+    }
+  ],
+  "quote": null,
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

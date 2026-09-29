@@ -1,0 +1,29 @@
+{
+  "path": "/external/structural/",
+  "kind": "inner",
+  "title": "Structural",
+  "seo": {
+    "title": "Structural - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/structual.jpg",
+    "width": 2000,
+    "height": 950,
+    "alt": ""
+  },
+  "heading": "Structural by Complete Restoration",
+  "subheading": "At the Complete Restoration Company we have a team of skilled advisors who work with us to ensure that your building becomes structurally sound and safe.",
+  "introHtml": null,
+  "lead": "Movement in old buildings can be seasonal, dictated by temperature changes. It could also be historic – i.e. there is evidence of past movement but there is no movement now.",
+  "bodyHtml": "<p>Only when the movement is ongoing and threatens the use or safety of the structure should you be concerned.</p><p>If the movement is suspected to be ongoing then we can instruct structural engineer who is familiar with old buildings and he can make an inspection. The structural stability of an older house is dependent on how it all fits together. If the connections between the various components – walls, floors and roof structure – are unstable or inadequate then the building is vulnerable to disproportionate damage.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

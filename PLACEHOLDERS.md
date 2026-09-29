@@ -9,3 +9,5 @@ Every fact the build needs from Steve. Each one renders on the site as a highlig
 | `REGISTERED_OFFICE` | Registered office address to publish (brief 10.2) | Footer company statement; privacy notice | |
 | `VAT_NUMBER` | VAT number | Footer company statement | The live footer shows 749 8815 68. Please confirm it is current and belongs to the same entity. |
 | `FAVICON` | A favicon or a decision to make one from the logo | Browser tab icon (not yet added) | The live favicon returns 404, so there is nothing to carry over. The scaffold's Next.js icon has been removed. |
+| `COMPACT_HEADER_LOGO` | A thinner logo for the compact (sticky) header bar | Compact header bar and menu panel (`components/SiteHeader/SiteHeader.tsx`, `LOGO`) | Steve will supply it. Until then the full logo is scaled down to fit. |
+| `MEMBERSHIPS` | Current accreditations and memberships (brief 10.9) | "Proud members of..." logo strip on every page (`lib/members.ts`) | Shows the five live logos until confirmed: The Tile Association, The Guild of Master Craftsmen, NICEIC, MPA, Gas Safe Register. Not marked on the page, as the logos are live content. |

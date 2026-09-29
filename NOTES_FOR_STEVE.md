@@ -111,3 +111,14 @@ The Haileybury case study is titled "Haileybury College" correctly; only its slu
 7. The blog is not linked from the main navigation or footer on the live site; it is reachable only from the sitemap and search results. The rebuild will match that unless you want a Blog link added.
 8. `scripts/screenshots.mjs` captures the brief's 390px and 1280px screenshots into `agent/screenshots/`. Run it against a production build (`npm run build && npm start`), not `npm run dev`, which adds the Next.js dev badge to every shot.
 9. Footer menus on phones (below 768px) are collapsible sections, closed by default, as you asked. Services and Case studies have linked headings on the live site; on phones the heading becomes the toggle, so the section link is repeated as the first item in its list. From 768px up all four menus are open with their original headings.
+
+## Step 3: page templates
+
+1. Content model: `scripts/build-content.mjs` (`npm run content`) turns the extracted pages into `content/site/*.json`, one per page. Every page is rendered by one template component (`components/templates/PageView.tsx`) that follows the live section order for its kind of page: home, section index (services, internal, external), inner page, case studies index, case study, contact, legal, blog archive and blog post. Unknown URLs return 404 (`dynamicParams = false`).
+2. Heading levels were adjusted for a logical order without changing any words. Each page has one `h1`. The live `h2` straplines under page titles and the `h4` lead sentences are now styled paragraphs, and blog archive titles (`h4` on the live site) are `h2`.
+3. Card labels from the live site ("Confirm" on the home tiles, "more" on section pages, "read on" on the blog) are kept visibly, but the card title is the link and the label is hidden from screen readers. Otherwise a screen reader would hear the same ambiguous link text several times on one page.
+4. The four home page tiles are four across on desktop rather than three, to avoid a single orphaned tile. Section and case study listings follow the brief: one, two and three columns.
+5. `/services/floor-restoration/` has no quote form title on the live site. Its form section has a visually hidden heading, "Get a quote", so the form is still labelled for screen readers.
+6. The blog archive heading is "BLog" on the live site (typo, carried over). The Swindon post's excerpt on the live archive is actually the Harpenden post's text; carried over as it is.
+7. The live contact page loads the Google Maps script but never shows a map, so there is no map to rebuild. The contact page publishes a trading address (Lordship lodge, Dane End, Ware, Hertfordshire SG12 0NS), carried over as it is; please confirm it against brief item 10.2.
+8. The disclaimer uses a fourth company name variant, "Complete Restoration Limited". It is replaced in step 7.

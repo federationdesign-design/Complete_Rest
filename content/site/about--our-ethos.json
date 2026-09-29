@@ -1,0 +1,29 @@
+{
+  "path": "/about/our-ethos/",
+  "kind": "inner",
+  "title": "Our Ethos",
+  "seo": {
+    "title": "Our Ethos - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/ethos-page-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "Our ethos",
+  "subheading": "The Complete Restoration Company is a traditional company that has been trading for over 35 years.",
+  "introHtml": null,
+  "lead": "Our ethos is that we pride ourselves on our high standard of finish and our attention to detail.",
+  "bodyHtml": "<p>We are an efficient and professional company who offer traditional values and service.</p><p>We are a value for return supplier who will always ensure that any project is completed to the excellent standard that our reputation has been built on.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

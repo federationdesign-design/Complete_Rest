@@ -1,0 +1,29 @@
+{
+  "path": "/about/our-team/",
+  "kind": "inner",
+  "title": "Our team",
+  "seo": {
+    "title": "Our team - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/team-page-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "Our team",
+  "subheading": "The Complete Restoration Company employs a team of highly skilled restorers that have undertaken all manner of work over the years.",
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": "<p>We have a number of contractors who work with us and have done for many years. We choose to employ these contractors as their standard of work is exemplary and is in line with our ethos and values.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

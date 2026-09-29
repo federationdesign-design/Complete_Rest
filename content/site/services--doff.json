@@ -1,0 +1,29 @@
+{
+  "path": "/services/doff/",
+  "kind": "inner",
+  "title": "Doff",
+  "seo": {
+    "title": "Doff Cleaning Services | The Complete Restoration Company",
+    "description": "Chemical-free and eco-friendly pressure wash system for cleaning walls and buildings. Get in contact today for more info about our Doff cleaning services.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/doff-image.jpg",
+    "width": 2000,
+    "height": 922,
+    "alt": ""
+  },
+  "heading": "Doff by Complete Restoration",
+  "subheading": "The Complete Restoration Company use a series of cleaning methods to clean walls and buildings of unwanted paint, moss and algae or even graffiti.",
+  "introHtml": null,
+  "lead": "Specifically, we have been accredited to use the chemical-free and eco-friendly pressure wash system called Doff.",
+  "bodyHtml": "<p>Using exactly the right combination of pressurised water and fine inert powder, the Doff machine and Torc nozzle allow us to clean walls and buildings highly effectively whilst protecting the precious stone or brickwork beneath.</p><p>The system is so highly regarded, Harrods, Westminster Abbey and St Pancras station insisted this system be used to clean their buildings.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "contact": null,
+  "members": true
+}

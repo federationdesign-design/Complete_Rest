@@ -1,0 +1,29 @@
+{
+  "path": "/internal/wet-rooms/",
+  "kind": "inner",
+  "title": "Wet Rooms",
+  "seo": {
+    "title": "Wet Rooms - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/wet-room-prepped.jpg",
+    "width": 2000,
+    "height": 867,
+    "alt": ""
+  },
+  "heading": "Staircase refurb by Complete Restoration",
+  "subheading": "The Complete Restoration Company offers an end-to-end service for all your wet room needs, whether this entails the conversion of your bathroom into a spacious, watertight wet room, the renovation of your dated showering facilities, or the planning and construction of a brand-new walk-in or walk-through wet room with underfloor heating in any space of your choosing.",
+  "introHtml": null,
+  "lead": "We offer a full Service including re siting of key structural components to enhance your bathrooms size or space availability. Our installers can create extra space by removing old partitions or relocating radiators to make the most efficient and effective use of the space available. We then fully design bathrooms, wetrooms or en suites with the clients requirements at the forefront of all decisions",
+  "bodyHtml": "<p>Our installers are fully trained in all aspects of project design and installation, meaning simplicity for you, the client. No need to call in several trades and try to project manage different aspects of your ‘Dream Bathroom’ Just one call to us and let us take the stress out of everything from plastering to tiling and from re wiring for those new lights to plumbing for the new wall hung w/c.</p><p>We also take care of certification of gas, electrics, building regulations and waste removal. A truly complete restoration project.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

@@ -1,0 +1,29 @@
+{
+  "path": "/services/shot-blasting/",
+  "kind": "inner",
+  "title": "Shot Blasting",
+  "seo": {
+    "title": "Industrial Shot Blasting London | Complete Restoration Company",
+    "description": "We remove surface contaminations and flaws using industrial shot blasting. Get in touch today for a free quote on how we can help you with your project.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/shotblasting-prepped.jpg",
+    "width": 2000,
+    "height": 900,
+    "alt": ""
+  },
+  "heading": "Shot Blasting",
+  "subheading": "Shot blasting is a process used to clean surfaces back to the base material.",
+  "introHtml": null,
+  "lead": "This is an essential part of preparation work, as it removes all contamination such as rust and corrosion then leaves a good clean surface for applying the primary first coats of powder coat.",
+  "bodyHtml": "<p>The process usually involves a nozzle with a high-pressure airline to deliver various types of media, or shot, at the object. This is a particularly effective method for removing scale, rust, paint, and minor surface flaws from metal objects.</p><p>Depending on the equipment and the type of material used, various surface finishes or textures can also be applied to a work piece for decorative purposes, or to prepare the surface for paint.</p><p>We regularly clean old brick walls, bring oak beams back to their original condition and restore all types of iron work, from steel beams to ornate, Victorian structures and cast iron fireplaces.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "GET A QUOTE TODAY"
+  },
+  "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "contact": null,
+  "members": true
+}

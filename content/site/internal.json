@@ -1,0 +1,100 @@
+{
+  "path": "/internal/",
+  "kind": "section",
+  "title": "Internal",
+  "seo": {
+    "title": "Internal - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/internal-image.jpg",
+    "width": 2000,
+    "height": 918,
+    "alt": ""
+  },
+  "heading": "internal Restoration by Complete Restoration",
+  "subheading": "For the complete restoration of your property, call us to provide details on how we can create amazing rooms for you to enjoy.",
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [
+    {
+      "title": "Floor restoration",
+      "href": "/services/floor-restoration/",
+      "excerpt": "More and more of us are preferring natural wood floors in our homes - they're easier to clean, won't...",
+      "label": "more",
+      "image": {
+        "src": "/images/floor-restoration3.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Staircase Refurb",
+      "href": "/internal/staircase-refurb/",
+      "excerpt": "We offer a stripping and refurbishment service of staircases to bring them back to their former glor...",
+      "label": "more",
+      "image": {
+        "src": "/images/staircase-prepped.jpg",
+        "width": 2000,
+        "height": 797,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Kitchens",
+      "href": "/internal/kitchens/",
+      "excerpt": "We use master craftsmen to provide a truly bespoke kitchen of your dreams.",
+      "label": "more",
+      "image": {
+        "src": "/images/kitchen-image-1.jpg",
+        "width": 2000,
+        "height": 918,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Wet Rooms",
+      "href": "/internal/wet-rooms/",
+      "excerpt": "We offer a full Service including re siting of key structural components to enhance your bathrooms s...",
+      "label": "more",
+      "image": {
+        "src": "/images/wet-room-prepped.jpg",
+        "width": 2000,
+        "height": 867,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Decorating",
+      "href": "/internal/decorating/",
+      "excerpt": "We have specialist skills in many areas your project will always be completed with a guarantee of hi...",
+      "label": "more",
+      "image": {
+        "src": "/images/decoration-image.jpg",
+        "width": 2000,
+        "height": 900,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Hand Stripping",
+      "href": "/services/hand-stripping/",
+      "excerpt": "The Complete Restoration Company with establish what process needs to be used and professionally rem...",
+      "label": "more",
+      "image": {
+        "src": "/images/Hand-stripping-prepped.jpg",
+        "width": 2000,
+        "height": 889,
+        "alt": ""
+      }
+    }
+  ],
+  "quote": null,
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

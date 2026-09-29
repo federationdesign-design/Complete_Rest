@@ -1,0 +1,34 @@
+{
+  "path": "/contact-us/",
+  "kind": "contact",
+  "title": "Contact us",
+  "seo": {
+    "title": "Contact us - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": null,
+  "heading": "Contact us",
+  "subheading": null,
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": {
+    "address": [
+      "Lordship lodge",
+      "Dane End",
+      "Ware",
+      "Hertfordshire",
+      "SG12 0NS"
+    ],
+    "phone": "07973424181",
+    "email": "info@completerestoration.co.uk"
+  },
+  "members": true
+}

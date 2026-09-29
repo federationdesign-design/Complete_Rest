@@ -1,0 +1,73 @@
+{
+  "path": "/case-studies/victorian-residence/",
+  "kind": "caseStudy",
+  "title": "Victorian Residence",
+  "seo": {
+    "title": "Victorian Residence - Complete restoration company",
+    "description": null,
+    "ogImage": "/images/victorian-img9b.jpg"
+  },
+  "hero": {
+    "src": "/images/victorian-img9b.jpg",
+    "width": 900,
+    "height": 624,
+    "alt": ""
+  },
+  "heading": "Victorian Residence",
+  "subheading": "Like most period houses, many original features that give a house its character have been ripped out long ago.",
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": "<p>From oak floors to pine doors, The Complete Restoration Company undertook and managed the whole restoration process for this particular project.</p>\n<p>Replacement period fireplaces were installed, whilst existing fireplaces were re-conditioned and made safe.</p>\n<p>A new kitchen was designed and built by our master craftsman for a bespoke look that is in keeping with the style of the property. Bathrooms were updated and modernised leaving. clean modern feel which will last for years to come</p>\n<p>The <a href=\"/services/floor-restoration/\">floorboards</a> were removed and replaced with oak flooring that was distressed to give it an antique feel. After which a series of organic hard wax oils were used to seal and finish it. The period renovation even extended to the fully refurbished Victorian radiators, all of which were supplied and fitted to Corgi standards.</p>\n<p>The original doors were long gone, but period doors were sourced, stripped of paint and finished with beeswax. The original <a href=\"/external/sash-window-restoration/\">sash windows</a> were reconditioned on site, the sash cords were replaced and the wood was stripped back, primed and repainted in a colour that suited its surroundings. By the time The Complete Restoration Company left the building, it looked truly beautiful!</p>",
+  "gallery": [
+    {
+      "src": "/images/victorian-img7b.jpg",
+      "width": 900,
+      "height": 675,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img6b.jpg",
+      "width": 900,
+      "height": 675,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img4b.jpg",
+      "width": 768,
+      "height": 683,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img3b.jpg",
+      "width": 768,
+      "height": 691,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img2b.jpg",
+      "width": 900,
+      "height": 780,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img5b.jpg",
+      "width": 900,
+      "height": 675,
+      "alt": ""
+    },
+    {
+      "src": "/images/victorian-img8b.jpg",
+      "width": 900,
+      "height": 675,
+      "alt": ""
+    }
+  ],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true,
+  "date": "2019-02-14T12:52:28"
+}

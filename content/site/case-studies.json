@@ -1,0 +1,71 @@
+{
+  "path": "/case-studies/",
+  "kind": "caseStudies",
+  "title": "Case studies",
+  "seo": {
+    "title": "Case studies - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": null,
+  "heading": "Case studies",
+  "subheading": null,
+  "introHtml": "<p>The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design. From floor restoration to shot blasting, we use a wide range of techniques to undertake a broad range of restoration work on all types of building restoration, architectural features and period furniture.</p><p>Take a look at our website and discover the type of work we undertake and some examples of work we’ve done in the past. If you’ve got a specific project that you would like advice on or help with, then please feel free to get in touch.</p>",
+  "lead": null,
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [
+    {
+      "title": "Halcyon Gallery",
+      "href": "/case-studies/halcyon-gallery/",
+      "excerpt": null,
+      "label": null,
+      "image": {
+        "src": "/images/Halcyon-img3.png",
+        "width": 1672,
+        "height": 1116,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Haileybury College",
+      "href": "/case-studies/haileybury-collages/",
+      "excerpt": null,
+      "label": null,
+      "image": {
+        "src": "/images/hailbury-img.jpg",
+        "width": 1536,
+        "height": 1024,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Imperial Science Collage",
+      "href": "/case-studies/imperialscience-collage/",
+      "excerpt": null,
+      "label": null,
+      "image": {
+        "src": "/images/imperial-img2.png",
+        "width": 2098,
+        "height": 1396,
+        "alt": ""
+      }
+    },
+    {
+      "title": "Victorian Residence",
+      "href": "/case-studies/victorian-residence/",
+      "excerpt": null,
+      "label": null,
+      "image": {
+        "src": "/images/victorian-img9b.jpg",
+        "width": 900,
+        "height": 624,
+        "alt": ""
+      }
+    }
+  ],
+  "quote": null,
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

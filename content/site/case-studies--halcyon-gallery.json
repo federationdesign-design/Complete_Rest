@@ -1,0 +1,43 @@
+{
+  "path": "/case-studies/halcyon-gallery/",
+  "kind": "caseStudy",
+  "title": "Halcyon Gallery",
+  "seo": {
+    "title": "Halcyon Gallery - Complete restoration company",
+    "description": null,
+    "ogImage": "/images/Halcyon-img3.png"
+  },
+  "hero": {
+    "src": "/images/Halcyon-img3.png",
+    "width": 1672,
+    "height": 1116,
+    "alt": ""
+  },
+  "heading": "Halcyon Gallery",
+  "subheading": "Situated in the heart of Mayfair",
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": "<p>The Halcyon Gallery has become known as one of Europe’s leading art galleries, representing some of the finest contemporary painters and sculptors.</p>\n<p>It was no surprise that they requested The Complete Restoration Company to restore their breathtaking Georgian staircase back to a work of art.</p>\n<p>All of the original features were completely covered with years and years of caked on paint, so it was necessary to restore the entire staircase in a considerate and fitting way.</p>\n<p>The cantilevered staircase was stripped of paint using the environmentally friendly <a href=\"/services/doff/\">Doff Cleaning System</a>, ensuring that only the paint was removed and the delicate limestone remained undamaged. We then honed back the limestone using diamond polishing pads and finally impregnated it with a limestone sealant.</p>\n<p>The cast and wrought iron balustrades were sand blasted to remove ugly layers of paint and then polished to make the most of the original finish. Finally, the mahogany handrail was stripped and re-polished by our expert French Polishing team.</p>",
+  "gallery": [
+    {
+      "src": "/images/Halcyon-img2.png",
+      "width": 1670,
+      "height": 1118,
+      "alt": ""
+    },
+    {
+      "src": "/images/Halcyon-img1.png",
+      "width": 934,
+      "height": 1396,
+      "alt": ""
+    }
+  ],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true,
+  "date": "2019-02-14T12:51:37"
+}

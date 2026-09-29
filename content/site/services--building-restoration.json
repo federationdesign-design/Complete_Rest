@@ -1,0 +1,29 @@
+{
+  "path": "/services/building-restoration/",
+  "kind": "inner",
+  "title": "Building Restoration",
+  "seo": {
+    "title": "Building Restoration - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/building-restoration-alt.jpg",
+    "width": 2000,
+    "height": 876,
+    "alt": ""
+  },
+  "heading": "Building Restoration by Complete Restoration",
+  "subheading": "Here at the Complete Restoration Company we have been specialising in period restoration for many years.",
+  "introHtml": null,
+  "lead": "We specialise in house restoration, working with our clinets to offer a bespoke service that allows the beautiy of the property to shine though.",
+  "bodyHtml": "<p>Here at the Complete Restoration Company we have been specialising in period restoration for many years. We specialise in house restoration, working with our clinets to offer a bespoke service that allows the beautiy of the property to shine though.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

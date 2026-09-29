@@ -1,0 +1,51 @@
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: calc(100svh - var(--header-full-height));
+  background: var(--colour-footer);
+  color: var(--colour-white);
+  isolation: isolate;
+}
+
+.image {
+  z-index: -2;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.82) 0%, rgb(0 0 0 / 0.55) 45%, rgb(0 0 0 / 0.15) 100%);
+}
+
+.text {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  /* Clear the fixed bottom action bar on phones (0 from tablet up). */
+  padding: var(--space-lg) var(--gutter) calc(var(--space-md) + var(--action-bar-space));
+  text-shadow: 0 1px 3px rgb(0 0 0 / 0.5);
+}
+
+.heading {
+  max-width: 30ch;
+  margin-bottom: var(--space-xs);
+  font-size: var(--text-2xl);
+}
+
+.subheading {
+  max-width: 40rem;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: 1.35;
+}
+
+@media (min-width: 48em) {
+  .hero {
+    min-height: clamp(24rem, 62svh, 40rem);
+  }
+}

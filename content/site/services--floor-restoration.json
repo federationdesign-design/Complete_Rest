@@ -1,0 +1,29 @@
+{
+  "path": "/services/floor-restoration/",
+  "kind": "inner",
+  "title": "Floor restoration",
+  "seo": {
+    "title": "Floor Tile Restorations London | The Complete Restoration Company",
+    "description": "Offering a complete floor laying & restoration service across London & beyond. We restore original wood floors or lay new antique style ones for your home.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/floor-restoration3.jpg",
+    "width": 2000,
+    "height": 900,
+    "alt": ""
+  },
+  "heading": "Floor Restoration",
+  "subheading": "by Complete Restoration",
+  "introHtml": null,
+  "lead": "More and more of us are preferring natural wood floors in our homes - they're easier to clean, won't stain and don't harbour dust mites.",
+  "bodyHtml": "<p>The Complete Restoration Company offer the complete floor laying and restoration service: we restore original wooden floors to their former glory and we can also lay new, distressed, parquet or antique floorboards in your home.</p><p>We use highly efficient sanding machines that collect most of the dust meaning there’s very little mess. Once the floor is stripped back, we treat the wood with an organic hard wax oil that, with the correct maintenance, will last for years. We can source any type of floorboard or block flooring that may need replacing, and we will always do our best to find the right wood to match the original floor.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": null
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

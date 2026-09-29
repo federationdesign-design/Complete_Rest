@@ -1,0 +1,284 @@
+[
+  {
+    "path": "/",
+    "key": "home",
+    "kind": "home",
+    "title": "Home"
+  },
+  {
+    "path": "/about/",
+    "key": "about",
+    "kind": "inner",
+    "title": "about"
+  },
+  {
+    "path": "/about/our-ethos/",
+    "key": "about--our-ethos",
+    "kind": "inner",
+    "title": "Our Ethos"
+  },
+  {
+    "path": "/about/our-team/",
+    "key": "about--our-team",
+    "kind": "inner",
+    "title": "Our team"
+  },
+  {
+    "path": "/blog/",
+    "key": "blog",
+    "kind": "blogArchive",
+    "title": "BLog"
+  },
+  {
+    "path": "/blog/brass-and-mixed-metals-top-interiors-trend/",
+    "key": "blog--brass-and-mixed-metals-top-interiors-trend",
+    "kind": "blogPost",
+    "title": "Brass And Mixed Metals ‘Top Interiors Trend’"
+  },
+  {
+    "path": "/blog/camdens-koko-nightclub-damaged-in-fire/",
+    "key": "blog--camdens-koko-nightclub-damaged-in-fire",
+    "kind": "blogPost",
+    "title": "Camden’s Koko Nightclub Damaged In Fire"
+  },
+  {
+    "path": "/blog/do-you-need-your-parquet-floor-restored/",
+    "key": "blog--do-you-need-your-parquet-floor-restored",
+    "kind": "blogPost",
+    "title": "Do You Need Your Parquet Floor Restored?"
+  },
+  {
+    "path": "/blog/how-to-look-after-original-wood-flooring/",
+    "key": "blog--how-to-look-after-original-wood-flooring",
+    "kind": "blogPost",
+    "title": "How To Look After Original Wood Flooring"
+  },
+  {
+    "path": "/blog/old-house-restoration-tips/",
+    "key": "blog--old-house-restoration-tips",
+    "kind": "blogPost",
+    "title": "Old House Restoration Tips"
+  },
+  {
+    "path": "/blog/peckham-top-urban-district/",
+    "key": "blog--peckham-top-urban-district",
+    "kind": "blogPost",
+    "title": "Peckham ‘Top Urban District’"
+  },
+  {
+    "path": "/blog/period-features-sought-after-in-renovation-properties/",
+    "key": "blog--period-features-sought-after-in-renovation-properties",
+    "kind": "blogPost",
+    "title": "Period Features ‘Sought After In Renovation Properties’"
+  },
+  {
+    "path": "/blog/period-home-in-harpenden-goes-on-sale/",
+    "key": "blog--period-home-in-harpenden-goes-on-sale",
+    "kind": "blogPost",
+    "title": "Period Home In Harpenden Goes On Sale"
+  },
+  {
+    "path": "/blog/swindons-mechanics-institute-set-to-be-restored/",
+    "key": "blog--swindons-mechanics-institute-set-to-be-restored",
+    "kind": "blogPost",
+    "title": "Swindon’s Mechanics Institute Set To Be Restored!"
+  },
+  {
+    "path": "/blog/the-advantages-of-having-a-wet-room/",
+    "key": "blog--the-advantages-of-having-a-wet-room",
+    "kind": "blogPost",
+    "title": "The Advantages Of Having A Wet Room"
+  },
+  {
+    "path": "/blog/the-uks-five-most-desirable-property-types/",
+    "key": "blog--the-uks-five-most-desirable-property-types",
+    "kind": "blogPost",
+    "title": "The UK’s Five Most Desirable Property Types"
+  },
+  {
+    "path": "/blog/top-tips-for-decorating-a-period-property/",
+    "key": "blog--top-tips-for-decorating-a-period-property",
+    "kind": "blogPost",
+    "title": "Top Tips For Decorating A Period Property"
+  },
+  {
+    "path": "/blog/uks-top-10-most-endangered-buildings-revealed/",
+    "key": "blog--uks-top-10-most-endangered-buildings-revealed",
+    "kind": "blogPost",
+    "title": "UK’s Top 10 Most Endangered Buildings Revealed"
+  },
+  {
+    "path": "/blog/what-are-listed-buildings/",
+    "key": "blog--what-are-listed-buildings",
+    "kind": "blogPost",
+    "title": "What Are Listed Buildings?"
+  },
+  {
+    "path": "/blog/what-would-you-do-to-create-your-forever-home/",
+    "key": "blog--what-would-you-do-to-create-your-forever-home",
+    "kind": "blogPost",
+    "title": "What Would You Do To Create Your Forever Home?"
+  },
+  {
+    "path": "/blog/work-begins-on-ipswichs-unitarian-meeting-house/",
+    "key": "blog--work-begins-on-ipswichs-unitarian-meeting-house",
+    "kind": "blogPost",
+    "title": "Work Begins On Ipswich’s Unitarian Meeting House"
+  },
+  {
+    "path": "/case-studies/",
+    "key": "case-studies",
+    "kind": "caseStudies",
+    "title": "Case studies"
+  },
+  {
+    "path": "/case-studies/haileybury-collages/",
+    "key": "case-studies--haileybury-collages",
+    "kind": "caseStudy",
+    "title": "Haileybury College"
+  },
+  {
+    "path": "/case-studies/halcyon-gallery/",
+    "key": "case-studies--halcyon-gallery",
+    "kind": "caseStudy",
+    "title": "Halcyon Gallery"
+  },
+  {
+    "path": "/case-studies/imperialscience-collage/",
+    "key": "case-studies--imperialscience-collage",
+    "kind": "caseStudy",
+    "title": "Imperial Science Collage"
+  },
+  {
+    "path": "/case-studies/victorian-residence/",
+    "key": "case-studies--victorian-residence",
+    "kind": "caseStudy",
+    "title": "Victorian Residence"
+  },
+  {
+    "path": "/contact-us/",
+    "key": "contact-us",
+    "kind": "contact",
+    "title": "Contact us"
+  },
+  {
+    "path": "/contact-us/cookies-policy/",
+    "key": "contact-us--cookies-policy",
+    "kind": "legal",
+    "title": "Cookies policy"
+  },
+  {
+    "path": "/contact-us/disclaimer/",
+    "key": "contact-us--disclaimer",
+    "kind": "legal",
+    "title": "Disclaimer"
+  },
+  {
+    "path": "/contact-us/privacy-policy/",
+    "key": "contact-us--privacy-policy",
+    "kind": "legal",
+    "title": "Privacy policy"
+  },
+  {
+    "path": "/external/",
+    "key": "external",
+    "kind": "section",
+    "title": "External"
+  },
+  {
+    "path": "/external/brickwork/",
+    "key": "external--brickwork",
+    "kind": "inner",
+    "title": "Brickwork"
+  },
+  {
+    "path": "/external/sash-window-restoration/",
+    "key": "external--sash-window-restoration",
+    "kind": "inner",
+    "title": "Sash Window Restoration"
+  },
+  {
+    "path": "/external/structural/",
+    "key": "external--structural",
+    "kind": "inner",
+    "title": "Structural"
+  },
+  {
+    "path": "/internal/",
+    "key": "internal",
+    "kind": "section",
+    "title": "Internal"
+  },
+  {
+    "path": "/internal/decorating/",
+    "key": "internal--decorating",
+    "kind": "inner",
+    "title": "Decorating"
+  },
+  {
+    "path": "/internal/kitchens/",
+    "key": "internal--kitchens",
+    "kind": "inner",
+    "title": "Kitchens"
+  },
+  {
+    "path": "/internal/staircase-refurb/",
+    "key": "internal--staircase-refurb",
+    "kind": "inner",
+    "title": "Staircase Refurb"
+  },
+  {
+    "path": "/internal/wet-rooms/",
+    "key": "internal--wet-rooms",
+    "kind": "inner",
+    "title": "Wet Rooms"
+  },
+  {
+    "path": "/services/",
+    "key": "services",
+    "kind": "section",
+    "title": "Services"
+  },
+  {
+    "path": "/services/brick-and-stone-cleaning/",
+    "key": "services--brick-and-stone-cleaning",
+    "kind": "inner",
+    "title": "Brick and Stone Cleaning"
+  },
+  {
+    "path": "/services/building-restoration/",
+    "key": "services--building-restoration",
+    "kind": "inner",
+    "title": "Building Restoration"
+  },
+  {
+    "path": "/services/doff/",
+    "key": "services--doff",
+    "kind": "inner",
+    "title": "Doff"
+  },
+  {
+    "path": "/services/floor-restoration/",
+    "key": "services--floor-restoration",
+    "kind": "inner",
+    "title": "Floor restoration"
+  },
+  {
+    "path": "/services/hand-stripping/",
+    "key": "services--hand-stripping",
+    "kind": "inner",
+    "title": "Hand Stripping"
+  },
+  {
+    "path": "/services/metal-polishing/",
+    "key": "services--metal-polishing",
+    "kind": "inner",
+    "title": "Metal Polishing"
+  },
+  {
+    "path": "/services/shot-blasting/",
+    "key": "services--shot-blasting",
+    "kind": "inner",
+    "title": "Shot Blasting"
+  }
+]

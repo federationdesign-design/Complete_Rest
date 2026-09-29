@@ -1,0 +1,29 @@
+{
+  "path": "/internal/staircase-refurb/",
+  "kind": "inner",
+  "title": "Staircase Refurb",
+  "seo": {
+    "title": "Staircase Refurb - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/staircase-prepped.jpg",
+    "width": 2000,
+    "height": 797,
+    "alt": ""
+  },
+  "heading": "Staircase Refurb by Complete Restoration",
+  "subheading": "Staircases are a focal point of a house and can look shabby and worn if not taken care of.",
+  "introHtml": null,
+  "lead": "We offer a stripping and refurbishment service of staircases to bring them back to their former glory.",
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

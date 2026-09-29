@@ -1,0 +1,29 @@
+{
+  "path": "/external/sash-window-restoration/",
+  "kind": "inner",
+  "title": "Sash Window Restoration",
+  "seo": {
+    "title": "Sash Window Restoration London | The Complete Restoration Company",
+    "description": "We provide a complete overhaul service for sash window restorations and repairs in London and beyond. Contact us to get a free quote today.",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/sash-windows.jpg",
+    "width": 2000,
+    "height": 900,
+    "alt": ""
+  },
+  "heading": "Sash Window Restoration",
+  "subheading": "Protect and restore your home's original features.",
+  "introHtml": null,
+  "lead": "Sash windows are a fabulous feature of any period home but like any other feature, they can begin to look tired, become draughty and difficult to maintain",
+  "bodyHtml": "<p>The Complete Restoration Company recondition sash windows on-site, replace sash cords, add draught excluders and repair any damage.</p><p>We offer the complete overhaul service for your sash windows, so while we’ve got the window out we will strip them back, prime and repaint them – you won’t believe they’re the same windows!</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

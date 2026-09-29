@@ -1,0 +1,29 @@
+{
+  "path": "/services/hand-stripping/",
+  "kind": "inner",
+  "title": "Hand Stripping",
+  "seo": {
+    "title": "Hand Stripping - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/Hand-stripping-prepped.jpg",
+    "width": 2000,
+    "height": 889,
+    "alt": ""
+  },
+  "heading": "Hand Stripping by Complete Restoration",
+  "subheading": "Sometimes items cannot be removed from site and will need to be stripped by hand.",
+  "introHtml": null,
+  "lead": "The Complete Restoration Company with establish what process needs to be used and professionally remove paint and apply an appropriate oil finish to ensure that these items can be enjoyed for many more years to come.",
+  "bodyHtml": null,
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

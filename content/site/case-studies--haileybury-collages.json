@@ -1,0 +1,30 @@
+{
+  "path": "/case-studies/haileybury-collages/",
+  "kind": "caseStudy",
+  "title": "Haileybury College",
+  "seo": {
+    "title": "Haileybury College - Complete restoration company",
+    "description": null,
+    "ogImage": "/images/hailbury-img.jpg"
+  },
+  "hero": {
+    "src": "/images/hailbury-img.jpg",
+    "width": 1536,
+    "height": 1024,
+    "alt": ""
+  },
+  "heading": "Haileybury College",
+  "subheading": null,
+  "introHtml": null,
+  "lead": null,
+  "bodyHtml": "<p>Originally built in 1806 as a training college for budding civil servants bound for India, Haileybury eventually became an independent school that taught luminaries including Clement Atlee, Sir Stirling Moss and Rudyard Kipling.</p>\n<p>Being such an old school, maintenance and upkeep of its many original features have to be undertaken carefully and respectfully. This is one of the reasons that The Complete Restoration Company were asked to repair and polish their rather neglected 100-year-old Dining Hall floor.</p>\n<p>Some of the original parquet flooring was carefully <a href=\"/services/floor-restoration/\">restored</a> and re-fitted and doormat wells were made larger before a series of meticulous sanding processes brought the original wood back to its former glory. Finally, three coats of a polytec hard wax oil were applied to protect it from the thunder of hungry students’ feet.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true,
+  "date": "2019-02-14T12:51:13"
+}

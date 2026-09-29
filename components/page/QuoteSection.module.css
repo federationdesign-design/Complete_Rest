@@ -1,0 +1,15 @@
+.quote {
+  padding: var(--space-md) var(--gutter) var(--space-lg);
+  background: var(--colour-brick) url('/images/form_bricks.svg') center / cover;
+  color: var(--colour-white);
+}
+
+.heading {
+  font-size: var(--text-xl);
+}
+
+@media (min-width: 48em) {
+  .quote {
+    padding: var(--space-lg) var(--space-md);
+  }
+}

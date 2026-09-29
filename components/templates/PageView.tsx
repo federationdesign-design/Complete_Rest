@@ -1,0 +1,150 @@
+import type { Page } from '../../lib/content';
+import CardGrid from '../page/CardGrid';
+import Gallery from '../page/Gallery';
+import Hero from '../page/Hero';
+import Members from '../page/Members';
+import PageTitle from '../page/PageTitle';
+import Prose from '../page/Prose';
+import QuoteSection from '../page/QuoteSection';
+import Testimonial from '../page/Testimonial';
+import styles from './PageView.module.css';
+
+// Renders any page from the content model. Section order follows the live
+// template for each kind of page.
+export default function PageView({ page }: { page: Page }) {
+  return (
+    <>
+      {page.hero ? (
+        <Hero image={page.hero} heading={page.heading} subheading={page.subheading} />
+      ) : (
+        <PageTitle heading={page.heading} subheading={page.subheading} />
+      )}
+      <Body page={page} />
+      {page.members && <Members />}
+    </>
+  );
+}
+
+function Body({ page }: { page: Page }) {
+  switch (page.kind) {
+    case 'home':
+      return (
+        <>
+          <Intro html={page.introHtml} />
+          <div className={styles.tiles}>
+            <CardGrid cards={page.cards} wide />
+          </div>
+          <ContentRow page={page} />
+        </>
+      );
+    case 'section':
+    case 'caseStudies':
+      return (
+        <>
+          <Intro html={page.introHtml} />
+          <div className={styles.container}>
+            <CardGrid cards={page.cards} label={page.title} />
+          </div>
+        </>
+      );
+    case 'blogArchive':
+      return (
+        <div className={styles.container}>
+          <CardGrid cards={page.cards} />
+        </div>
+      );
+    case 'contact':
+      return (
+        <>
+          {page.contact && <ContactDetails contact={page.contact} />}
+          {page.quote && (
+            <div className={styles.container}>
+              <QuoteSection title={page.quote.title} />
+            </div>
+          )}
+        </>
+      );
+    case 'legal':
+      return (
+        <div className={`${styles.container} ${styles.legal}`}>
+          {page.bodyHtml && <Prose html={page.bodyHtml} />}
+        </div>
+      );
+    default:
+      return (
+        <>
+          <Intro html={page.introHtml} />
+          <ContentRow page={page} />
+          {page.testimonial && <Testimonial text={page.testimonial} />}
+        </>
+      );
+  }
+}
+
+function Intro({ html }: { html: string | null }) {
+  if (!html) return null;
+  return (
+    <div className={styles.intro}>
+      <Prose html={html} className={styles.introProse} />
+    </div>
+  );
+}
+
+// Copy on the left, quote panel on the right from desktop up.
+function ContentRow({ page }: { page: Page }) {
+  const hasCopy = page.lead || page.bodyHtml || page.gallery.length > 0;
+  if (!hasCopy && !page.quote) return null;
+  return (
+    <div className={`${styles.container} ${styles.row}`}>
+      {hasCopy && (
+        <div className={styles.copy}>
+          {page.lead && <p className={styles.lead}>{page.lead}</p>}
+          {page.bodyHtml && <Prose html={page.bodyHtml} />}
+          {page.gallery.length > 0 && (
+            <div className={styles.gallery}>
+              <Gallery images={page.gallery} label={`${page.heading} photographs`} />
+            </div>
+          )}
+        </div>
+      )}
+      {page.quote && <QuoteSection title={page.quote.title} />}
+    </div>
+  );
+}
+
+function ContactDetails({ contact }: { contact: NonNullable<Page['contact']> }) {
+  return (
+    <div className={`${styles.container} ${styles.contact}`}>
+      <section className={styles.contactBlock} aria-labelledby="contact-address">
+        <h2 className={styles.contactHeading} id="contact-address">
+          Address
+        </h2>
+        <address className={styles.address}>
+          {contact.address.map((line) => (
+            <span key={line}>{line}</span>
+          ))}
+        </address>
+      </section>
+      <section className={styles.contactBlock} aria-labelledby="contact-phone">
+        <h2 className={styles.contactHeading} id="contact-phone">
+          Phone
+        </h2>
+        <p>
+          <a className={styles.contactLink} href={`tel:${contact.phone.replace(/\s+/g, '')}`}>
+            {contact.phone}
+          </a>
+        </p>
+      </section>
+      <section className={styles.contactBlock} aria-labelledby="contact-email">
+        <h2 className={styles.contactHeading} id="contact-email">
+          Email
+        </h2>
+        <p>
+          <a className={styles.contactLink} href={`mailto:${contact.email}`}>
+            {contact.email}
+          </a>
+        </p>
+      </section>
+    </div>
+  );
+}

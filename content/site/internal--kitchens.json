@@ -1,0 +1,29 @@
+{
+  "path": "/internal/kitchens/",
+  "kind": "inner",
+  "title": "Kitchens",
+  "seo": {
+    "title": "Kitchens - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/kitchen-image-1.jpg",
+    "width": 2000,
+    "height": 918,
+    "alt": ""
+  },
+  "heading": "Kitchens by Complete Restoration",
+  "subheading": "Whether you already have a kitchen supplier or are looking for a bespoke service, The Complete Restoration Company offers a seamless installation service.",
+  "introHtml": null,
+  "lead": "We use master craftsmen to provide a truly bespoke kitchen of your dreams.",
+  "bodyHtml": "<p>Alternatively we work alongside kitchen installers and we can provide the plumbing, tiling and electrics for this important room within your home.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": null,
+  "contact": null,
+  "members": true
+}

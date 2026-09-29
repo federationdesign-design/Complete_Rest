@@ -1,0 +1,29 @@
+{
+  "path": "/about/",
+  "kind": "inner",
+  "title": "about",
+  "seo": {
+    "title": "about - Complete restoration company",
+    "description": null,
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/about-page-image.jpg",
+    "width": 2000,
+    "height": 857,
+    "alt": ""
+  },
+  "heading": "About us",
+  "subheading": "The Complete Restoration Company are award winning experts in the field of building restoration and conservation.",
+  "introHtml": null,
+  "lead": "Our high quality work can be seen all over the home counties and London.",
+  "bodyHtml": "<p>The Complete Restoration Company is a traditional company that has been trading for over 35 years. Our ethos is that we pride ourselves on our high standard of finish and our attention to detail.</p><p>We are an efficient and professional company who offer traditional values and service.</p><p>We are a value for return supplier who will always ensure that any project is completed to the excellent standard that our reputation has been built on.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a Quote Today"
+  },
+  "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "contact": null,
+  "members": true
+}

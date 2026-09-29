@@ -1,0 +1,29 @@
+{
+  "path": "/services/metal-polishing/",
+  "kind": "inner",
+  "title": "Metal Polishing",
+  "seo": {
+    "title": "Metal Polishing London | The Complete Restoration Company",
+    "description": "The Complete Restoration Company can cater for all types of metals with our polishing services for interior furnishings & decorations. Get in touch today!",
+    "ogImage": null
+  },
+  "hero": {
+    "src": "/images/Metal-Polishing.jpg",
+    "width": 2000,
+    "height": 837,
+    "alt": ""
+  },
+  "heading": "Metal Polishing",
+  "subheading": "Nothing compares to the natural beauty of a well restored and polished metal ornament or period feature.",
+  "introHtml": null,
+  "lead": "The Complete Restoration Company can bring your architectural or antique piece back to its original finish – in fact any finish you require.",
+  "bodyHtml": "<p>We know exactly which polishing processes are correct to make the most of the unique natural metal tones of all manner of interior metal furnishings and decoration.</p>",
+  "gallery": [],
+  "cards": [],
+  "quote": {
+    "title": "Get a quote today"
+  },
+  "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
+  "contact": null,
+  "members": true
+}
