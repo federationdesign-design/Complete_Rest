@@ -114,6 +114,27 @@ function cleanHtml($, $root, page) {
     const $p = $(el);
     if (!text($p).replace(/ /g, '').trim() && !$p.find('a').length) $p.remove();
   });
+  // WordPress sometimes wraps a heading in a one-item list; unwrap it.
+  $root.find('ul, ol').each((_, list) => {
+    const $list = $(list);
+    const $items = $list.children('li');
+    if ($items.length === 1 && $items.children().length === 1 && $items.children('h1, h2, h3, h4, h5, h6').length === 1) {
+      $list.replaceWith($items.children().first());
+    }
+  });
+  // Body headings start at h2 under the page h1 (logical order, same words).
+  const levels = $root.find('h1, h2, h3, h4, h5, h6').map((_, h) => Number(h.tagName[1])).get();
+  const shift = levels.length ? Math.min(...levels) - 2 : 0;
+  if (shift !== 0) {
+    $root.find('h1, h2, h3, h4, h5, h6').each((_, h) => {
+      const level = Math.min(6, Math.max(2, Number(h.tagName[1]) - shift));
+      $(h).replaceWith(`<h${level}>${$(h).html()}</h${level}>`);
+    });
+  }
+  // Drop headings with no text.
+  $root.find('h2, h3, h4, h5, h6').each((_, h) => {
+    if (!text($(h))) $(h).remove();
+  });
   const html = ($root.html() || '').replace(/\n\s*\n+/g, '\n').trim();
   return { html, images };
 }

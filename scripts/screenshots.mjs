@@ -33,6 +33,12 @@ export const PAGES = {
   'casestudy-example': '/case-studies/halcyon-gallery/',
   contactus: '/contact-us/',
   privacy: '/contact-us/privacy-policy/',
+  // No reference screenshot for these templates.
+  'our-team': '/about/our-team/',
+  'cookies-policy': '/contact-us/cookies-policy/',
+  disclaimer: '/contact-us/disclaimer/',
+  blog: '/blog/',
+  'blog-post': '/blog/the-advantages-of-having-a-wet-room/',
 };
 
 const VIEWPORTS = [

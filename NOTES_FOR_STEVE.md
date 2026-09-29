@@ -196,3 +196,11 @@ Excerpts on the section index pages end mid-word ("natur...", "histori...", "rem
 4. `sitemap.xml` and `robots.txt` are generated from the route list. The sitemap lists all 47 pages, with last-modified dates from WordPress (the blog archive has none).
 5. Every page keeps its live title tag and meta description (none written). Open Graph and Twitter tags reuse the same title and description, with the page's hero image where it has one; the live site had no Open Graph images. Canonical URLs use www.completerestoration.co.uk.
 6. There is a branded 404 page ("Page not found"); its title tag is new, as the live site had none to carry over.
+
+## Step 9: screenshots, accessibility and verification
+
+1. `agent/screenshots/` holds 390px (`mob-` prefix) and 1280px full-page screenshots for 21 pages, named to match `agent/reference/`, plus `our-team`, `cookies-policy`, `disclaimer`, `blog` and `blog-post`, which have no reference. They were taken from a production build with `npm run screenshots -- http://localhost:3000` (after `npm run build && npm start`). The fixed mobile bottom bar appears once, where it sits on the first screen; that is how full-page captures show fixed elements.
+2. `scripts/a11y-check.mjs` checks all 47 pages at 320, 390 and 1280px: axe with WCAG 2.2 A and AA rules (including colour contrast), no horizontal scroll, one `h1`, no skipped heading levels, and 44px tap targets. It reports no problems. axe also found nothing with the menu open, with the form showing errors, or with the compact header showing.
+3. The check found one real issue, now fixed: a blog post's body headings were `h3` directly under the `h1`, each wrapped in a one-item list. Body headings now start at `h2`, and the stray lists are removed; the words are unchanged.
+4. Largest Contentful Paint, measured with Lighthouse's mobile throttling (4x CPU slowdown, 1.6 Mbps, 150 ms latency) on a 390px screen: home 1.4 s, Doff 1.4 s, Victorian Residence 1.0 s, a blog post 1.1 s, contact 0.8 s. The target is under 2.5 s. Phones download hero images of about 30 to 50 KB.
+5. The screenshots and checks were run before the cookie consent port (step 5), which comes next as agreed. They will be re-run after it.
