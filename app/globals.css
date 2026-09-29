@@ -17,6 +17,7 @@
   --colour-rule: #d8d9d9; /* separators */
   --colour-logo-grey: #bab9bd; /* "COMPANY" in the logo */
   --colour-white: #ffffff;
+  --colour-error: #a4161a; /* form errors, on white only */
   --colour-placeholder-bg: #fff3b0;
   --colour-placeholder-text: #2e2e2e;
 

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import type { Page } from '../../lib/content';
+import EnquiryForm from '../EnquiryForm/EnquiryForm';
 import CardGrid from '../page/CardGrid';
 import Gallery from '../page/Gallery';
 import Hero from '../page/Hero';
@@ -60,7 +61,9 @@ function Body({ page }: { page: Page }) {
           {page.contact && <ContactDetails contact={page.contact} />}
           {page.quote && (
             <div className={styles.container}>
-              <QuoteSection title={page.quote.title} />
+              <QuoteSection title={page.quote.title}>
+                <EnquiryForm />
+              </QuoteSection>
             </div>
           )}
         </>
@@ -108,7 +111,11 @@ function ContentRow({ page }: { page: Page }) {
           )}
         </div>
       )}
-      {page.quote && <QuoteSection title={page.quote.title} />}
+      {page.quote && (
+        <QuoteSection title={page.quote.title}>
+          <EnquiryForm />
+        </QuoteSection>
+      )}
     </div>
   );
 }

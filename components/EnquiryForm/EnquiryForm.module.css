@@ -1,0 +1,169 @@
+/* The form sits on the grey brick panel (QuoteSection). Error text uses dark
+   red on white so it meets contrast on the grey background. */
+
+.form {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: 36rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.optional {
+  font-weight: 400;
+}
+
+.input {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 0.625rem 0.75rem;
+  border: 2px solid var(--colour-white);
+  border-radius: 0;
+  background: var(--colour-white);
+  color: var(--colour-text);
+  font: inherit;
+  font-size: max(1rem, var(--text-base));
+}
+
+.textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.input:focus-visible {
+  border-color: var(--colour-text);
+}
+
+.input[aria-invalid='true'] {
+  border-color: var(--colour-error);
+  box-shadow: 0 0 0 2px var(--colour-white);
+}
+
+.error,
+.failed {
+  justify-self: start;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  background: var(--colour-white);
+  color: var(--colour-error);
+  font-weight: 700;
+}
+
+.failed {
+  padding: var(--space-xs) var(--space-sm);
+  border-left: 5px solid var(--colour-error);
+}
+
+.summary {
+  padding: var(--space-sm);
+  border: 4px solid var(--colour-error);
+  background: var(--colour-white);
+  color: var(--colour-text);
+}
+
+.summaryHeading {
+  margin: 0 0 var(--space-xs);
+  font-weight: 700;
+  font-size: var(--text-lg);
+}
+
+.summaryList {
+  display: grid;
+  gap: var(--tap-gap);
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.summaryList a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  color: var(--colour-error);
+  font-weight: 700;
+}
+
+.checkboxField {
+  display: grid;
+  grid-template-columns: var(--tap) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--tap-gap);
+}
+
+.checkbox {
+  width: var(--tap);
+  height: var(--tap);
+  margin: 0;
+  accent-color: var(--colour-footer);
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+.notice {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.notice a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.submit {
+  justify-self: start;
+  min-width: 12rem;
+  min-height: var(--tap);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--colour-white);
+  background: var(--colour-white);
+  color: var(--colour-text);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: transparent;
+  color: var(--colour-white);
+}
+
+.submit:disabled {
+  cursor: progress;
+  opacity: 0.8;
+}
+
+/* Honeypot: off screen, not display:none, so simple bots still fill it. */
+.trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.sent {
+  padding: var(--space-sm) var(--space-md);
+  border-left: 5px solid var(--colour-white);
+  background: rgb(0 0 0 / 0.25);
+}
+
+.sentHeading {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+}
+
+.sent p:last-child {
+  margin-bottom: 0;
+}

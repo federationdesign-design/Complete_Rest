@@ -167,3 +167,14 @@ These are bigger than typos and may be worth fixing before launch:
 | `/blog/work-begins-on-ipswichs-unitarian-meeting-house/` | "as well as been awarded further grants"; "gave cause for the church to be founded, and is now a Grade 1 listed building" | as well as being awarded; which is now Grade I listed |
 
 Excerpts on the section index pages end mid-word ("natur...", "histori...", "rem...") because the live site cuts them at a fixed length. They are carried over as they are.
+
+## Step 6: enquiry form
+
+1. Fields as the brief sets out: name, email and message required; phone and postcode or town optional. On the live form the phone number was required and there was no message field; that has changed as the brief asks.
+2. Labels are visible above each field (the live form used placeholder text only). The submit button reads "Send enquiry"; the live button said "Contact us".
+3. Before the button, a short notice says who receives the details, that they are used only to reply, and links to the privacy notice. There is no "I agree" box. Marketing is a separate, optional, unticked checkbox that does not affect sending.
+4. Submission is a server action (`app/actions/enquiry.ts`), so the form also works with JavaScript turned off. The same validation rules run in the browser and on the server (`lib/enquiry/schema.ts`). Errors appear in a summary at the top and next to each field, are linked to the fields for screen readers, and focus moves to them. On success the form is replaced by a confirmation on the same page. Nothing is stored in the browser.
+5. Spam protection with no third parties: a hidden honeypot field (bots that fill it get a fake success and nothing is sent), a 3 second minimum between the form appearing and being sent, and a limit of 5 enquiries per IP address per 10 minutes. The time check relies on JavaScript, so it is skipped when JavaScript is off.
+6. The rate limit is kept in server memory, so on Vercel each server instance counts separately. That is enough to stop casual repeat sending. A hard limit across instances needs a shared store such as Vercel KV or Upstash Redis, which would be a new processor for the privacy notice. Please say if you want it.
+7. Delivery waits on the email provider and recipient (PLACEHOLDERS.md). Until then, production shows "Sorry, we could not send your enquiry. Please try again, or email us at info@completerestoration.co.uk or call 07973424181." Enquiries are never silently dropped.
+8. The quote form appears on every page that had one on the live site: home, all about, service, internal and external pages, contact, each case study and each blog post.

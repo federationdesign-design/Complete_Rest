@@ -1,7 +1,7 @@
 import styles from './QuoteSection.module.css';
 
 // The "Get a quote" panel on the brick background. id="quote" is the target
-// of the bottom action bar. The form itself is added in step 6.
+// of the bottom action bar.
 export default function QuoteSection({ title, children }: { title: string | null; children?: React.ReactNode }) {
   return (
     <section className={styles.quote} id="quote" aria-labelledby="quote-heading">
