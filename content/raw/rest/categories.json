@@ -1,0 +1,122 @@
+[
+  {
+    "id": 20,
+    "count": 16,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/category/blog/",
+    "name": "BLog",
+    "slug": "blog",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories/20"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?categories=20"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "count": 4,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/category/case-studies/",
+    "name": "Case studies",
+    "slug": "case-studies",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories/17"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?categories=17"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/category/uncategorised/",
+    "name": "Uncategorised",
+    "slug": "uncategorised",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "sitemapUrls": {
+    "post-sitemap.xml": [
+      "/case-studies/halcyon-gallery/",
+      "/case-studies/victorian-residence/",
+      "/case-studies/haileybury-collages/",
+      "/blog/how-to-look-after-original-wood-flooring/",
+      "/case-studies/imperialscience-collage/",
+      "/blog/period-home-in-harpenden-goes-on-sale/",
+      "/blog/swindons-mechanics-institute-set-to-be-restored/",
+      "/blog/peckham-top-urban-district/",
+      "/blog/top-tips-for-decorating-a-period-property/",
+      "/blog/uks-top-10-most-endangered-buildings-revealed/",
+      "/blog/old-house-restoration-tips/",
+      "/blog/the-advantages-of-having-a-wet-room/",
+      "/blog/do-you-need-your-parquet-floor-restored/",
+      "/blog/brass-and-mixed-metals-top-interiors-trend/",
+      "/blog/camdens-koko-nightclub-damaged-in-fire/",
+      "/blog/the-uks-five-most-desirable-property-types/",
+      "/blog/what-would-you-do-to-create-your-forever-home/",
+      "/blog/what-are-listed-buildings/",
+      "/blog/work-begins-on-ipswichs-unitarian-meeting-house/",
+      "/blog/period-features-sought-after-in-renovation-properties/"
+    ],
+    "page-sitemap.xml": [
+      "/",
+      "/about/our-ethos/",
+      "/about/our-team/",
+      "/about/",
+      "/services/hand-stripping/",
+      "/internal/wet-rooms/",
+      "/internal/staircase-refurb/",
+      "/internal/decorating/",
+      "/external/brickwork/",
+      "/external/",
+      "/internal/",
+      "/site-map/",
+      "/case-studies/",
+      "/services/building-restoration/",
+      "/contact-us/cookies-policy/",
+      "/external/structural/",
+      "/internal/kitchens/",
+      "/services/",
+      "/services/floor-restoration/",
+      "/external/sash-window-restoration/",
+      "/services/shot-blasting/",
+      "/services/metal-polishing/",
+      "/services/brick-and-stone-cleaning/",
+      "/services/doff/",
+      "/contact-us/privacy-policy/",
+      "/contact-us/disclaimer/",
+      "/contact-us/"
+    ],
+    "esm_testimonials-sitemap.xml": [
+      "/esm_testimonials/test1/"
+    ],
+    "category-sitemap.xml": [
+      "/category/blog/",
+      "/category/case-studies/"
+    ],
+    "post_tag-sitemap.xml": [
+      "/tag/building-restorations-in-london/",
+      "/tag/building-restorations-london/",
+      "/tag/complete-restoration-solutions/",
+      "/tag/floor-restoration-london/",
+      "/tag/metal-polishing-in-london/",
+      "/tag/metal-polishing-london/",
+      "/tag/restoration-services/",
+      "/tag/restoration-services-london/",
+      "/tag/uk-building-conservation/"
+    ],
+    "author-sitemap.xml": [
+      "/author/addrankone/",
+      "/author/federation/"
+    ]
+  },
+  "robotsTxt": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n"
+}

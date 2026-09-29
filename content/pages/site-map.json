@@ -1,0 +1,63 @@
+{
+  "id": 2113,
+  "type": "page",
+  "path": "/site-map/",
+  "slug": "site-map",
+  "parent": 0,
+  "template": null,
+  "menuOrder": 0,
+  "date": "2019-04-12T16:06:24",
+  "modified": "2019-04-12T16:06:48",
+  "categories": [],
+  "tags": [],
+  "title": "Site map",
+  "seo": {
+    "title": "Site map - Complete restoration company",
+    "description": null,
+    "canonical": "https://www.completerestoration.co.uk/site-map/",
+    "robots": null,
+    "ogTitle": "Site map - Complete restoration company",
+    "ogDescription": null,
+    "ogImage": null
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Site map"
+    },
+    {
+      "level": 2,
+      "text": "Proud members of..."
+    }
+  ],
+  "hasQuoteForm": false,
+  "featuredImage": null,
+  "images": [
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png"
+  ],
+  "restContentHtml": "",
+  "restExcerptHtml": "",
+  "renderedHtml": "</div> \n    </div>\n <div class=\"spacer\"></div>\n<section class=\"row\" id=\"row_intro_about\"><a name=\"introduction\" class=\"anchor_position\"></a>\n  <div class=\"wrapper\">\n        <div class=\"content-inner\">\n                <h1 class=\"title\">Site map</h1>\n                      <div class=\"clear\"></div>\n          <p>[wp_sitemap_page]</p>\n        </div>\n      </div>\n</section>\n<div class=\"clear\"></div>\n</div>\n<section class=\"target-section target sectcompanies \" id=\"sectcompanies\">\n\t<div  class=\"accredited\">\n        <hr class=\"hrseparatortop\" />\n\t\t\t\t<h2>Proud members of...</h2>\n\t\t<br class=\"tabseparatortop\" />\n\t\t\t\t<ul class=\"companies\" >\n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png\" >\n                     </li>   \n           </ul>\n\t\t</div>\n</section>\n<div class=\"clear\"></div>",
+  "tracking": [
+    "detected: Google Analytics / gtag",
+    "detected: reCAPTCHA",
+    "id: UA-139352035-1",
+    "resource: cdnjs.cloudflare.com",
+    "resource: fonts.googleapis.com",
+    "resource: gmpg.org",
+    "resource: maxcdn.bootstrapcdn.com",
+    "script: //ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js",
+    "script: //code.jquery.com/jquery-1.10.1.min.js",
+    "script: http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+    "script: https://www.google.com/recaptcha/api.js?render=6LexX6EUAAAAADpcDIbDbUL-2G0jMX8UKGhKdnHV&#038;ver=3.0",
+    "script: https://www.googletagmanager.com/gtag/js?id=UA-139352035-1"
+  ]
+}

@@ -1,0 +1,1266 @@
+{
+  "generated": "2026-09-29T11:39:27.960Z",
+  "origin": "https://www.completerestoration.co.uk",
+  "counts": {
+    "pages": 27,
+    "posts": 20,
+    "media": 100,
+    "categories": 3,
+    "tags": 9,
+    "esm_testimonials": 1
+  },
+  "briefMissingFromSite": [],
+  "notInBrief": [
+    "/author/addrankone/",
+    "/author/federation/",
+    "/blog/",
+    "/blog/brass-and-mixed-metals-top-interiors-trend/",
+    "/blog/camdens-koko-nightclub-damaged-in-fire/",
+    "/blog/do-you-need-your-parquet-floor-restored/",
+    "/blog/how-to-look-after-original-wood-flooring/",
+    "/blog/old-house-restoration-tips/",
+    "/blog/peckham-top-urban-district/",
+    "/blog/period-features-sought-after-in-renovation-properties/",
+    "/blog/period-home-in-harpenden-goes-on-sale/",
+    "/blog/swindons-mechanics-institute-set-to-be-restored/",
+    "/blog/the-advantages-of-having-a-wet-room/",
+    "/blog/the-uks-five-most-desirable-property-types/",
+    "/blog/top-tips-for-decorating-a-period-property/",
+    "/blog/uks-top-10-most-endangered-buildings-revealed/",
+    "/blog/what-are-listed-buildings/",
+    "/blog/what-would-you-do-to-create-your-forever-home/",
+    "/blog/work-begins-on-ipswichs-unitarian-meeting-house/",
+    "/case-studies/feed/",
+    "/category/blog/",
+    "/category/blog/page/2/",
+    "/category/case-studies/",
+    "/category/uncategorised/",
+    "/comments/feed/",
+    "/esm_testimonials/test1/",
+    "/feed/",
+    "/site-map/",
+    "/tag/building-restorations-in-london/",
+    "/tag/building-restorations-london/",
+    "/tag/complete-restoration-solutions/",
+    "/tag/floor-restoration-london/",
+    "/tag/metal-polishing-in-london/",
+    "/tag/metal-polishing-london/",
+    "/tag/restoration-services-london/",
+    "/tag/restoration-services/",
+    "/tag/uk-building-conservation/"
+  ],
+  "urls": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1593",
+      "title": "Home",
+      "titleTag": "Building Contractors London | The Complete Restoration Company",
+      "metaDescription": "London Building contractors providing services in period restoration & conservation solutions. We pride ourselves on our high standards over 35 years.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1605",
+      "title": "about",
+      "titleTag": "about - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/about/our-ethos/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1719",
+      "title": "Our Ethos",
+      "titleTag": "Our Ethos - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/about/our-team/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1722",
+      "title": "Our team",
+      "titleTag": "Our team - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/author/addrankone/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "addrankone, Author at Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/author/federation/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "federation, Author at Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "BLog Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/blog/brass-and-mixed-metals-top-interiors-trend/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2220",
+      "title": "Brass And Mixed Metals ‘Top Interiors Trend’",
+      "titleTag": "Brass And Mixed Metals ‘Top Interiors Trend’",
+      "metaDescription": "If you’re getting ready to embark on a renovation project in 2020, it certainly pays to see what’s hot in the world of interior design.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/camdens-koko-nightclub-damaged-in-fire/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2224",
+      "title": "Camden’s Koko Nightclub Damaged In Fire",
+      "titleTag": "Camden’s Koko Nightclub Damaged In Fire",
+      "metaDescription": "Music venue Koko, which once served as Camden Place Ballroom, has been seriously damaged after a fire broke out earlier this month. Find out more here.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/do-you-need-your-parquet-floor-restored/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2209",
+      "title": "Do You Need Your Parquet Floor Restored?",
+      "titleTag": "Do You Need Your Parquet Floor Restored?",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/how-to-look-after-original-wood-flooring/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2169",
+      "title": "How To Look After Original Wood Flooring",
+      "titleTag": "How To Look After Original Wood Flooring",
+      "metaDescription": "Wood flooring can really bring a house to life, so here are some tips on how to maintain your original floor so it can last several years more.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/old-house-restoration-tips/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2206",
+      "title": "Old House Restoration Tips",
+      "titleTag": "Old House Restoration Tips",
+      "metaDescription": "If you are considering buying, a fixer upper, you may be wondering how to start tackling such a large project. Here are our tips to get you started.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/page/2/",
+      "status": 404,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": null,
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/blog/peckham-top-urban-district/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2191",
+      "title": "Peckham ‘Top Urban District’",
+      "titleTag": "Peckham ‘Top Urban District’",
+      "metaDescription": "Research has found that house price growth in Peckham has outpaced every other UK district since 1995 when records began. Find out more here.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/period-features-sought-after-in-renovation-properties/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2234",
+      "title": "Period Features ‘Sought After In Renovation Properties’",
+      "titleTag": "Period Features ‘Sought After In Renovation Properties’",
+      "metaDescription": "New research has found that an increasing number of Brits would be happy to take on a home that requires moderate to significant renovations.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/period-home-in-harpenden-goes-on-sale/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2194",
+      "title": "Period Home In Harpenden Goes On Sale",
+      "titleTag": "Period Home In Harpenden Goes On Sale",
+      "metaDescription": "Homebuyers who love the idea of living in a period property might be interested in a house that has just come on the market in the Hertfordshire town of Harpenden.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/swindons-mechanics-institute-set-to-be-restored/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2165",
+      "title": "Swindon’s Mechanics Institute Set To Be Restored!",
+      "titleTag": "Swindon’s Mechanics Institute Set To Be Restored!",
+      "metaDescription": "The Mechanics Institute in Swindon, an educational centre for those working on the railway, has been given £500,000 to put towards refurbishment work.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/the-advantages-of-having-a-wet-room/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2211",
+      "title": "The Advantages Of Having A Wet Room",
+      "titleTag": "The Advantages Of Having A Wet Room",
+      "metaDescription": "If you’re considering a change to your home and installing a wet room to your property, here are some advantages of making such a change.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/the-uks-five-most-desirable-property-types/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2226",
+      "title": "The UK’s Five Most Desirable Property Types",
+      "titleTag": "The UK’s Five Most Desirable Property Types",
+      "metaDescription": "If you could live in any property type, what would your preference be? Well, London building contractors have the answers for you.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/top-tips-for-decorating-a-period-property/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2182",
+      "title": "Top Tips For Decorating A Period Property",
+      "titleTag": "Top Tips For Decorating A Period Property",
+      "metaDescription": "If you live in a period property you’ll want to make the most of the period features in your home. Here are some top decorating tips for a period property.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/uks-top-10-most-endangered-buildings-revealed/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2180",
+      "title": "UK’s Top 10 Most Endangered Buildings Revealed",
+      "titleTag": "UK’s Top 10 Most Endangered Buildings Revealed",
+      "metaDescription": "A 'rich mix' of the top ten most endangered buildings around the UK has been revealed. Take a look at our blog to find out more.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/what-are-listed-buildings/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2230",
+      "title": "What Are Listed Buildings?",
+      "titleTag": "What Are Listed Buildings?",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/what-would-you-do-to-create-your-forever-home/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2228",
+      "title": "What Would You Do To Create Your Forever Home?",
+      "titleTag": "What Would You Do To Create Your Forever Home?",
+      "metaDescription": "A growing number of homeowners appear to be deciding to make the best of where they live now instead of looking to move.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/blog/work-begins-on-ipswichs-unitarian-meeting-house/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "post:2232",
+      "title": "Work Begins On Ipswich’s Unitarian Meeting House",
+      "titleTag": "Work Begins On Ipswich’s Unitarian Meeting House",
+      "metaDescription": "One of the oldest chapels in the country is to undergo a £550,000 restoration, with help from Historic England covering most of the cost.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/case-studies/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1612",
+      "title": "Case studies",
+      "titleTag": "Case studies - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/case-studies/feed/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "Comments on: Case studies",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/case-studies/haileybury-collages/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "post:1669",
+      "title": "Haileybury College",
+      "titleTag": "Haileybury College - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/case-studies/halcyon-gallery/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "post:1671",
+      "title": "Halcyon Gallery",
+      "titleTag": "Halcyon Gallery - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/case-studies/imperialscience-collage/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "post:1675",
+      "title": "Imperial Science Collage",
+      "titleTag": "Imperial Science Collage - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/case-studies/victorian-residence/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "post:1673",
+      "title": "Victorian Residence",
+      "titleTag": "Victorian Residence - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/category/blog/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "BLog Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/category/blog/page/2/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "BLog Archives - Page 2 of 2 - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/category/case-studies/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "Case studies Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/category/uncategorised/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "Uncategorised Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/comments/feed/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "Comments for Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/contact-us/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1621",
+      "title": "Contact us",
+      "titleTag": "Contact us - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/contact-us/cookies-policy/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1643",
+      "title": "Cookies policy",
+      "titleTag": "Cookies policy - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/contact-us/disclaimer/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1645",
+      "title": "Disclaimer",
+      "titleTag": "Disclaimer - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/contact-us/privacy-policy/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1637",
+      "title": "Privacy policy",
+      "titleTag": "Privacy policy - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/esm_testimonials/test1/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "Testimonial - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/external/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1618",
+      "title": "External",
+      "titleTag": "External - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/external/brickwork/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1940",
+      "title": "Brickwork",
+      "titleTag": "Brickwork - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/external/sash-window-restoration/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1653",
+      "title": "Sash Window Restoration",
+      "titleTag": "Sash Window Restoration London | The Complete Restoration Company",
+      "metaDescription": "We provide a complete overhaul service for sash window restorations and repairs in London and beyond. Contact us to get a free quote today.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/external/structural/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1942",
+      "title": "Structural",
+      "titleTag": "Structural - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/feed/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": false,
+      "rest": null,
+      "title": null,
+      "titleTag": "Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/internal/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1615",
+      "title": "Internal",
+      "titleTag": "Internal - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/internal/decorating/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1954",
+      "title": "Decorating",
+      "titleTag": "Decorating - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/internal/kitchens/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1952",
+      "title": "Kitchens",
+      "titleTag": "Kitchens - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/internal/staircase-refurb/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1948",
+      "title": "Staircase Refurb",
+      "titleTag": "Staircase Refurb - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/internal/wet-rooms/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1950",
+      "title": "Wet Rooms",
+      "titleTag": "Wet Rooms - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1609",
+      "title": "Services",
+      "titleTag": "Building Conservation Services UK | Complete Restoration Company",
+      "metaDescription": "Utilising a wide range of building restoration techniques to undertake all types of work across London and around the UK. Get in touch with us today.",
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/services/brick-and-stone-cleaning/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1915",
+      "title": "Brick and Stone Cleaning",
+      "titleTag": "Brick & Stone Restoration Services London | Complete Restoration",
+      "metaDescription": "Brick and Stone Cleaning restoration services across London. We remove paint using several specialist techniques. Get in contact today for a free quote.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/building-restoration/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1754",
+      "title": "Building Restoration",
+      "titleTag": "Building Restoration - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/doff/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1925",
+      "title": "Doff",
+      "titleTag": "Doff Cleaning Services | The Complete Restoration Company",
+      "metaDescription": "Chemical-free and eco-friendly pressure wash system for cleaning walls and buildings. Get in contact today for more info about our Doff cleaning services.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/floor-restoration/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1651",
+      "title": "Floor restoration",
+      "titleTag": "Floor Tile Restorations London | The Complete Restoration Company",
+      "metaDescription": "Offering a complete floor laying & restoration service across London & beyond. We restore original wood floors or lay new antique style ones for your home.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/hand-stripping/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1928",
+      "title": "Hand Stripping",
+      "titleTag": "Hand Stripping - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/metal-polishing/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1657",
+      "title": "Metal Polishing",
+      "titleTag": "Metal Polishing London | The Complete Restoration Company",
+      "metaDescription": "The Complete Restoration Company can cater for all types of metals with our polishing services for interior furnishings & decorations. Get in touch today!",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/services/shot-blasting/",
+      "status": 200,
+      "location": null,
+      "inBrief": true,
+      "inSitemap": true,
+      "rest": "page:1655",
+      "title": "Shot Blasting",
+      "titleTag": "Industrial Shot Blasting London | Complete Restoration Company",
+      "metaDescription": "We remove surface contaminations and flaws using industrial shot blasting. Get in touch today for a free quote on how we can help you with your project.",
+      "h1Count": 1,
+      "hasQuoteForm": true
+    },
+    {
+      "path": "/site-map/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": "page:2113",
+      "title": "Site map",
+      "titleTag": "Site map - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": 1,
+      "hasQuoteForm": false
+    },
+    {
+      "path": "/tag/building-restorations-in-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "building restorations in London Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/building-restorations-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "building restorations london Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/complete-restoration-solutions/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "complete restoration solutions Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/floor-restoration-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "floor restoration london Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/metal-polishing-in-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "metal polishing in London Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/metal-polishing-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "metal polishing london Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/restoration-services-london/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "restoration services London Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/restoration-services/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "restoration services Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    },
+    {
+      "path": "/tag/uk-building-conservation/",
+      "status": 200,
+      "location": null,
+      "inBrief": false,
+      "inSitemap": true,
+      "rest": null,
+      "title": null,
+      "titleTag": "UK building conservation Archives - Complete restoration company",
+      "metaDescription": null,
+      "h1Count": null,
+      "hasQuoteForm": null
+    }
+  ],
+  "tracking": [
+    "detected: Google Analytics / gtag",
+    "detected: reCAPTCHA",
+    "id: UA-139352035-1",
+    "resource: cdnjs.cloudflare.com",
+    "resource: fonts.googleapis.com",
+    "resource: gmpg.org",
+    "resource: maxcdn.bootstrapcdn.com",
+    "script: //ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js",
+    "script: //code.jquery.com/jquery-1.10.1.min.js",
+    "script: http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+    "script: https://maps.googleapis.com/maps/api/js?key=AIzaSyBODCFfO8YbwOHsRf8_jU91ckFCo2he6MU",
+    "script: https://www.google.com/recaptcha/api.js?render=6LexX6EUAAAAADpcDIbDbUL-2G0jMX8UKGhKdnHV&#038;ver=3.0",
+    "script: https://www.googletagmanager.com/gtag/js?id=UA-139352035-1"
+  ],
+  "images": {
+    "total": 60,
+    "failed": [
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/favicon-2.ico",
+        "error": "HTTP 404"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/img/large7.jpg",
+        "error": "HTTP 404"
+      }
+    ],
+    "collisions": [],
+    "skipped": [
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/plugins/contact-form-7/images/ajax-loader.gif",
+        "reason": "css only: wp-content--plugins--contact-form-7--includes--css--styles.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/.gif",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/wind-turbine.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/map-icon.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/images/ajax-loader.gif",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/carousel-arrow.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/tick-blue.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/home-img-with-blur.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "http://www.planwallpaper.com/static/images/general-night-golden-gate-bridge-hd-wallpapers-golden-gate-bridge-wallpaper.jpg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/left-quotemark.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/right-quotemark.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/helvetica.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/helvetica-bold.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/helvetica-light-webfont.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/LubalinGraphStd-Demi-webfont.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/lubalingraphitcbybt-xtralight-webfont.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/Calibri-Bold.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/Calibri-Italic.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/Calibri.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/Calibri-BoldItalic.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/AvenirLTStd-Book.svg",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/nav-arrow.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/nav-arrow-e98723.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/nav-arrow-c6d72b.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/nav-arrow-00a3e7.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/nav-arrow-ef098d.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/images/confirm-button.png",
+        "reason": "css only: wp-content--themes--completerestoration--style.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/images/layout/loading.gif",
+        "reason": "css only: css--layout.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/completerestoration/wp-content/uploads/2019/04/mobile_completerestoration_header_bricks_bg.svg",
+        "reason": "css only: css--layout.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/images/layout/preload-dark-grey-big.gif",
+        "reason": "css only: css--shortcodes.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/esse2019/wp-content/uploads/2018/01/website-background.jpg",
+        "reason": "css only: css--custom.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/esse2019/wp-content/uploads/2017/09/widget-why-choose-us-bg-white.png",
+        "reason": "css only: css--custom.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/esse/wp-content/uploads/2018/01/website-background.jpg",
+        "reason": "css only: css--completerestoration.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/completerestoration/wp-content/themes/completerestoration/images/pattern-overlay.png",
+        "reason": "css only: css--completerestoration.css"
+      },
+      {
+        "source": "https://dev.federation-design.co.uk/aegeanspas2019/wp-content/uploads/widget-why-choose-us-bg-white.png",
+        "reason": "css only: css--completerestoration.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/fancybox_sprite.png",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/fancybox_loading.gif",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/blank.gif",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/fancybox_overlay.png",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/fancybox_sprite@2x.png",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/fancybox_loading@2x.gif",
+        "reason": "css only: wp-content--themes--completerestoration--js--fancybox2--source--jquery.fancybox.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/owl.carousel.2/owl.video.play.png",
+        "reason": "css only: wp-content--themes--completerestoration--owl.carousel.2--owl.carousel.min.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_glass_100_f6f6f6_1x400.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_glass_100_fdf5ce_1x400.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_glass_65_ffffff_1x400.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_diagonals-thick_18_b81900_40x40.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-icons_222222_256x240.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-icons_ffffff_256x240.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-icons_ef8c08_256x240.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-icons_228ef1_256x240.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-icons_ffd27a_256x240.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_diagonals-thick_20_666666_40x40.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/images/ui-bg_flat_10_000000_40x100.png",
+        "reason": "css only: wp-content--themes--completerestoration--jquery-ui-1.11.4--jquery-ui.css"
+      },
+      {
+        "source": "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/fonts/entypo-fontello.svg",
+        "reason": "icon font, not an image"
+      }
+    ],
+    "unreferencedMedia": [
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/kitchen-image.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/test-image.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/stone.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/decoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/windows.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/brick.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/sandblasting.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/floor-restoration2.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/floor-restoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/shashwindows-prepped.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/Decorating-prepped.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/04/Hand-stripping-preped.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/victorian-img3.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/victorian-img2.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/victorian-img1.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailybury-img5.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailybury-img4.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailybury-img3.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailybury-img2.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/03/brickwork-page-image.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/03/header-image-placeholder.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/header_brick_bg.svg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/88110497-arrière-plan-transparent-d-une-brique-sombre-illustration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/quote-close.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/quote-open.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-18-inner-template-pdf-Shared-with-pCloud.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-18-homepage_concept-pdf3.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-18-homepage_concept-pdf2.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-18-homepage_concept-pdf1.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-18-homepage_concept-pdf.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Brick_cleaning_6completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Brick_cleaning_5completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Brick_cleaning_4completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Bathroom5completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/bathroom_4completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Bathroom_3completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/BAthroom_2completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Bathroom_1completeRestoration.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/smart-tech-image.jpg",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-12-homepage-concept-pdf-Shared-with-pCloud1.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Screenshot_2019-02-12-homepage-concept-pdf-Shared-with-pCloud.png",
+      "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/logo_siteMain.gif"
+    ]
+  },
+  "stylesheets": [
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/css/tinymce.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/css/hover.css",
+    "https://www.completerestoration.co.uk/wp-content/plugins/contact-form-7/includes/css/styles.css",
+    "https://www.completerestoration.co.uk/wp-content/plugins/cookie-notice/css/front.min.css",
+    "https://www.completerestoration.co.uk/wp-content/plugins/slicknav-mobile-menu/css/slicknav.min.css",
+    "https://www.completerestoration.co.uk/wp-content/plugins/svg-support/css/svgs-attachment.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/style.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/css/ie.css",
+    "https://www.completerestoration.co.uk/css/grid.css",
+    "https://www.completerestoration.co.uk/css/base.css",
+    "https://www.completerestoration.co.uk/css/layout.css",
+    "https://www.completerestoration.co.uk/css/shortcodes.css",
+    "https://www.completerestoration.co.uk/css/print.css",
+    "https://www.completerestoration.co.uk/css/custom.css",
+    "https://www.completerestoration.co.uk/css/completerestoration.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/js/fancybox2/source/jquery.fancybox.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/owl.carousel.2/owl.carousel.min.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/css/animate.css",
+    "https://www.completerestoration.co.uk/wp-content/themes/completerestoration/jquery-ui-1.11.4/jquery-ui.css"
+  ]
+}

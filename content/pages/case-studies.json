@@ -1,0 +1,83 @@
+{
+  "id": 1612,
+  "type": "page",
+  "path": "/case-studies/",
+  "slug": "case-studies",
+  "parent": 0,
+  "template": "template-post-grid.php",
+  "menuOrder": 0,
+  "date": "2019-02-12T17:48:38",
+  "modified": "2019-04-15T10:02:44",
+  "categories": [],
+  "tags": [],
+  "title": "Case studies",
+  "seo": {
+    "title": "Case studies - Complete restoration company",
+    "description": null,
+    "canonical": "https://www.completerestoration.co.uk/case-studies/",
+    "robots": null,
+    "ogTitle": "Case studies - Complete restoration company",
+    "ogDescription": null,
+    "ogImage": null
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Case studies"
+    },
+    {
+      "level": 2,
+      "text": "Halcyon Gallery"
+    },
+    {
+      "level": 2,
+      "text": "Haileybury College"
+    },
+    {
+      "level": 2,
+      "text": "Imperial Science Collage"
+    },
+    {
+      "level": 2,
+      "text": "Victorian Residence"
+    },
+    {
+      "level": 2,
+      "text": "Proud members of..."
+    }
+  ],
+  "hasQuoteForm": false,
+  "featuredImage": null,
+  "images": [
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Halcyon-img3-288x335.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailbury-img-288x335.jpg",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/imperial-img2-288x335.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/victorian-img9b-288x335.jpg",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png"
+  ],
+  "restContentHtml": "",
+  "restExcerptHtml": "",
+  "renderedHtml": "</div> \n    </div>\n<div id='main' class='all_colors' data-scroll-offset=\"0\">\n<div class='clear'></div>\n    <div class=\"container\">\n<section class=\"row\" id=\"introductionwelcome\" class=\"introductionwelcome\" style=\"text-align:center;\">\n\t<div  id=\"divintroductionThird\" class=\"divsectiontext\" style=\"margin-bottom:0;\">\n\t\t <br class=\"separatorintro\" />\n\t\t\t  <h1>Case studies</h1>\n   <p>The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design. From floor restoration to shot blasting, we use a wide range of techniques to undertake a broad range of restoration work on all types of building restoration, architectural features and period furniture.</p>\n<p>Take a look at our website and discover the type of work we undertake and some examples of work we&#8217;ve done in the past. If you&#8217;ve got a specific project that you would like advice on or help with, then please feel free to get in touch.</p>\n       </div> \n    <div class=\"clear\"></div>\n    <br class=\"tabseparatortop\" />\n </section>\n        <div class=\"div-grid\" style=\"text-align:center;\">\n            <div class=\"div-line-grid primeracolumna\" id=\"div-line-grid-0\" style=\"background-color:#4a4a49;\">\t    \t\t\t\t    \n\t\t\t\t    <div class=\"entry-header\" style=\"transform: translate(0px, 0px);\">\t\n\t\t\t\t\t\t<a  href=\"https://www.completerestoration.co.uk/case-studies/halcyon-gallery/\" title=\"Halcyon Gallery\" >\n                        <img src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Halcyon-img3-288x335.png\">\n                        </a>\n                        <a class=\"entry-title-grid\" style=\"text-transform:uppercase;\" href=\"https://www.completerestoration.co.uk/case-studies/halcyon-gallery/\"><h2  >Halcyon Gallery</h2>\t</a>\t\t\t      \t\n          </div>\n          </div>\n \t      <div class=\"div-line-grid segundacolumna\" id=\"div-line-grid-1\" style=\"background-color:#4a4a49;\">\t    \t\t\t\t    \n\t\t\t\t    <div class=\"entry-header\" style=\"transform: translate(0px, 0px);\">\t\n\t\t\t\t\t\t<a  href=\"https://www.completerestoration.co.uk/case-studies/haileybury-collages/\" title=\"Haileybury College\" >\n                        <img src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/hailbury-img-288x335.jpg\">\n                        </a>\n                        <a class=\"entry-title-grid\" style=\"text-transform:uppercase;\" href=\"https://www.completerestoration.co.uk/case-studies/haileybury-collages/\"><h2  >Haileybury College</h2>\t</a>\t\t\t      \t\n          </div>\n          </div>\n \t      <div class=\"div-line-grid segundacolumna\" id=\"div-line-grid-2\" style=\"background-color:#4a4a49;\">\t    \t\t\t\t    \n\t\t\t\t    <div class=\"entry-header\" style=\"transform: translate(0px, 0px);\">\t\n\t\t\t\t\t\t<a  href=\"https://www.completerestoration.co.uk/case-studies/imperialscience-collage/\" title=\"Imperial Science Collage\" >\n                        <img src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/imperial-img2-288x335.png\">\n                        </a>\n                        <a class=\"entry-title-grid\" style=\"text-transform:uppercase;\" href=\"https://www.completerestoration.co.uk/case-studies/imperialscience-collage/\"><h2  >Imperial Science Collage</h2>\t</a>\t\t\t      \t\n          </div>\n          </div>\n \t      <div class=\"div-line-grid terceracolumna\" id=\"div-line-grid-3\" style=\"background-color:#4a4a49;\">\t    \t\t\t\t    \n\t\t\t\t    <div class=\"entry-header\" style=\"transform: translate(0px, 0px);\">\t\n\t\t\t\t\t\t<a  href=\"https://www.completerestoration.co.uk/case-studies/victorian-residence/\" title=\"Victorian Residence\" >\n                        <img src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/victorian-img9b-288x335.jpg\">\n                        </a>\n                        <a class=\"entry-title-grid\" style=\"text-transform:uppercase;\" href=\"https://www.completerestoration.co.uk/case-studies/victorian-residence/\"><h2  >Victorian Residence</h2>\t</a>\t\t\t      \t\n          </div>\n          </div>\n \t        </div>\n</div>\n<div class=\"clear\"></div>\n<section class=\"target-section target sectcompanies \" id=\"sectcompanies\">\n\t<div  class=\"accredited\">\n        <hr class=\"hrseparatortop\" />\n\t\t\t\t<h2>Proud members of...</h2>\n\t\t<br class=\"tabseparatortop\" />\n\t\t\t\t<ul class=\"companies\" >\n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png\" >\n                     </li>   \n           </ul>\n\t\t</div>\n</section>\n<div class=\"clear\"></div>",
+  "tracking": [
+    "detected: Google Analytics / gtag",
+    "detected: reCAPTCHA",
+    "id: UA-139352035-1",
+    "resource: cdnjs.cloudflare.com",
+    "resource: fonts.googleapis.com",
+    "resource: gmpg.org",
+    "resource: maxcdn.bootstrapcdn.com",
+    "script: //ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js",
+    "script: //code.jquery.com/jquery-1.10.1.min.js",
+    "script: http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+    "script: https://www.google.com/recaptcha/api.js?render=6LexX6EUAAAAADpcDIbDbUL-2G0jMX8UKGhKdnHV&#038;ver=3.0",
+    "script: https://www.googletagmanager.com/gtag/js?id=UA-139352035-1"
+  ]
+}

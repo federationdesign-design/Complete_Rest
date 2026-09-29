@@ -1,0 +1,63 @@
+{
+  "id": 1643,
+  "type": "page",
+  "path": "/contact-us/cookies-policy/",
+  "slug": "cookies-policy",
+  "parent": 1621,
+  "template": null,
+  "menuOrder": 0,
+  "date": "2019-02-14T10:52:34",
+  "modified": "2019-04-23T16:57:19",
+  "categories": [],
+  "tags": [],
+  "title": "Cookies policy",
+  "seo": {
+    "title": "Cookies policy - Complete restoration company",
+    "description": null,
+    "canonical": "https://www.completerestoration.co.uk/contact-us/cookies-policy/",
+    "robots": null,
+    "ogTitle": "Cookies policy - Complete restoration company",
+    "ogDescription": null,
+    "ogImage": null
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Cookies policy"
+    },
+    {
+      "level": 2,
+      "text": "Proud members of..."
+    }
+  ],
+  "hasQuoteForm": false,
+  "featuredImage": null,
+  "images": [
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png"
+  ],
+  "restContentHtml": "",
+  "restExcerptHtml": "",
+  "renderedHtml": "</div> \n    </div>\n <div class=\"spacer\"></div>\n<section class=\"row\" id=\"row_intro_about\"><a name=\"introduction\" class=\"anchor_position\"></a>\n  <div class=\"wrapper\">\n        <div class=\"content-inner\">\n                <h1 class=\"title\">Cookies policy</h1>\n                      <div class=\"clear\"></div>\n          <p>Cookies are tiny text files (made up of letters and numbers) stored on your browser or the hard drive of your computer if you agree. Cookies contain information that is transferred to your computer’s hard drive. EU legislation states that all websites should let you know when they are using your cookies.</p>\n<p>Please note we use cookies from analytics service providers such as Google Analytics and from third party ad networks such as Google AdWords, Twitter, Facebook and LinkedIn</p>\n<p>Our website uses cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our website. Cookies do not tell us who you are or give us any personal details about you. Third party ad networks use cookies to collect non-personal data about your activities on this and other Web sites to provide you targeted advertising based upon your interests. If you wish to not have this information used for the purpose of serving you targeted ads, you may opt-out by clicking. Please note this does not opt you out of being served advertising. You will continue to receive generic ads.</p>\n<p>We cannot guarantee full operability of our website if you disable your cookies. For detailed information about cookies, please visit http://www.allaboutcookies.org/. By continuing to browse the site, you are agreeing to our use of cookies.</p>\n        </div>\n      </div>\n</section>\n<div class=\"clear\"></div>\n</div>\n<section class=\"target-section target sectcompanies \" id=\"sectcompanies\">\n\t<div  class=\"accredited\">\n        <hr class=\"hrseparatortop\" />\n\t\t\t\t<h2>Proud members of...</h2>\n\t\t<br class=\"tabseparatortop\" />\n\t\t\t\t<ul class=\"companies\" >\n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png\" >\n                     </li>   \n           </ul>\n\t\t</div>\n</section>\n<div class=\"clear\"></div>",
+  "tracking": [
+    "detected: Google Analytics / gtag",
+    "detected: reCAPTCHA",
+    "id: UA-139352035-1",
+    "resource: cdnjs.cloudflare.com",
+    "resource: fonts.googleapis.com",
+    "resource: gmpg.org",
+    "resource: maxcdn.bootstrapcdn.com",
+    "script: //ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js",
+    "script: //code.jquery.com/jquery-1.10.1.min.js",
+    "script: http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+    "script: https://www.google.com/recaptcha/api.js?render=6LexX6EUAAAAADpcDIbDbUL-2G0jMX8UKGhKdnHV&#038;ver=3.0",
+    "script: https://www.googletagmanager.com/gtag/js?id=UA-139352035-1"
+  ]
+}

@@ -1,0 +1,52 @@
+.goldtext{
+  color:#DBB528;
+}
+
+.hbtable{
+  width:100%;
+}
+
+.hbtable th{
+  background-color:#DBB528;
+  color:#000;
+  padding:4px 6px;
+  font-size:11px;
+}
+
+.hbtable tr:nth-child(even), .hbtable tr:nth-child(even) td{
+  background-color:#542604;
+  color:#fff;
+}
+
+.hbtable tr:nth-child(odd), .hbtable tr:nth-child(odd) td{
+  background-color:#7a4300;
+  color:#fff;  
+}
+
+.hbtable tr td{
+  border-right:1px solid #fff;
+  padding:5px 6px;
+  font-size:11px; 
+  text-align:center;  
+}
+
+.hbtable tr td:last-child{
+  border-right:0px none #fff;
+}
+
+.tblpop{
+  color:white;
+}
+
+.tblpop  img{
+  border:none;
+}
+	
+
+
+
+p.para-intro{color:#fff;padding:0;font-size:18px;font-family: 'bodoni_svtytwo';line-height:22px;}
+p.para-intro-large{color:#fff;padding:0;font-size:28px;font-family: 'bodoni_svtytwo';}
+p.para-main-small{color:#fff;font-size:13px;padding:0 0 10px 0;font-family: 'bodoni_svtytwo';}
+p.para-main{color:#fff;padding:0;font-size:17px;font-family: 'bodoni_svtytwo';}
+p.para-main-large{color:#fff;font-size:20px;padding:0 0 10px 0;font-family: 'bodoni_svtytwo';line-height:24px;}

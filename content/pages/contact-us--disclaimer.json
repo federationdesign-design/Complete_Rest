@@ -1,0 +1,63 @@
+{
+  "id": 1645,
+  "type": "page",
+  "path": "/contact-us/disclaimer/",
+  "slug": "disclaimer",
+  "parent": 1621,
+  "template": null,
+  "menuOrder": 0,
+  "date": "2019-02-14T10:53:37",
+  "modified": "2019-10-16T14:48:50",
+  "categories": [],
+  "tags": [],
+  "title": "Disclaimer",
+  "seo": {
+    "title": "Disclaimer - Complete restoration company",
+    "description": null,
+    "canonical": "https://www.completerestoration.co.uk/contact-us/disclaimer/",
+    "robots": null,
+    "ogTitle": "Disclaimer - Complete restoration company",
+    "ogDescription": null,
+    "ogImage": null
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Disclaimer"
+    },
+    {
+      "level": 2,
+      "text": "Proud members of..."
+    }
+  ],
+  "hasQuoteForm": false,
+  "featuredImage": null,
+  "images": [
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png",
+    "https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png"
+  ],
+  "restContentHtml": "",
+  "restExcerptHtml": "",
+  "renderedHtml": "</div> \n    </div>\n <div class=\"spacer\"></div>\n<section class=\"row\" id=\"row_intro_about\"><a name=\"introduction\" class=\"anchor_position\"></a>\n  <div class=\"wrapper\">\n        <div class=\"content-inner\">\n                <h1 class=\"title\">Disclaimer</h1>\n                      <div class=\"clear\"></div>\n          <p>Complete Restoration Limited is providing this site on an “as is” basis and makes no representations or warranties of any kind with respect to this site or its contents and disclaims all such representations and warranties. In addition, Complete Restoration Limited makes no representations or warranties about the accuracy, completeness or suitability for any purpose of the information and related graphics published in this site. The information contained in this site may contain technical inaccuracies or typographical errors. All liability of Complete Restoration Limited howsoever arising for any such inaccuracies or errors is expressly excluded to the fullest extent permitted by law.</p>\n<p>Neither Complete Restoration Limited nor any of its partners, employees or other representatives will be liable for loss or damage arising out of or in connection with the use of this site. This is a comprehensive limitation of liability that applies to all damages of any kind, including (without limitation) compensatory, direct, indirect or consequential damages, loss of data, income or profit, loss of or damage to property and claims of third parties.</p>\n<p>Notwithstanding the foregoing, none of the exclusions and limitations in the clause are intended to limit any rights you may have as a consumer under local law or other statutory rights which may not be excluded nor in any way to exclude or limit Complete Restoration Limited liability to you for death or personal injury resulting from our negligence or that of our employees or agents.</p>\n<p>Complete Restoration Limited is not responsible for and has no control over the content of such sites. Information available via hypertext link from http://<a href=\"mailto:info@completerestoration.co.uk\">completerestoration.co.uk</a> is made available without responsibility on the part of Complete Restoration Limited. Complete Restoration Limited disclaims all responsibility and liability (including for negligence) in relation to information on or accessible from http://<a href=\"mailto:info@completerestoration.co.uk\">completerestoration.co.uk</a></p>\n<p>The use of your information<br />\nYou agree that we may collect, store and use information about you in accordance with our privacy policy.</p>\n<p>Access<br />\nWe reserve the right in our sole discretion to deny users access to our site or any part of our site without notice and to decline to provide the service to any user that is in breach of these terms and conditions of use.</p>\n<p>Links to other sites<br />\nCertain links, including hypertext links, in our site will take you outside our site. Links are provided for your convenience and inclusion of any link does not imply endorsement or approval by us of the linked site, its operator or its content. We are not responsible for the content of any website outside our site.</p>\n<p>Variations<br />\nWe reserve the right at any time without notice to revise the content of our website (including the services offered by us) and these terms and conditions. Any changes to these terms and conditions will be posted on our site and by continuing to use our site following any such change you will signify that you agree to be bound by the revised terms and conditions of use.</p>\n<p>Applicable law and jurisdiction<br />\nThese terms and conditions shall be governed by and interpreted in accordance with English law and subject to the exclusive jurisdiction of English courts.</p>\n        </div>\n      </div>\n</section>\n<div class=\"clear\"></div>\n</div>\n<section class=\"target-section target sectcompanies \" id=\"sectcompanies\">\n\t<div  class=\"accredited\">\n        <hr class=\"hrseparatortop\" />\n\t\t\t\t<h2>Proud members of...</h2>\n\t\t<br class=\"tabseparatortop\" />\n\t\t\t\t<ul class=\"companies\" >\n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/qualified_tile_association_tiler_suffolk.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/Guild-Emblem-Transparent.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/niceic-logo.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/MPA-logo.jpg.png\" >\n                     </li>   \n      <li class=\"licompany\" style=\"display:inline-block;\" >\n           <img class=\"imgcomapny\" src=\"https://www.completerestoration.co.uk/wp-content/uploads/2019/02/220px-Gas_Safe_Register.png\" >\n                     </li>   \n           </ul>\n\t\t</div>\n</section>\n<div class=\"clear\"></div>",
+  "tracking": [
+    "detected: Google Analytics / gtag",
+    "detected: reCAPTCHA",
+    "id: UA-139352035-1",
+    "resource: cdnjs.cloudflare.com",
+    "resource: fonts.googleapis.com",
+    "resource: gmpg.org",
+    "resource: maxcdn.bootstrapcdn.com",
+    "script: //ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js",
+    "script: //cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js",
+    "script: //code.jquery.com/jquery-1.10.1.min.js",
+    "script: http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "script: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js",
+    "script: https://www.google.com/recaptcha/api.js?render=6LexX6EUAAAAADpcDIbDbUL-2G0jMX8UKGhKdnHV&#038;ver=3.0",
+    "script: https://www.googletagmanager.com/gtag/js?id=UA-139352035-1"
+  ]
+}

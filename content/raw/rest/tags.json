@@ -1,0 +1,353 @@
+[
+  {
+    "id": 29,
+    "count": 1,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/building-restorations-in-london/",
+    "name": "building restorations in London",
+    "slug": "building-restorations-in-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/29"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=29"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "count": 2,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/building-restorations-london/",
+    "name": "building restorations london",
+    "slug": "building-restorations-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/26"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=26"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "count": 1,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/complete-restoration-solutions/",
+    "name": "complete restoration solutions",
+    "slug": "complete-restoration-solutions",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/24"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=24"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "count": 1,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/floor-restoration-london/",
+    "name": "floor restoration london",
+    "slug": "floor-restoration-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/25"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=25"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "count": 2,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/metal-polishing-in-london/",
+    "name": "metal polishing in London",
+    "slug": "metal-polishing-in-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/27"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=27"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "count": 4,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/metal-polishing-london/",
+    "name": "metal polishing london",
+    "slug": "metal-polishing-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/21"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=21"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "count": 2,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/restoration-services/",
+    "name": "restoration services",
+    "slug": "restoration-services",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/22"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=22"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "count": 1,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/restoration-services-london/",
+    "name": "restoration services London",
+    "slug": "restoration-services-london",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/28"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=28"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "count": 1,
+    "description": "",
+    "link": "https://www.completerestoration.co.uk/tag/uk-building-conservation/",
+    "name": "UK building conservation",
+    "slug": "uk-building-conservation",
+    "taxonomy": "post_tag",
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags/23"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/tags"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/taxonomies/post_tag"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://www.completerestoration.co.uk/wp-json/wp/v2/posts?tags=23"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
