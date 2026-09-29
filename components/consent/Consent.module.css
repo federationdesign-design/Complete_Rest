@@ -1,0 +1,211 @@
+/* Cookie banner and settings panel, in the site's footer grey. Adapted from
+   LHM's CookieBanner.module.css. Accept all and Reject all share one class,
+   so they are the same size and style (brief 7.3). */
+
+.banner {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 60;
+  max-height: 75svh;
+  overflow-y: auto;
+  padding: var(--space-sm) var(--gutter) calc(var(--space-sm) + env(safe-area-inset-bottom, 0px));
+  border-top: 3px solid var(--colour-white);
+  background: var(--colour-footer);
+  color: var(--colour-white);
+  box-shadow: 0 -4px 16px rgb(0 0 0 / 0.3);
+}
+
+.bannerInner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 0 0 var(--space-xs);
+  font-size: var(--text-lg);
+}
+
+.text {
+  max-width: 48rem;
+  margin: 0 0 var(--space-sm);
+  font-size: var(--text-sm);
+}
+
+.text a,
+.dialog a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.preview {
+  display: inline-block;
+  margin: 0 0 var(--space-xs);
+  padding: 0.125rem 0.5rem;
+  background: var(--colour-placeholder-bg);
+  color: var(--colour-placeholder-text);
+  font-size: var(--text-sm);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--tap-gap);
+  margin-bottom: var(--space-sm);
+}
+
+.choice {
+  min-height: var(--tap);
+  padding: 0.625rem 1rem;
+  border: 2px solid var(--colour-white);
+  background: var(--colour-white);
+  color: var(--colour-text);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background: transparent;
+  color: var(--colour-white);
+}
+
+.manage {
+  grid-column: 1 / -1;
+  justify-self: center;
+  min-height: var(--tap);
+  padding: 0 var(--space-sm);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+/* Category choices */
+
+.prefs {
+  display: grid;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.legend {
+  margin-bottom: var(--space-xs);
+  font-weight: 700;
+}
+
+.pref {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: var(--space-sm);
+  align-items: start;
+  padding: var(--space-xs) 0;
+  border-top: 1px solid rgb(255 255 255 / 0.25);
+}
+
+.checkbox {
+  justify-self: center;
+  width: var(--tap);
+  height: var(--tap);
+  margin: 0;
+  accent-color: var(--colour-brick);
+  cursor: pointer;
+}
+
+.always {
+  padding-top: 0.25rem;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prefName {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prefDesc {
+  margin: 0.125rem 0 0;
+  font-size: var(--text-sm);
+}
+
+/* Settings panel */
+
+.dialog {
+  width: min(36rem, calc(100% - 2 * var(--space-sm)));
+  max-height: calc(100dvh - 2 * var(--space-sm));
+  padding: 0 var(--space-md) var(--space-md);
+  overflow-y: auto;
+  border: 0;
+  background: var(--colour-footer);
+  color: var(--colour-white);
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.dialogHead {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  padding-top: var(--space-sm);
+  background: var(--colour-footer);
+}
+
+.dialogHead .heading {
+  margin: 0;
+}
+
+.close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.close:hover {
+  border-color: var(--colour-white);
+}
+
+.closeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .choice {
+    min-width: 11rem;
+  }
+
+  .manage {
+    justify-self: auto;
+  }
+}

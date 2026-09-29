@@ -12,6 +12,8 @@ export type ConsentCategory = {
   id: ConsentCategoryId;
   label: string;
   description: string;
+  // What the banner says it would like to do with this category.
+  bannerText?: string;
   alwaysOn: boolean;
 };
 
@@ -42,15 +44,21 @@ export const categories: ConsentCategory[] = [
     id: 'analytics',
     label: 'Analytics',
     description: 'Help us understand how visitors use the website so we can improve it.',
+    bannerText: 'analytics cookies to understand how you use the website, so we can improve it',
     alwaysOn: false,
   },
   {
     id: 'marketing',
     label: 'Marketing',
     description: 'Used by advertising and social media services to show you relevant adverts.',
+    bannerText: 'marketing cookies to show you relevant adverts on other websites',
     alwaysOn: false,
   },
 ];
+
+// Google Analytics 4, only if a measurement ID is configured. It loads only
+// after analytics consent (components/consent/ConsentScripts.tsx).
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const cookies: CookieInfo[] = [
   {
@@ -60,6 +68,24 @@ export const cookies: CookieInfo[] = [
     category: 'necessary',
     duration: '6 months',
   },
+  ...(GA_ID
+    ? ([
+        {
+          name: '_ga',
+          provider: 'Google Analytics',
+          purpose: 'Distinguishes visitors so we can count visits and see how the website is used.',
+          category: 'analytics',
+          duration: '2 years',
+        },
+        {
+          name: `_ga_${GA_ID.replace(/^G-/, '')}`,
+          provider: 'Google Analytics',
+          purpose: 'Keeps track of your current visit for Google Analytics.',
+          category: 'analytics',
+          duration: '2 years',
+        },
+      ] satisfies CookieInfo[])
+    : []),
 ];
 
 export function categoryLabel(id: ConsentCategoryId): string {
