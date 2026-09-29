@@ -11,7 +11,8 @@
     "src": "/images/building-restoration-page-image.jpg",
     "width": 2000,
     "height": 857,
-    "alt": ""
+    "alt": "Scaffolding in front of a weathered period building facade",
+    "focal": "50% 50%"
   },
   "heading": "External Restoration by Complete Restoration",
   "subheading": "Sympathetic and knowledgeable building facade restoration is a specialised skill encompassing several highly prized trades",
@@ -29,7 +30,8 @@
         "src": "/images/shotblasting.jpg",
         "width": 2000,
         "height": 900,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     },
     {
@@ -41,7 +43,8 @@
         "src": "/images/sash-windows.jpg",
         "width": 2000,
         "height": 900,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     },
     {
@@ -53,7 +56,8 @@
         "src": "/images/structual.jpg",
         "width": 2000,
         "height": 950,
-        "alt": ""
+        "alt": "",
+        "focal": "72% 50%"
       }
     }
   ],

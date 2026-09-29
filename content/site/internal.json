@@ -11,7 +11,8 @@
     "src": "/images/internal-image.jpg",
     "width": 2000,
     "height": 918,
-    "alt": ""
+    "alt": "",
+    "focal": "30% 50%"
   },
   "heading": "internal Restoration by Complete Restoration",
   "subheading": "For the complete restoration of your property, call us to provide details on how we can create amazing rooms for you to enjoy.",
@@ -29,7 +30,8 @@
         "src": "/images/floor-restoration3.jpg",
         "width": 2000,
         "height": 900,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     },
     {
@@ -41,7 +43,8 @@
         "src": "/images/staircase-prepped.jpg",
         "width": 2000,
         "height": 797,
-        "alt": ""
+        "alt": "",
+        "focal": "38% 50%"
       }
     },
     {
@@ -53,7 +56,8 @@
         "src": "/images/kitchen-image-1.jpg",
         "width": 2000,
         "height": 918,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 60%"
       }
     },
     {
@@ -65,7 +69,8 @@
         "src": "/images/wet-room-prepped.jpg",
         "width": 2000,
         "height": 867,
-        "alt": ""
+        "alt": "",
+        "focal": "46% 50%"
       }
     },
     {
@@ -77,7 +82,8 @@
         "src": "/images/decoration-image.jpg",
         "width": 2000,
         "height": 900,
-        "alt": ""
+        "alt": "",
+        "focal": "62% 40%"
       }
     },
     {
@@ -89,7 +95,8 @@
         "src": "/images/Hand-stripping-prepped.jpg",
         "width": 2000,
         "height": 889,
-        "alt": ""
+        "alt": "",
+        "focal": "56% 50%"
       }
     }
   ],

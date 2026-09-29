@@ -11,7 +11,8 @@
     "src": "/images/Halcyon-img3.png",
     "width": 1672,
     "height": 1116,
-    "alt": ""
+    "alt": "The restored Georgian cantilevered staircase at the Halcyon Gallery, with its iron balustrade and mahogany handrail",
+    "focal": "45% 50%"
   },
   "heading": "Halcyon Gallery",
   "subheading": "Situated in the heart of Mayfair",
@@ -23,13 +24,15 @@
       "src": "/images/Halcyon-img2.png",
       "width": 1670,
       "height": 1118,
-      "alt": ""
+      "alt": "Halcyon Gallery interior with the restored staircase and gallery balustrade",
+      "focal": "55% 50%"
     },
     {
       "src": "/images/Halcyon-img1.png",
       "width": 934,
       "height": 1396,
-      "alt": ""
+      "alt": "Detail of the polished cast and wrought iron balustrade on the Halcyon Gallery staircase",
+      "focal": "50% 40%"
     }
   ],
   "cards": [],

@@ -24,7 +24,8 @@
         "src": "/images/Halcyon-img3.png",
         "width": 1672,
         "height": 1116,
-        "alt": ""
+        "alt": "",
+        "focal": "45% 50%"
       }
     },
     {
@@ -36,7 +37,8 @@
         "src": "/images/hailbury-img.jpg",
         "width": 1536,
         "height": 1024,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 62%"
       }
     },
     {
@@ -48,7 +50,8 @@
         "src": "/images/imperial-img2.png",
         "width": 2098,
         "height": 1396,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 60%"
       }
     },
     {
@@ -60,7 +63,8 @@
         "src": "/images/victorian-img9b.jpg",
         "width": 900,
         "height": 624,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     }
   ],

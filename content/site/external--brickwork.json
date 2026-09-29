@@ -11,7 +11,8 @@
     "src": "/images/shotblasting.jpg",
     "width": 2000,
     "height": 900,
-    "alt": ""
+    "alt": "",
+    "focal": "50% 50%"
   },
   "heading": "Brickwork",
   "subheading": "by Complete Restoration",

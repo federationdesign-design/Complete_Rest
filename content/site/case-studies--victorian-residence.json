@@ -11,7 +11,8 @@
     "src": "/images/victorian-img9b.jpg",
     "width": 900,
     "height": 624,
-    "alt": ""
+    "alt": "Period panelled door, stripped of paint and finished with beeswax, in the Victorian residence",
+    "focal": "50% 50%"
   },
   "heading": "Victorian Residence",
   "subheading": "Like most period houses, many original features that give a house its character have been ripped out long ago.",
@@ -23,43 +24,50 @@
       "src": "/images/victorian-img7b.jpg",
       "width": 900,
       "height": 675,
-      "alt": ""
+      "alt": "Modernised bathroom with a freestanding stone bath and brass taps",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img6b.jpg",
       "width": 900,
       "height": 675,
-      "alt": ""
+      "alt": "Bathroom with a stone bath, wall-hung toilet and brass fittings",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img4b.jpg",
       "width": 768,
       "height": 683,
-      "alt": ""
+      "alt": "Vanity unit with a countertop basin and wall-mounted tap",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img3b.jpg",
       "width": 768,
       "height": 691,
-      "alt": ""
+      "alt": "Tiled shower with a lit recessed shelf",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img2b.jpg",
       "width": 900,
       "height": 780,
-      "alt": ""
+      "alt": "Oval countertop basin with a wall-mounted tap",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img5b.jpg",
       "width": 900,
       "height": 675,
-      "alt": ""
+      "alt": "Fitted wardrobes with mirrored doors in a dressing room",
+      "focal": "50% 50%"
     },
     {
       "src": "/images/victorian-img8b.jpg",
       "width": 900,
       "height": 675,
-      "alt": ""
+      "alt": "Twin wall-hung basins with brass taps",
+      "focal": "50% 50%"
     }
   ],
   "cards": [],

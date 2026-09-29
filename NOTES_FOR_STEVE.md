@@ -81,7 +81,7 @@ Pages with only the default `Page - Complete restoration company` title and no m
 | `/services/hand-stripping/`, and its summary on `/services/` and `/internal/` | "The Complete Restoration Company with establish what process needs to be used" |
 | `/case-studies/imperialscience-collage/`, `/case-studies/`, footer menu | "Imperial Science Collage" |
 
-The Haileybury case study is titled "Haileybury College" correctly; only its slug says `collages`. A full proofread of every page will be done during content import (step 4) and added here.
+The Haileybury case study is titled "Haileybury College" correctly; only its slug says `collages`. The full proofread from step 4 is below.
 
 ### Company details seen on the live site (for section 10)
 
@@ -122,3 +122,48 @@ The Haileybury case study is titled "Haileybury College" correctly; only its slu
 6. The blog archive heading is "BLog" on the live site (typo, carried over). The Swindon post's excerpt on the live archive is actually the Harpenden post's text; carried over as it is.
 7. The live contact page loads the Google Maps script but never shows a map, so there is no map to rebuild. The contact page publishes a trading address (Lordship lodge, Dane End, Ware, Hertfordshire SG12 0NS), carried over as it is; please confirm it against brief item 10.2.
 8. The disclaimer uses a fourth company name variant, "Complete Restoration Limited". It is replaced in step 7.
+
+## Step 4: content import
+
+1. All 47 pages are imported. An automated check compared every heading, paragraph, list item and link label in each live page's content area with the rebuilt page; nothing is missing.
+2. Alt text and focal points for all 46 hero and gallery images are in `content/image-text.json`, written from what each page says the image shows. Plain texture backgrounds (the two brick wall photos and the dark panelled wall on `/internal/`) have empty alt text as decorative images. Card thumbnails also have empty alt text, because the card title beside them already names the link.
+3. Copy was compared against the live rendered pages and the REST API, which agree. The reference screenshots were used for section order and brand only; no conflicts with the REST content were found on the pages reviewed.
+
+### Content errors on the live site (carried over verbatim, not corrected)
+
+These are bigger than typos and may be worth fixing before launch:
+
+| Page | Problem |
+|---|---|
+| `/internal/wet-rooms/` | The page title (`h1`) reads "Staircase refurb by Complete Restoration", copied from the staircase page. |
+| `/blog/swindons-mechanics-institute-set-to-be-restored/` | The whole article body is the Harpenden house sale article. There is no Swindon text on the live site. Its archive excerpt is the Harpenden text too. |
+| `/blog/brass-and-mixed-metals-top-interiors-trend/` | The final sentence stops mid-way: "Get in touch with us today to find out". |
+| `/internal/` | The page title starts with a lower-case letter: "internal Restoration by Complete Restoration". |
+| `/about/` | The browser tab title is "about - Complete restoration company", in lower case. |
+| `/blog/` | Heading "BLog". |
+
+### Typos and grammar on the live site (carried over verbatim)
+
+| Page | Text | Likely intended |
+|---|---|---|
+| `/`, `/services/building-restoration/` | "working with our clinets" | clients |
+| `/`, `/services/building-restoration/` | "allows the beautiy of the property" | beauty |
+| `/`, `/services/building-restoration/` | "to shine though" | through |
+| `/` | "please feel free to get in touch" (no full stop) | |
+| `/services/hand-stripping/`, and its cards on `/services/` and `/internal/` | "The Complete Restoration Company with establish" | will establish |
+| `/case-studies/imperialscience-collage/`, `/case-studies/`, footer | "Imperial Science Collage" | College |
+| `/case-studies/haileybury-collages/` | "Clement Atlee" | Attlee |
+| `/case-studies/victorian-residence/` | "Bathrooms were updated and modernised leaving. clean modern feel which will last for years to come" | leaving a clean modern feel ... to come. |
+| `/external/structural/` | "we can instruct structural engineer" | instruct a structural engineer |
+| `/external/`, `/external/brickwork/` | "Specialists in; painted walls, removal of moss, algae, Ivy Carbon Deposits" | Specialists in painted walls ... ivy, carbon deposits |
+| `/internal/decorating/` | "We have specialist skills in many areas your project will always be completed" | areas, and your project |
+| `/internal/wet-rooms/` | "a full Service including re siting", "your bathrooms size", "wetrooms", "the clients requirements", "‘Dream Bathroom’ Just one call" (missing full stop), "re wiring", "wall hung w/c" | service, re-siting, bathroom's, wet rooms, client's, re-wiring, wall-hung WC |
+| `/about/` | "all over the home counties" | Home Counties |
+| `/blog/do-you-need-your-parquet-floor-restored/` | "asap", "inbetween tiles", "floor restoration company in london" | as soon as possible, in between, London |
+| `/blog/the-advantages-of-having-a-wet-room/` | "easier too clean", "here’s some advantages", "frame work" | to clean, here are some, framework |
+| `/blog/the-uks-five-most-desirable-property-types/` | "the great Georgian cites" | cities |
+| `/blog/uks-top-10-most-endangered-buildings-revealed/` | "How incredible that should feature on the Top Ten Endangered Buildings list" | that these should feature |
+| `/blog/period-home-in-harpenden-goes-on-sale/` (and the Swindon post) | "period features remains", "original features was why" | remain, were why |
+| `/blog/work-begins-on-ipswichs-unitarian-meeting-house/` | "as well as been awarded further grants"; "gave cause for the church to be founded, and is now a Grade 1 listed building" | as well as being awarded; which is now Grade I listed |
+
+Excerpts on the section index pages end mid-word ("natur...", "histori...", "rem...") because the live site cuts them at a fixed length. They are carried over as they are.

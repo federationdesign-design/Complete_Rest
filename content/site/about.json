@@ -11,7 +11,8 @@
     "src": "/images/about-page-image.jpg",
     "width": 2000,
     "height": 857,
-    "alt": ""
+    "alt": "Three builders in hard hats looking over building plans on site",
+    "focal": "66% 50%"
   },
   "heading": "About us",
   "subheading": "The Complete Restoration Company are award winning experts in the field of building restoration and conservation.",

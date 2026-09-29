@@ -11,7 +11,8 @@
     "src": "/images/shotblasting-prepped.jpg",
     "width": 2000,
     "height": 900,
-    "alt": ""
+    "alt": "",
+    "focal": "50% 50%"
   },
   "heading": "Shot Blasting",
   "subheading": "Shot blasting is a process used to clean surfaces back to the base material.",

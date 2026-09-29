@@ -11,7 +11,8 @@
     "src": "/images/imperial-img2.png",
     "width": 2098,
     "height": 1396,
-    "alt": ""
+    "alt": "Restored foyer and staircase at Imperial College, with glazed brick columns and bronze balustrades",
+    "focal": "50% 60%"
   },
   "heading": "Imperial Science Collage",
   "subheading": "As one of the foremost teaching and research institutions, the Imperial College of Science wanted to restore the foyer and staircase back to its original beauty and to retain its grandeur.",
@@ -23,13 +24,15 @@
       "src": "/images/imperial-img3.png",
       "width": 2090,
       "height": 1570,
-      "alt": ""
+      "alt": "Imperial College reception with its cut back and re-polished terrazzo floor",
+      "focal": "40% 60%"
     },
     {
       "src": "/images/imperial-img1.png",
       "width": 2096,
       "height": 1390,
-      "alt": ""
+      "alt": "Cleaned glazed brick columns and bronze balustrades in the Imperial College foyer",
+      "focal": "50% 50%"
     }
   ],
   "cards": [],

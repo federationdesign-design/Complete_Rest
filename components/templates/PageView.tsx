@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import type { Page } from '../../lib/content';
 import CardGrid from '../page/CardGrid';
 import Gallery from '../page/Gallery';
@@ -120,8 +121,11 @@ function ContactDetails({ contact }: { contact: NonNullable<Page['contact']> }) 
           Address
         </h2>
         <address className={styles.address}>
-          {contact.address.map((line) => (
-            <span key={line}>{line}</span>
+          {contact.address.map((line, i) => (
+            <Fragment key={line}>
+              {i > 0 && <br />}
+              {line}
+            </Fragment>
           ))}
         </address>
       </section>

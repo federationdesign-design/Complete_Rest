@@ -11,7 +11,8 @@
     "src": "/images/hoempage-image.jpg",
     "width": 2000,
     "height": 857,
-    "alt": ""
+    "alt": "Builders in hard hats reviewing plans on scaffolding inside a building under restoration",
+    "focal": "46% 50%"
   },
   "heading": "The Complete Restoration company",
   "subheading": "A professional and comprehensive service for the restoration of period buildings",
@@ -29,7 +30,8 @@
         "src": "/images/building-restoration-alt.jpg",
         "width": 2000,
         "height": 876,
-        "alt": ""
+        "alt": "",
+        "focal": "82% 50%"
       }
     },
     {
@@ -41,7 +43,8 @@
         "src": "/images/internal-image.jpg",
         "width": 2000,
         "height": 918,
-        "alt": ""
+        "alt": "",
+        "focal": "30% 50%"
       }
     },
     {
@@ -53,7 +56,8 @@
         "src": "/images/building-restoration-page-image.jpg",
         "width": 2000,
         "height": 857,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     },
     {
@@ -65,7 +69,8 @@
         "src": "/images/floor-restoration3.jpg",
         "width": 2000,
         "height": 900,
-        "alt": ""
+        "alt": "",
+        "focal": "50% 50%"
       }
     }
   ],
