@@ -47,6 +47,7 @@ export type Page = {
   testimonial: string | null;
   contact: { address: string[]; phone: string; email: string } | null;
   members: boolean;
+  modified: string | null; // YYYY-MM-DD, last modified in WordPress
   date?: string;
 };
 

@@ -1,0 +1,11 @@
+.body {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--space-md) var(--gutter) var(--space-lg);
+  text-align: center;
+}
+
+.body a {
+  color: var(--colour-text-muted);
+  text-underline-offset: 0.2em;
+}

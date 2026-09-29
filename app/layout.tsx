@@ -3,6 +3,7 @@ import { Crimson_Text, Lato } from 'next/font/google';
 import ActionBar from '../components/ActionBar/ActionBar';
 import SiteFooter from '../components/SiteFooter/SiteFooter';
 import SiteHeader from '../components/SiteHeader/SiteHeader';
+import { SITE_URL } from '../lib/metadata';
 import './globals.css';
 
 // next/font downloads these at build time and serves them from this site,
@@ -22,7 +23,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.completerestoration.co.uk'),
+  metadataBase: new URL(SITE_URL),
   title: 'Complete restoration company',
 };
 

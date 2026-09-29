@@ -177,6 +177,7 @@ function base(raw, kind) {
     testimonial: null,
     contact: null,
     members: false,
+    modified: raw.modified ? raw.modified.slice(0, 10) : null,
   };
 }
 
@@ -384,7 +385,20 @@ await writeFile(
   ) + '\n',
 );
 
-console.log(`${pages.length} pages written to content/site/`);
+// 301s from WordPress upload URLs (originals and resized copies) to the
+// downloaded file, since some are indexed or used as Open Graph images.
+const uploadRedirects = [];
+for (const m of manifest) {
+  if (!m.file) continue;
+  for (const url of [m.source, ...(m.variants || [])]) {
+    const u = new URL(url);
+    if (u.pathname.startsWith('/wp-content/uploads/')) uploadRedirects.push({ source: decodeURI(u.pathname), destination: m.file });
+  }
+}
+uploadRedirects.sort((a, b) => a.source.localeCompare(b.source));
+await writeFile(path.join(ROOT, 'content/upload-redirects.json'), JSON.stringify(uploadRedirects, null, 2) + '\n');
+
+console.log(`${pages.length} pages written to content/site/, ${uploadRedirects.length} upload redirects`);
 const counts = pages.reduce((acc, p) => ({ ...acc, [p.kind]: (acc[p.kind] || 0) + 1 }), {});
 console.log(counts);
 if (warnings.length) {
