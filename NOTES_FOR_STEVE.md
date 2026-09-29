@@ -94,6 +94,12 @@ The Haileybury case study is titled "Haileybury College" correctly; only its slu
 1. The brief says reference screenshots are in `agent/reference/current/`. That folder exists but is empty; the screenshots are in `agent/reference/`. There are desktop shots for 15 pages (including one case study example) and mobile shots for 8. None exist for the four internal pages, brickwork, structural, building restoration, the team or ethos pages, or the legal pages other than a mobile privacy shot.
 2. `/blog/page/2/` returns 404 while `/category/blog/page/2/` works.
 
+### Decisions confirmed by Steve (29 September 2026)
+
+1. Keep all 16 blog posts and the `/blog/` archive; build post and archive templates.
+2. The proposed 301 targets above for the other extra URLs are approved (the blog rows now resolve as "keep").
+3. Reference screenshots stay in `agent/reference/`.
+
 ## Step 2: scaffold and layout shell
 
 1. Next.js 16.3.7 was scaffolded with `create-next-app`. It creates an `AGENTS.md` whose text (written by Next.js) contains em dashes, and `next dev` rewrites that file whenever a coding agent runs it and the text differs. If `AGENTS.md` is missing, `next dev` writes the same block into `CLAUDE.md` instead. So `AGENTS.md` is kept on disk, which protects `CLAUDE.md`, and listed in `.gitignore` so no em dashes are committed.
@@ -104,3 +110,4 @@ The Haileybury case study is titled "Haileybury College" correctly; only its slu
 6. On pages without the quote form, the bottom bar's Get a quote button links to `/contact-us/#quote`. On pages with the form it jumps to the form, and the bar hides while the form is on screen so it never covers the form buttons.
 7. The blog is not linked from the main navigation or footer on the live site; it is reachable only from the sitemap and search results. The rebuild will match that unless you want a Blog link added.
 8. `scripts/screenshots.mjs` captures the brief's 390px and 1280px screenshots into `agent/screenshots/`. Run it against a production build (`npm run build && npm start`), not `npm run dev`, which adds the Next.js dev badge to every shot.
+9. Footer menus on phones (below 768px) are collapsible sections, closed by default, as you asked. Services and Case studies have linked headings on the live site; on phones the heading becomes the toggle, so the section link is repeated as the first item in its list. From 768px up all four menus are open with their original headings.

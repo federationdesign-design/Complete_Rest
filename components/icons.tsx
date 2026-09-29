@@ -65,3 +65,11 @@ export function QuoteIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function ChevronIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}

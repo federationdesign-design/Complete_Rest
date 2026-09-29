@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { company } from '../../lib/company';
 import { footerMenus, siteName } from '../../lib/site';
+import FooterMenu from './FooterMenu';
 import Placeholder from '../Placeholder/Placeholder';
 import styles from './SiteFooter.module.css';
 
@@ -21,26 +22,7 @@ export default function SiteFooter() {
 
         <div className={styles.menus}>
           {footerMenus.map((menu) => (
-            <nav key={menu.title} className={styles.menu} aria-labelledby={`footer-${slug(menu.title)}`}>
-              <h2 className={styles.menuTitle} id={`footer-${slug(menu.title)}`}>
-                {menu.href ? (
-                  <Link className={styles.menuTitleLink} href={menu.href}>
-                    {menu.title}
-                  </Link>
-                ) : (
-                  menu.title
-                )}
-              </h2>
-              <ul className={styles.list}>
-                {menu.links.map((link) => (
-                  <li key={link.href + link.label}>
-                    <Link className={styles.link} href={link.href}>
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <FooterMenu key={menu.title} menu={menu} />
           ))}
         </div>
 
@@ -59,6 +41,3 @@ export default function SiteFooter() {
   );
 }
 
-function slug(text: string) {
-  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-}
