@@ -1,8 +1,10 @@
 import { Fragment } from 'react';
-import type { Page } from '../../lib/content';
+import { getPage, type Page } from '../../lib/content';
+import { openingHours } from '../../lib/hours';
 import { pageSchema } from '../../lib/schema';
 import EnquiryForm from '../EnquiryForm/EnquiryForm';
 import JsonLd from '../JsonLd/JsonLd';
+import OpenStatus from '../OpenStatus/OpenStatus';
 import { legalDrafts } from '../legal/drafts';
 import CardGrid from '../page/CardGrid';
 import Gallery from '../page/Gallery';
@@ -14,6 +16,8 @@ import QuoteSection from '../page/QuoteSection';
 import Testimonial from '../page/Testimonial';
 import styles from './PageView.module.css';
 
+const LEARN_MORE = 'Learn more';
+
 // Renders any page from the content model. Section order follows the live
 // template for each kind of page.
 export default function PageView({ page }: { page: Page }) {
@@ -21,7 +25,12 @@ export default function PageView({ page }: { page: Page }) {
     <>
       <JsonLd data={pageSchema(page)} />
       {page.hero ? (
-        <Hero image={page.hero} heading={page.heading} subheading={page.subheading} />
+        <Hero
+          image={page.hero}
+          heading={page.heading}
+          subheading={page.subheading}
+          fadeOnScroll={page.kind === 'home'}
+        />
       ) : (
         <PageTitle heading={page.heading} subheading={page.subheading} />
       )}
@@ -33,16 +42,28 @@ export default function PageView({ page }: { page: Page }) {
 
 function Body({ page }: { page: Page }) {
   switch (page.kind) {
-    case 'home':
+    case 'home': {
+      // Round 2: the four case studies in the same slider and card style,
+      // using only their existing titles and images.
+      const caseStudies = getPage('/case-studies/');
       return (
         <>
           <Intro html={page.introHtml} />
           <div className={styles.tiles}>
-            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" />
+            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} />
           </div>
+          {caseStudies && caseStudies.cards.length > 0 && (
+            <section className={styles.tiles} aria-labelledby="home-case-studies">
+              <h2 className={styles.sectionHeading} id="home-case-studies">
+                {caseStudies.title}
+              </h2>
+              <CardGrid cards={caseStudies.cards} headingLevel="h3" mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} row />
+            </section>
+          )}
           <ContentRow page={page} />
         </>
       );
+    }
     case 'section':
       return (
         <>
@@ -73,7 +94,7 @@ function Body({ page }: { page: Page }) {
           {page.contact && <ContactDetails contact={page.contact} />}
           {page.quote && (
             <div className={styles.container}>
-              <QuoteSection title={page.quote.title}>
+              <QuoteSection>
                 <EnquiryForm />
               </QuoteSection>
             </div>
@@ -123,7 +144,7 @@ function ContentRow({ page }: { page: Page }) {
         </div>
       )}
       {page.quote && (
-        <QuoteSection title={page.quote.title}>
+        <QuoteSection>
           <EnquiryForm />
         </QuoteSection>
       )}
@@ -167,6 +188,16 @@ function ContactDetails({ contact }: { contact: NonNullable<Page['contact']> }) 
           </a>
         </p>
       </section>
+      {/* Status tag as on the LHM contact page. Shown only once opening hours
+          are set in lib/hours.ts (PLACEHOLDERS.md, OPENING_HOURS). */}
+      {openingHours && (
+        <section className={styles.contactBlock} aria-labelledby="contact-status">
+          <h2 className={styles.contactHeading} id="contact-status">
+            Open / Closed
+          </h2>
+          <OpenStatus />
+        </section>
+      )}
     </div>
   );
 }

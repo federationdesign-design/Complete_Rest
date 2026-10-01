@@ -1,9 +1,18 @@
-/* Phones (mobile round 1, item 17): the quote marks are drawn inside the
-   padding, so they sit inset from the top and bottom of the box, and the
-   text is italic with a 1.3 line-height. */
+/* Phones: the two quote marks are separate images placed in opposite corners
+   of the padded box, clear of its top and bottom edges. Only their height is
+   set, so each keeps its native aspect ratio at every size (round 2, item 5;
+   they are cut from testimonialbackgroundimage.png). The text is italic,
+   2px smaller, with a 1.3 line-height. */
 .band {
   padding: var(--space-md) var(--gutter);
-  background: var(--colour-nav) url('/images/testimonialbackgroundimage.png') center / 100% 100% no-repeat content-box;
+  background-color: var(--colour-nav);
+  background-image: url('/images/quote-mark-open.png'), url('/images/quote-mark-close.png');
+  background-position:
+    left top,
+    right bottom;
+  background-size: auto 2.75rem;
+  background-repeat: no-repeat;
+  background-origin: content-box;
   background-clip: border-box;
   color: var(--colour-white);
 }
@@ -13,13 +22,14 @@
   margin: 0 auto;
   font-family: var(--font-serif);
   padding: var(--space-md) 0;
-  font-size: var(--text-xl);
+  font-size: calc(var(--text-xl) - 2px);
   font-style: italic;
   line-height: 1.3;
   text-align: center;
   text-shadow: 0 1px 3px rgb(0 0 0 / 0.6);
 }
 
+/* Tablet up: the original band with the full image as its background. */
 @media (min-width: 48em) {
   .band {
     padding: var(--space-lg) var(--gutter);
@@ -28,6 +38,7 @@
 
   .text {
     padding: 0;
+    font-size: var(--text-xl);
     font-style: normal;
     line-height: 1.35;
   }

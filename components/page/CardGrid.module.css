@@ -88,6 +88,46 @@
   color: var(--colour-text);
 }
 
+/* Call to action link ("Learn more"): the card's one link, stretched over
+   the whole card. On phones it is a text link with an arrow, in white, the
+   link colour used on the site's dark backgrounds. From tablet up it keeps
+   the bordered button look. */
+.cta {
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: var(--text-base);
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-transform: none;
+  text-underline-offset: 0.2em;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.cta::after {
+  content: '\2192';
+  margin-left: 0.375rem;
+  text-decoration: none;
+}
+
+.cta:focus-visible {
+  box-shadow: none;
+}
+
+.card:hover .cta {
+  background: none;
+  color: inherit;
+  text-decoration-thickness: 2px;
+}
+
 /* Swipe slider on phones (shared Slider), the same grid from tablet up. */
 
 .slides {
@@ -96,6 +136,12 @@
 }
 
 .slidesWide {
+  --slider-columns-desktop: repeat(4, minmax(0, 1fr));
+}
+
+/* A single row of four from tablet up (home page case studies). */
+.slidesRow {
+  --slider-columns-tablet: repeat(4, minmax(0, 1fr));
   --slider-columns-desktop: repeat(4, minmax(0, 1fr));
 }
 
@@ -183,6 +229,26 @@
 
   .overlay .label {
     border-radius: 0;
+  }
+
+  .cta {
+    display: block;
+    min-height: 0;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--colour-white);
+    font-size: var(--text-sm);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .cta::after {
+    content: none;
+  }
+
+  .card:hover .cta {
+    background: var(--colour-white);
+    color: var(--colour-text);
   }
 
   .caption .body {

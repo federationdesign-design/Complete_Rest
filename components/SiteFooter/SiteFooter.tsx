@@ -33,10 +33,7 @@ export default function SiteFooter() {
           </p>
           <p>
             {siteName} is the trading name of <Placeholder fact={company.legalName} />, a company registered in
-            England and Wales with company number <Placeholder fact={company.companyNumber} />.
-          </p>
-          <p>
-            Registered office: <Placeholder fact={company.registeredOffice} />. VAT number{' '}
+            England and Wales with company number <Placeholder fact={company.companyNumber} />. VAT number{' '}
             <Placeholder fact={company.vatNumber} />.
           </p>
         </div>

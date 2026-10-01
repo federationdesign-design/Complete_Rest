@@ -18,6 +18,10 @@
   --colour-logo-grey: #bab9bd; /* "COMPANY" in the logo */
   --colour-white: #ffffff;
   --colour-error: #a4161a; /* form errors, on white only */
+  /* Open / closed status dot on the contact page (as on the LHM site). */
+  --colour-status-open: #2cd12c;
+  --colour-status-closing: #f5a623;
+  --colour-status-closed: #ff4444;
   --colour-placeholder-bg: #fff3b0;
   --colour-placeholder-text: #2e2e2e;
 

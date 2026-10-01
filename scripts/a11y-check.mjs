@@ -47,8 +47,10 @@ try {
       const small = await page.evaluate(() =>
         [...document.querySelectorAll('a[href], button, input:not([type=hidden]), select, textarea')]
           .filter((el) => {
-            // Stretched links (card titles) use ::after to cover their card.
-            const stretched = getComputedStyle(el, '::after').position === 'absolute' && el.offsetParent;
+            // Stretched links (card titles and "Learn more") use a pseudo-element
+            // to cover their card.
+            const stretched =
+              ['::before', '::after'].some((pseudo) => getComputedStyle(el, pseudo).position === 'absolute') && el.offsetParent;
             const r = (stretched ? el.offsetParent : el).getBoundingClientRect();
             const style = getComputedStyle(el);
             if (!r.width || !r.height || style.visibility === 'hidden') return false;

@@ -15,12 +15,19 @@ type Props = {
   // On phones: 'overlay' puts the title over the image on a plain box;
   // 'caption' centres the title over the image with no box below.
   phoneStyle?: 'default' | 'overlay' | 'caption';
+  // Call to action shown instead of the card's own label, e.g. "Learn more".
+  // It becomes the card's link, named "Learn more about <title>" so screen
+  // readers do not hear several identical links. Four across from tablet up
+  // when `row` is set.
+  cta?: string;
+  row?: boolean;
 };
 
 // One column or a swipe slider on phones, two columns from tablet, three from
-// desktop. The title is the link; its hit area covers the whole card. The
-// live "more" style label is kept as visible text but hidden from screen
-// readers to avoid repeated, ambiguous link names.
+// desktop. Each card has one link whose hit area covers the whole card: the
+// title, or the call to action when `cta` is set. The live "more" style label
+// is kept as visible text but hidden from screen readers to avoid repeated,
+// ambiguous link names.
 export default function CardGrid({
   cards,
   headingLevel = 'h2',
@@ -28,6 +35,8 @@ export default function CardGrid({
   wide = false,
   mobile = 'stack',
   phoneStyle = 'default',
+  cta,
+  row = false,
 }: Props) {
   const Heading = headingLevel;
   const cardClass = [styles.card, phoneStyle === 'overlay' && styles.overlay, phoneStyle === 'caption' && styles.caption]
@@ -50,15 +59,25 @@ export default function CardGrid({
       )}
       <div className={styles.body}>
         <Heading className={styles.title}>
-          <Link className={styles.link} href={card.href}>
-            {card.title}
-          </Link>
+          {cta ? (
+            card.title
+          ) : (
+            <Link className={styles.link} href={card.href}>
+              {card.title}
+            </Link>
+          )}
         </Heading>
         {card.excerpt && <p className={styles.excerpt}>{card.excerpt}</p>}
-        {card.label && (
-          <span className={styles.label} aria-hidden="true">
-            {card.label}
-          </span>
+        {cta ? (
+          <Link className={`${styles.label} ${styles.cta}`} href={card.href} aria-label={`${cta} about ${card.title}`}>
+            {cta}
+          </Link>
+        ) : (
+          card.label && (
+            <span className={styles.label} aria-hidden="true">
+              {card.label}
+            </span>
+          )
         )}
       </div>
     </li>
@@ -66,7 +85,10 @@ export default function CardGrid({
 
   if (mobile === 'slider') {
     return (
-      <Slider className={wide ? `${styles.slides} ${styles.slidesWide}` : styles.slides} label={label}>
+      <Slider
+        className={[styles.slides, wide && styles.slidesWide, row && styles.slidesRow].filter(Boolean).join(' ')}
+        label={label}
+      >
         {items}
       </Slider>
     );

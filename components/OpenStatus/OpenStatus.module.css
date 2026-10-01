@@ -1,0 +1,22 @@
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.dot {
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--colour-status-closed);
+}
+
+.dot[data-state='open'] {
+  background: var(--colour-status-open);
+}
+
+.dot[data-state='closing'] {
+  background: var(--colour-status-closing);
+}

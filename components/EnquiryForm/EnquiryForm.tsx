@@ -129,9 +129,16 @@ export default function EnquiryForm() {
           'aria-invalid': error ? true : undefined,
           'aria-describedby': error ? errorId : undefined,
           value: values[f.name],
+          // A blank placeholder lets CSS tell an empty field from a filled one
+          // (:placeholder-shown) for the floating labels on phones.
+          placeholder: ' ',
         };
         return (
-          <div className={styles.field} key={f.name}>
+          <div
+            className={f.multiline ? `${styles.field} ${styles.fieldMultiline}` : styles.field}
+            data-filled={values[f.name] !== ''}
+            key={f.name}
+          >
             <label className={styles.label} htmlFor={id(f.name)}>
               {f.label}
               {f.optional && <span className={styles.optional}> (optional)</span>}
@@ -187,7 +194,7 @@ export default function EnquiryForm() {
       </p>
 
       <button className={styles.submit} type="submit" disabled={pending}>
-        {pending ? 'Sending' : 'Send enquiry'}
+        {pending ? 'Sending' : 'Submit'}
       </button>
     </form>
   );

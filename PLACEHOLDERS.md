@@ -4,10 +4,10 @@ Every fact the build needs from Steve. Each one renders on the site as a highlig
 
 | ID | Needed | Where it appears | Notes |
 |---|---|---|---|
-| `LEGAL_ENTITY_NAME` | Legal entity name exactly as registered (brief 10.1) | Footer company statement; legal pages; business schema as `[PLACEHOLDER: LEGAL_ENTITY_NAME]` | Companies House lists THE COMPLETE RESTORATION COMPANY (HERTFORD) LIMITED. The live site uses three variants. |
-| `COMPANY_NUMBER` | Company number for that entity | Footer company statement; legal pages; business schema | Companies House gives 03905618 for the Hertford company. The live footer shows 3905618, without the leading zero. |
-| `REGISTERED_OFFICE` | Registered office address to publish (brief 10.2) | Footer company statement; privacy notice | |
-| `VAT_NUMBER` | VAT number | Footer company statement; business schema | The live footer shows 749 8815 68. Please confirm it is current and belongs to the same entity. |
+| ~~`LEGAL_ENTITY_NAME`~~ | Closed 1 October 2026 | Footer company statement; legal pages; business schema (`lib/company.ts`) | Resolved in round 2: The Complete Restoration Company (Hertford) Limited. |
+| ~~`COMPANY_NUMBER`~~ | Closed 1 October 2026 | Footer company statement; legal pages; business schema (`lib/company.ts`) | Resolved in round 2: 03905618. |
+| `REGISTERED_OFFICE` | Registered office address to publish (brief 10.2) | Privacy notice and website terms | Still open. The footer statement no longer mentions the registered office (round 2 wording), so this placeholder now shows only on the two legal pages. |
+| ~~`VAT_NUMBER`~~ | Closed 1 October 2026 | Footer company statement; business schema (`lib/company.ts`) | Resolved in round 2: 749 8815 68. |
 | `FAVICON` | A favicon or a decision to make one from the logo | Browser tab icon (not yet added) | The live favicon returns 404, so there is nothing to carry over. The scaffold's Next.js icon has been removed. |
 | ~~`COMPACT_HEADER_LOGO`~~ | Closed 1 October 2026 | Compact header bar on phones (`components/SiteHeader/SiteHeader.tsx`, `LOGO_SHORT`) | Resolved: Steve supplied `public/images/CR-logo-short.svg`, now used in the compact bar on phones. The header and menu panel on phones use `CR-logo-tall.svg`; tablet and desktop keep the original logo. |
 | `MEMBERSHIPS` | Current accreditations and memberships (brief 10.9) | "Proud members of..." logo strip on every page (`lib/members.ts`) | Shows the five live logos until confirmed: The Tile Association, The Guild of Master Craftsmen, NICEIC, MPA, Gas Safe Register. Not marked on the page, as the logos are live content. |
@@ -26,3 +26,4 @@ Every fact the build needs from Steve. Each one renders on the site as a highlig
 | `ANALYTICS_TOOL` | Which analytics tool, if any, the client wants (brief 10.4, 7.5) | `lib/consent/config.ts`; privacy notice section 2; cookie policy | None at present. Google Analytics would go behind consent. An exempt first-party tool would still be listed with an off switch. |
 | `MARKETING_TAGS` | Whether any advertising or social pixels are wanted (brief 7.6) | `lib/consent/config.ts` | None at present; the live page source showed none. |
 | `TRADING_ADDRESS` | Confirmation of the trading address to publish (brief 10.2) | Contact page (live copy, carried over) and the business schema on every page (`lib/schema.ts`) | Currently the live contact page address: Lordship lodge, Dane End, Ware, Hertfordshire, SG12 0NS. Not marked on the page, as it is live content. |
+| `OPENING_HOURS` | Opening hours, if the client wants the open / closed status tag | Contact page status tag (`lib/hours.ts`, `openingHours`) | The tag is ported from the LHM contact page, where it is worked out from a table of opening hours. This site states no hours, so none were invented and the tag is not shown. Add the hours in `lib/hours.ts` to switch it on. |

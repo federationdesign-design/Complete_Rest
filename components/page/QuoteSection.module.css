@@ -1,7 +1,7 @@
 /* Phones (mobile round 1, items 10 and 22): a white quote box with rounded
    corners and a soft shadow. From tablet up it is the grey brick panel. */
 .quote {
-  padding: var(--space-md) var(--space-sm);
+  padding: var(--space-md) calc(var(--space-sm) + 5px);
   border: 1px solid var(--colour-rule);
   border-radius: var(--radius);
   background: var(--colour-white);
@@ -13,9 +13,14 @@
 
 .heading {
   font-size: var(--text-xl);
+  text-align: center;
 }
 
 @media (min-width: 48em) {
+  .heading {
+    text-align: inherit;
+  }
+
   .quote {
     padding: var(--space-lg) var(--space-md);
     border: 0;
