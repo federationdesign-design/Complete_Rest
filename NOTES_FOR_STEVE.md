@@ -279,3 +279,7 @@ Other points:
 - Text over images sits on a dark gradient at least 50% black behind the text, for AA contrast.
 - Checks: no sideways scroll at 320px or 390px on any page; axe (WCAG 2.2 AA) clean on all pages, with the menu open and with form errors showing. Screenshots at 390px of every page, plus the open menu and compact header, are in `agent/screenshots/round1/`.
 - No copy was changed.
+
+### Compact bar logo (1 October 2026)
+
+`CR-logo-short.svg` has been supplied and is now used in the compact bar on phones, which completes item 1 of mobile round 1. It is 240px wide at 390px and 208px wide at 320px, leaving room for the menu button. The bar stays 60px high so the menu icon and the close icon still line up. `COMPACT_HEADER_LOGO` is closed in PLACEHOLDERS.md.

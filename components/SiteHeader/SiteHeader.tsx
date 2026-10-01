@@ -14,10 +14,8 @@ import styles from './SiteHeader.module.css';
 const LOGO = { src: '/images/CompleteRestorationlogo-1.svg', width: 279, height: 60, alt: `${siteName}, home` };
 // Phones (mobile round 1): the tall logo in the header and menu panel.
 const LOGO_TALL = { src: '/images/CR-logo-tall.svg', width: 279, height: 55, alt: LOGO.alt };
-// The compact bar on phones is meant to use CR-logo-short.svg, which has not
-// been supplied yet (PLACEHOLDERS.md, COMPACT_HEADER_LOGO). Until it is, the
-// tall logo is used there too.
-const LOGO_COMPACT_MOBILE = LOGO_TALL;
+// Phones: the short, single-line logo in the compact bar after scrolling.
+const LOGO_SHORT = { src: '/images/CR-logo-short.svg', width: 279, height: 21, alt: LOGO.alt };
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
@@ -163,11 +161,11 @@ export default function SiteHeader() {
       <div className={styles.compact} data-visible={compact}>
         <Link className={styles.compactLogoLink} href="/">
           <Image
-            className={styles.logoTall}
-            src={LOGO_COMPACT_MOBILE.src}
-            width={LOGO_COMPACT_MOBILE.width}
-            height={LOGO_COMPACT_MOBILE.height}
-            alt={LOGO_COMPACT_MOBILE.alt}
+            className={styles.logoShort}
+            src={LOGO_SHORT.src}
+            width={LOGO_SHORT.width}
+            height={LOGO_SHORT.height}
+            alt={LOGO_SHORT.alt}
           />
           <Image
             className={styles.compactLogo}

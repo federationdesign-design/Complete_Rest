@@ -192,6 +192,12 @@
   height: auto;
 }
 
+/* Sized by width so it always leaves room for the menu button, from 320px. */
+.logoShort {
+  width: min(15rem, calc(100vw - 7rem));
+  height: auto;
+}
+
 /* Menu panel */
 
 .dialog {
@@ -292,7 +298,8 @@
     width: clamp(16rem, 30vw, 20rem);
   }
 
-  .logoTall {
+  .logoTall,
+  .logoShort {
     display: none;
   }
 
