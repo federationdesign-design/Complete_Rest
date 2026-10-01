@@ -6,7 +6,7 @@
 // and every visible link and button at least 44 by 44 CSS pixels (24 by 24
 // for footer menu links, the WCAG 2.2 AA minimum).
 //
-// Usage: node scripts/a11y-check.mjs [baseUrl]   (default http://localhost:3000)
+// Usage: node scripts/a11y-check.mjs [baseUrl] [widths]   (defaults: http://localhost:3000, 320,390,1280)
 // Run against a production build (npm run build && npm start).
 
 import fs from 'node:fs';
@@ -17,6 +17,9 @@ import { chromium } from 'playwright';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const base = process.argv[2] || 'http://localhost:3000';
+// Optional second argument: a comma-separated list of widths, e.g. 1280,2800.
+// At 320px only the sideways-scroll check runs.
+const widths = (process.argv[3] || '320,390,1280').split(',').map(Number);
 const pages = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site/index.json'), 'utf8')).map((e) => e.path);
 
 const problems = [];
@@ -24,7 +27,7 @@ const report = (page, width, msg) => problems.push(`${page} @${width}px: ${msg}`
 
 const browser = await chromium.launch();
 try {
-  for (const width of [320, 390, 1280]) {
+  for (const width of widths) {
     const context = await browser.newContext({ viewport: { width, height: 800 } });
     const page = await context.newPage();
     for (const p of pages) {
@@ -84,5 +87,5 @@ if (problems.length) {
   console.log(`\n${problems.length} problems across ${pages.length} pages`);
   process.exitCode = 1;
 } else {
-  console.log(`No problems found on ${pages.length} pages at 320, 390 and 1280px.`);
+  console.log(`No problems found on ${pages.length} pages at ${widths.join(', ')}px.`);
 }

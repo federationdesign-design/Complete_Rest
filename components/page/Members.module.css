@@ -38,3 +38,15 @@
   max-height: 5.5rem;
   object-fit: contain;
 }
+
+/* Tablet up: each logo sits in a box sized in rem, so the logos grow with the
+   layout on wide screens instead of staying at their small native size. At
+   1280px they are the same size as before. */
+@media (min-width: 48em) {
+  .logo {
+    width: 8rem;
+    max-width: none;
+    height: 5.5rem;
+    max-height: none;
+  }
+}

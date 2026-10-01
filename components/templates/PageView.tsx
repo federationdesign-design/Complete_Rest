@@ -51,7 +51,7 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} />
           <div className={styles.tiles}>
-            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} />
+            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlayAlways" cta={LEARN_MORE} />
             {caseStudies && caseStudies.cards.length > 0 && (
               <CardGrid
                 cards={caseStudies.cards}
@@ -60,6 +60,7 @@ function Body({ page }: { page: Page }) {
                 mobile="slider"
                 phoneStyle="captionAlways"
                 nameSuffix="case study"
+                pairs={{ previous: 'Previous case studies', next: 'Next case studies' }}
               />
             )}
           </div>

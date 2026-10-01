@@ -123,6 +123,14 @@
     --card-gap: var(--space-md);
   }
 
+  /* Intro text under the hero: 3px larger at 1280px (25px, was 22px) and
+     scaling with the window: about 18px at 768px, 36px at 1920px, 51px at
+     2800px. The measure is in ch, so it widens with the type. */
+  .introProse {
+    max-width: 62ch;
+    font-size: clamp(1.125rem, 0.4rem + 1.45vw, 3.25rem);
+  }
+
   .introTight {
     line-height: 1.5;
   }
@@ -164,9 +172,11 @@
   }
 }
 
+/* Desktop: copy and quote box side by side, in equal columns so the box is
+   wide enough for its paired fields. */
 @media (min-width: 64em) {
   .row {
-    grid-template-columns: minmax(0, 3fr) minmax(20rem, 2fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
   }
 }

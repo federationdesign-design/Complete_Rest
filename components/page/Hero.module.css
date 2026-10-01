@@ -61,4 +61,22 @@
   .hero {
     min-height: clamp(24rem, 62svh, 40rem);
   }
+
+  /* Larger type that keeps growing with the window, uncapped below 2800px
+     (desktop round 1): about 54px at 1280px, 81px at 1920px, 118px at 2800px. */
+  .heading {
+    font-size: clamp(2.75rem, 4.2vw, 8rem);
+  }
+
+  .subheading {
+    max-width: 50ch;
+    font-size: clamp(1.25rem, 1.9vw, 3.75rem);
+  }
+}
+
+/* Desktop up: the hero is about three quarters of the screen height. */
+@media (min-width: 64em) {
+  .hero {
+    min-height: max(75svh, 30rem);
+  }
 }

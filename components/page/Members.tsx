@@ -15,7 +15,17 @@ export default function Members() {
       <Slider className={styles.logos}>
         {members.map((logo) => (
           <li key={logo.src} className={styles.item}>
-            <Image className={styles.logo} src={logo.src} width={logo.width} height={logo.height} alt={logo.alt} sizes="8rem" />
+            {/* Loaded eagerly: five small files, and it keeps them in full-page
+                screenshots taken without scrolling. */}
+            <Image
+              className={styles.logo}
+              src={logo.src}
+              width={logo.width}
+              height={logo.height}
+              alt={logo.alt}
+              sizes="8rem"
+              loading="eager"
+            />
           </li>
         ))}
       </Slider>

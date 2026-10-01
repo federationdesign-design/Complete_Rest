@@ -14,8 +14,11 @@ type Props = {
   mobile?: 'stack' | 'slider';
   // On phones: 'overlay' puts the title over the image on a plain box;
   // 'caption' centres the title over the image with no box below.
-  // 'captionAlways' is the caption card at every screen size.
-  phoneStyle?: 'default' | 'overlay' | 'caption' | 'captionAlways';
+  // 'overlayAlways' and 'captionAlways' use that design at every screen size.
+  phoneStyle?: 'default' | 'overlay' | 'overlayAlways' | 'caption' | 'captionAlways';
+  // From desktop up, keep the slider and show two cards at a time, with
+  // previous and next buttons (their accessible names).
+  pairs?: { previous: string; next: string };
   // Added to each title link's accessible name, e.g. "case study" gives
   // "Halcyon Gallery case study".
   nameSuffix?: string;
@@ -39,11 +42,13 @@ export default function CardGrid({
   phoneStyle = 'default',
   cta,
   nameSuffix,
+  pairs,
 }: Props) {
   const Heading = headingLevel;
   const cardClass = [
     styles.card,
     phoneStyle === 'overlay' && styles.overlay,
+    phoneStyle === 'overlayAlways' && styles.overlayAlways,
     phoneStyle === 'caption' && styles.caption,
     phoneStyle === 'captionAlways' && styles.captionAlways,
   ]
@@ -59,7 +64,13 @@ export default function CardGrid({
             src={card.image.src}
             alt=""
             fill
-            sizes={wide ? '(min-width: 64em) 25vw, (min-width: 48em) 50vw, 100vw' : '(min-width: 64em) 33vw, (min-width: 48em) 50vw, 100vw'}
+            sizes={
+              pairs
+                ? '(min-width: 48em) 50vw, 100vw'
+                : wide
+                  ? '(min-width: 64em) 25vw, (min-width: 48em) 50vw, 100vw'
+                  : '(min-width: 64em) 33vw, (min-width: 48em) 50vw, 100vw'
+            }
             style={card.image.focal ? { objectPosition: card.image.focal } : undefined}
           />
         </div>
@@ -96,7 +107,11 @@ export default function CardGrid({
 
   if (mobile === 'slider') {
     return (
-      <Slider className={wide ? `${styles.slides} ${styles.slidesWide}` : styles.slides} label={label}>
+      <Slider
+        className={[styles.slides, wide && styles.slidesWide, pairs && styles.slidesPairs].filter(Boolean).join(' ')}
+        label={label}
+        arrows={pairs}
+      >
         {items}
       </Slider>
     );

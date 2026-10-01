@@ -35,8 +35,14 @@ export default function SiteHeader() {
     const sentinels = document.querySelectorAll('[data-header-sentinel]');
     const target = sentinels[sentinels.length - 1];
     if (!target) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      setCompact(!entry.isIntersecting && entry.boundingClientRect.top < 0);
+    // The observed area is everything above the top of the viewport (the
+    // root is extended far upwards and its bottom edge moved to the top), so
+    // the sentinel intersects exactly when it has scrolled off the top. This
+    // also catches jumps straight past it, such as the End key, an anchor
+    // link or a restored scroll position, which a plain "left the viewport"
+    // check misses when the sentinel was never on screen.
+    const observer = new IntersectionObserver(([entry]) => setCompact(entry.isIntersecting), {
+      rootMargin: '100000px 0px -100% 0px',
     });
     observer.observe(target);
     return () => observer.disconnect();

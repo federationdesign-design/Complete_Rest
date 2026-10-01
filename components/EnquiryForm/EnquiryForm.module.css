@@ -1,7 +1,5 @@
-/* Phones: the form sits in a white quote box (QuoteSection), with rounded
-   inputs and a full-width button. From tablet up it sits on the grey brick
-   panel, where error text uses dark red on white to meet contrast. The
-   tablet-up values are restored in the media query at the end of this file. */
+/* The form sits in a white quote box (QuoteSection), with floating labels,
+   rounded inputs and a full-width button, at every screen size. */
 
 .form {
   display: grid;
@@ -9,7 +7,7 @@
   max-width: 36rem;
 }
 
-/* Phones (round 2): floating labels. The label shares the input's grid cell,
+/* Floating labels (round 2). The label shares the input's grid cell,
    sitting inside the field, and moves up onto the top edge when the field
    has focus or a value. The error message keeps its own row above. */
 .field {
@@ -217,108 +215,40 @@
   margin-bottom: 0;
 }
 
-/* Tablet up: the original form on the grey brick panel. */
+/* Tablet up (desktop round 1): the same design as phones. Where the quote box
+   is wide enough (a container query on the box, not the window), Name and
+   Email sit side by side, as do Phone and Postcode or town, and the message
+   box is about four rows high. */
 
 @media (min-width: 48em) {
   .form {
-    gap: var(--space-sm);
+    max-width: none;
   }
 
-  .field {
-    gap: 0.375rem;
+  .textarea {
+    height: 7.5rem;
+    min-height: 0;
   }
 
-  /* Labels sit above the fields, as before. */
-  .label,
-  .fieldMultiline .label,
-  .field:focus-within .label,
-  .field[data-filled='true'] .label {
-    grid-area: auto;
-    align-self: auto;
-    justify-self: auto;
-    z-index: auto;
-    margin: 0;
-    padding: 0;
-    background: none;
-    color: inherit;
-    font-size: inherit;
-    font-weight: 700;
-    line-height: inherit;
-    pointer-events: auto;
-    transform: none;
-  }
+  @container quote (min-width: 30rem) {
+    .form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: var(--space-sm);
+    }
 
-  .field:has(.input:not(:placeholder-shown)) .label {
-    font-size: inherit;
-    transform: none;
-  }
+    .form > * {
+      grid-column: 1 / -1;
+    }
 
-  .error {
-    grid-area: auto;
-  }
+    /* Bottom-aligned, so paired inputs stay level when only one of them
+       has an error message above it. */
+    .form > .field {
+      grid-column: auto;
+      align-self: end;
+    }
 
-  .error,
-  .failed {
-    margin: 0;
-  }
-
-  .checkboxLabel {
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  .notice {
-    font-size: var(--text-sm);
-    line-height: inherit;
-  }
-
-  .input {
-    grid-area: auto;
-    min-height: var(--tap);
-    padding: 0.625rem 0.75rem;
-    border: 2px solid var(--colour-white);
-    border-radius: 0;
-  }
-
-  .input:focus-visible {
-    border-color: var(--colour-text);
-  }
-
-  .input[aria-invalid='true'] {
-    border-color: var(--colour-error);
-  }
-
-  .error,
-  .failed {
-    padding: 0.25rem 0.5rem;
-  }
-
-  .failed {
-    padding: var(--space-xs) var(--space-sm);
-  }
-
-  .summary {
-    border-radius: 0;
-  }
-
-  .submit {
-    justify-self: start;
-    width: auto;
-    min-height: var(--tap);
-    border: 2px solid var(--colour-white);
-    border-radius: 0;
-    background: var(--colour-white);
-    color: var(--colour-text);
-  }
-
-  .submit:hover {
-    background: transparent;
-    color: var(--colour-white);
-  }
-
-  .sent {
-    border-left-color: var(--colour-white);
-    border-radius: 0;
-    background: rgb(0 0 0 / 0.25);
+    .form > .fieldMultiline {
+      grid-column: 1 / -1;
+    }
   }
 }

@@ -15,7 +15,7 @@ export default function Gallery({ images, label }: { images: SiteImage[]; label:
             src={image.src}
             alt={image.alt}
             fill
-            sizes="(min-width: 72em) 23rem, (min-width: 48em) 33vw, 50vw"
+            sizes="(min-width: 64em) 17vw, (min-width: 48em) 33vw, 50vw"
             style={image.focal ? { objectPosition: image.focal } : undefined}
           />
         </li>

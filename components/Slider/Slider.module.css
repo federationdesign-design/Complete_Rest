@@ -42,6 +42,7 @@
     margin: 0;
     padding: 0;
     overflow: visible;
+    scroll-padding-inline: 0;
     scroll-snap-type: none;
   }
 }
@@ -49,5 +50,90 @@
 @media (min-width: 64em) {
   .slider {
     grid-template-columns: var(--slider-columns-desktop, repeat(3, minmax(0, 1fr)));
+  }
+}
+
+/* Slider with arrows (desktop round 1). Below desktop the frame has no box
+   and the buttons are hidden, so phones and tablets are unchanged. */
+
+.frame {
+  display: contents;
+}
+
+.arrow {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .frame {
+    position: relative;
+    display: block;
+    min-width: 0;
+  }
+
+  /* A slider again, not a grid: --slider-desktop-slide is each slide's width. */
+  .desktopSlider {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+  }
+
+  .desktopSlider > li {
+    flex: 0 0 var(--slider-desktop-slide, 50%);
+    scroll-snap-align: start;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--colour-white);
+    border-radius: 50%;
+    background: var(--colour-footer);
+    color: var(--colour-white);
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .arrow:hover {
+    background: var(--colour-white);
+    color: var(--colour-footer);
+  }
+
+  .arrow[aria-disabled='true'] {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .arrow[aria-disabled='true']:hover {
+    background: var(--colour-footer);
+    color: var(--colour-white);
+  }
+
+  .previous {
+    left: var(--space-sm);
+  }
+
+  .next {
+    right: var(--space-sm);
+  }
+
+  .arrowIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .previous .arrowIcon {
+    transform: rotate(90deg);
+  }
+
+  .next .arrowIcon {
+    transform: rotate(-90deg);
   }
 }

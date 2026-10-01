@@ -1,6 +1,9 @@
-/* Phones (mobile round 1, items 10 and 22): a white quote box with rounded
-   corners and a soft shadow. From tablet up it is the grey brick panel. */
+/* A white quote box with rounded corners and a soft shadow, at every screen
+   size (phones from mobile round 1, tablet and desktop from desktop round 1).
+   It is a size container, so the form inside can lay its fields out by the
+   width of the box rather than the window. */
 .quote {
+  container: quote / inline-size;
   padding: var(--space-md) calc(var(--space-sm) + 5px);
   border: 1px solid var(--colour-rule);
   border-radius: var(--radius);
@@ -16,17 +19,13 @@
   text-align: center;
 }
 
+/* Tablet up: more padding, and a readable maximum width (in rem, which grows
+   with the window from 1280px) where the box is not in a column. */
 @media (min-width: 48em) {
-  .heading {
-    text-align: inherit;
-  }
-
   .quote {
-    padding: var(--space-lg) var(--space-md);
-    border: 0;
-    border-radius: 0;
-    background: var(--colour-brick) url('/images/form_bricks.svg') center / cover;
-    box-shadow: none;
-    color: var(--colour-white);
+    width: 100%;
+    max-width: 56rem;
+    margin-inline: auto;
+    padding: var(--space-md);
   }
 }
