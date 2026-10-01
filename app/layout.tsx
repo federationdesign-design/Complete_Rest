@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Crimson_Text, Lato } from 'next/font/google';
+import { Crimson_Text } from 'next/font/google';
 import ActionBar from '../components/ActionBar/ActionBar';
 import { Analytics, MarketingScripts } from '../components/consent/ConsentScripts';
 import CookieBanner from '../components/consent/CookieBanner';
@@ -10,19 +10,13 @@ import SiteHeader from '../components/SiteHeader/SiteHeader';
 import { SITE_URL } from '../lib/metadata';
 import './globals.css';
 
-// next/font downloads these at build time and serves them from this site,
+// next/font downloads the font at build time and serves it from this site,
 // so no visitor request goes to Google.
 const crimson = Crimson_Text({
   variable: '--font-crimson',
   subsets: ['latin'],
-  weight: ['400', '600'],
-  display: 'swap',
-});
-
-const lato = Lato({
-  variable: '--font-lato',
-  subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '600', '700'],
+  style: ['normal', 'italic'],
   display: 'swap',
 });
 
@@ -40,7 +34,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${crimson.variable} ${lato.variable}`}>
+    <html lang="en-GB" className={crimson.variable}>
       <body>
         <CookieConsentProvider>
           {/* First in the page so keyboard and screen reader users reach it first. */}

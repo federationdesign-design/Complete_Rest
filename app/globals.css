@@ -22,8 +22,8 @@
   --colour-placeholder-text: #2e2e2e;
 
   /* Typography (font families are set by next/font in the root layout) */
-  --font-serif: var(--font-crimson), 'Times New Roman', serif;
-  --font-sans: var(--font-lato), 'Helvetica Neue', Arial, sans-serif;
+  /* Crimson Text for everything, headings and body (mobile round 1, item 4). */
+  --font-serif: var(--font-crimson), 'Crimson Text', serif;
   --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.9375rem);
   --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --text-lg: clamp(1.125rem, 1.03rem + 0.45vw, 1.375rem);
@@ -105,7 +105,7 @@ body {
   overflow-x: clip;
   background: var(--colour-white);
   color: var(--colour-text);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--text-base);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
