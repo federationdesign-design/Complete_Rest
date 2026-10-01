@@ -90,9 +90,12 @@
   text-decoration: underline;
 }
 
+/* Phones (round 3): compact links inside the collapsible menus. Their height
+   is the WCAG 2.2 AA minimum target of 24px rather than the brief's 44px,
+   which Steve has waived for footer links only. */
 .list {
   display: none;
-  gap: var(--tap-gap);
+  gap: 0.25rem;
   margin: 0;
   padding: 0 var(--space-xs) var(--space-sm);
   list-style: none;
@@ -105,7 +108,8 @@
 .link {
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 1.5rem;
+  padding: 0.125rem 0;
   color: inherit;
   line-height: 1.3;
   text-decoration: none;
@@ -179,6 +183,12 @@
   .list,
   .list[data-open='false'] {
     display: grid;
+    gap: var(--tap-gap);
+    padding: 0;
+  }
+
+  .link {
+    min-height: var(--tap);
     padding: 0;
   }
 }

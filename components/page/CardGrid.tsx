@@ -14,7 +14,11 @@ type Props = {
   mobile?: 'stack' | 'slider';
   // On phones: 'overlay' puts the title over the image on a plain box;
   // 'caption' centres the title over the image with no box below.
-  phoneStyle?: 'default' | 'overlay' | 'caption';
+  // 'captionAlways' is the caption card at every screen size.
+  phoneStyle?: 'default' | 'overlay' | 'caption' | 'captionAlways';
+  // Added to each title link's accessible name, e.g. "case study" gives
+  // "Halcyon Gallery case study".
+  nameSuffix?: string;
   // Call to action shown instead of the card's own label, e.g. "Learn more".
   // It becomes the card's link, named "Learn more about <title>" so screen
   // readers do not hear several identical links. Four across from tablet up
@@ -37,9 +41,15 @@ export default function CardGrid({
   phoneStyle = 'default',
   cta,
   row = false,
+  nameSuffix,
 }: Props) {
   const Heading = headingLevel;
-  const cardClass = [styles.card, phoneStyle === 'overlay' && styles.overlay, phoneStyle === 'caption' && styles.caption]
+  const cardClass = [
+    styles.card,
+    phoneStyle === 'overlay' && styles.overlay,
+    phoneStyle === 'caption' && styles.caption,
+    phoneStyle === 'captionAlways' && styles.captionAlways,
+  ]
     .filter(Boolean)
     .join(' ');
 
@@ -62,7 +72,11 @@ export default function CardGrid({
           {cta ? (
             card.title
           ) : (
-            <Link className={styles.link} href={card.href}>
+            <Link
+              className={styles.link}
+              href={card.href}
+              aria-label={nameSuffix ? `${card.title} ${nameSuffix}` : undefined}
+            >
               {card.title}
             </Link>
           )}

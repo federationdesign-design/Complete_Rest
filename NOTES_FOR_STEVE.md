@@ -308,3 +308,20 @@ Checks: no sideways scroll at 320px or 390px on any page; axe (WCAG 2.2 AA) clea
 1. The footer company statement ends with "Registered office: [Registered office address]." again, after the VAT number. It fills in from `lib/company.ts` once `REGISTERED_OFFICE` is supplied.
 2. The form's privacy notice and checkbox text are never below 14px on phones (14px at 320px, about 14.2px for the checkbox text at 390px).
 3. "Learn more" is the underlined text link with an arrow at every screen size, on the home service boxes and the home case studies. This replaces the bordered button look that tablet and desktop kept in round 2.
+
+## Updates: round 3 (1 October 2026)
+
+1. **Hero fade.** The home hero now fades to the header grey (`--colour-brick`, #6e6e6d) instead of black.
+2. **Home case studies heading.** Removed. The case studies slider sits directly below the service slider. The list keeps "Case studies" as a label for screen readers only.
+3. **Home case study cards.** Now the same full-image caption cards as on `/case-studies/`: caption centred over the image, the same overlay, text size and rounded corners (measured identical on phones), no bottom gradient and no "Learn more". The whole card is one link, named "Halcyon Gallery case study" and so on. On the home page this card style is used at every screen size, in a single row of four from tablet up. The `/case-studies/` page itself still shows boxed cards from tablet up, as before; say if you want that page to use the caption cards on larger screens too.
+4. **Order.** The Imperial College case study is first on the home slider and on `/case-studies/`; the others keep their order (Halcyon Gallery, Haileybury College, Victorian Residence). Its title still reads "Imperial Science Collage", as no copy change was asked for. The footer's Case studies menu keeps its own existing order.
+5. **Registered office.** "Lordship Lodge, Dane End, Ware, Hertfordshire, SG12 0NS" is filled in `lib/company.ts` and shows in the footer, the privacy notice and the website terms. `REGISTERED_OFFICE` is closed.
+6. **Footer menus.**
+   - On phones, links inside the collapsible menus are 24px high with 4px between them (they were 44px with 8px). This is the WCAG 2.2 AA minimum and overrides the brief's 44px rule for footer links only, as instructed; `scripts/a11y-check.mjs` allows it for footer menu links and still requires 44px everywhere else. The menu headings that open and close each section are still 52px.
+   - "Quick Nav" is renamed "Main menu" and is first; "Customer services" is last. The order is now Main menu, Services, Case studies, Customer services.
+   - The rename and the new order apply at every screen size, not only phones. The menus are one list in the page, so reordering it for phones alone would have made the keyboard order on larger screens differ from what is on screen. From tablet up the links keep their 44px height.
+7. **Trading address.** Same as the registered office; `TRADING_ADDRESS` is closed. **Copy change:** the contact page address now starts "Lordship Lodge" (the live page has "Lordship lodge"), so the page, the schema and the footer all agree.
+
+There are now no placeholder markers on any page or in the schema except the legal pages' own open items (ICO number, dates, email provider, retention periods and transfer safeguards).
+
+Checks: gate passed; axe clean on all 47 pages at 320, 390 and 1280px; no sideways scroll at 320px or 390px. Screenshots at 390px of every page, plus the footer with every menu open, are in `agent/screenshots/round3/`.

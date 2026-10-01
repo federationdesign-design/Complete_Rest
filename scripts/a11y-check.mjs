@@ -3,7 +3,8 @@
 //
 // Runs axe (WCAG 2.2 A and AA rules) at 390px and 1280px, plus the brief's own
 // rules: no horizontal scroll from 320px, one h1, no skipped heading levels,
-// and every visible link and button at least 44 by 44 CSS pixels.
+// and every visible link and button at least 44 by 44 CSS pixels (24 by 24
+// for footer menu links, the WCAG 2.2 AA minimum).
 //
 // Usage: node scripts/a11y-check.mjs [baseUrl]   (default http://localhost:3000)
 // Run against a production build (npm run build && npm start).
@@ -58,7 +59,10 @@ try {
             if (el.matches('[class*="skipLink"]')) return false;
             // Links inside running text are exempt under WCAG 2.5.8.
             if (el.tagName === 'A' && el.closest('p, li') && !el.matches('[class]')) return false;
-            return r.width < 44 || r.height < 44;
+            // Footer menu links may be as small as the WCAG 2.2 AA minimum of
+            // 24px; Steve waived the brief's 44px rule for them (round 3).
+            const min = el.closest('footer nav') ? 24 : 44;
+            return r.width < min || r.height < min;
           })
           .map((el) => `${el.tagName.toLowerCase()} "${(el.textContent || el.getAttribute('aria-label') || '').trim().slice(0, 30)}" ${Math.round(el.getBoundingClientRect().width)}x${Math.round(el.getBoundingClientRect().height)}`),
       );

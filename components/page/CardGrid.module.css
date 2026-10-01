@@ -172,19 +172,24 @@
   border-radius: var(--radius);
 }
 
-/* Phones: caption centred over the image, no box underneath. */
+/* Caption centred over the image, no box underneath: on phones for
+   .caption (the case studies page), at every size for .captionAlways (the
+   home page case studies). */
 
-.caption {
+.caption,
+.captionAlways {
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--colour-footer);
 }
 
-.caption .body {
+.caption .body,
+.captionAlways .body {
   padding: 0;
 }
 
-.caption .title {
+.caption .title,
+.captionAlways .title {
   position: absolute;
   inset: 0;
   display: flex;

@@ -26,7 +26,8 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: #000;
+  /* The header grey (round 3). LHM fades to black, its page background. */
+  background: var(--colour-brick);
   opacity: 0;
   pointer-events: none;
 }

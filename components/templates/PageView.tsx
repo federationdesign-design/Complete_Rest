@@ -43,8 +43,8 @@ export default function PageView({ page }: { page: Page }) {
 function Body({ page }: { page: Page }) {
   switch (page.kind) {
     case 'home': {
-      // Round 2: the four case studies in the same slider and card style,
-      // using only their existing titles and images.
+      // The four case studies directly below the service slider, with no
+      // heading, as full-image caption cards like those on /case-studies/.
       const caseStudies = getPage('/case-studies/');
       return (
         <>
@@ -53,12 +53,16 @@ function Body({ page }: { page: Page }) {
             <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} />
           </div>
           {caseStudies && caseStudies.cards.length > 0 && (
-            <section className={styles.tiles} aria-labelledby="home-case-studies">
-              <h2 className={styles.sectionHeading} id="home-case-studies">
-                {caseStudies.title}
-              </h2>
-              <CardGrid cards={caseStudies.cards} headingLevel="h3" mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} row />
-            </section>
+            <div className={styles.tiles}>
+              <CardGrid
+                cards={caseStudies.cards}
+                label={caseStudies.title}
+                mobile="slider"
+                phoneStyle="captionAlways"
+                nameSuffix="case study"
+                row
+              />
+            </div>
           )}
           <ContentRow page={page} />
         </>

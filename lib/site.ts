@@ -23,14 +23,21 @@ export const mainNav: NavLink[] = [
 
 export type FooterMenu = { title: string; href?: string; links: NavLink[] };
 
+// Order and the "Main menu" title (was "Quick Nav") are from round 3.
 export const footerMenus: FooterMenu[] = [
   {
-    title: 'Customer services',
+    title: 'Main menu',
     links: [
-      { label: 'Contact us', href: '/contact-us/' },
-      { label: 'Privacy policy', href: '/contact-us/privacy-policy/' },
-      { label: 'Cookies policy', href: '/contact-us/cookies-policy/' },
-      { label: 'Disclaimer', href: '/contact-us/disclaimer/' },
+      { label: 'Home', href: '/' },
+      { label: 'About', href: '/about/' },
+      { label: 'Ethos', href: '/about/our-ethos/' },
+      { label: 'Team', href: '/about/our-team/' },
+      { label: 'Services', href: '/services/' },
+      { label: 'External', href: '/external/' },
+      { label: 'Internal', href: '/internal/' },
+      { label: 'Structural', href: '/external/structural/' },
+      { label: 'Kitchens', href: '/internal/kitchens/' },
+      { label: 'Wet Rooms', href: '/internal/wet-rooms/' },
     ],
   },
   {
@@ -61,18 +68,12 @@ export const footerMenus: FooterMenu[] = [
     ],
   },
   {
-    title: 'Quick Nav',
+    title: 'Customer services',
     links: [
-      { label: 'Home', href: '/' },
-      { label: 'About', href: '/about/' },
-      { label: 'Ethos', href: '/about/our-ethos/' },
-      { label: 'Team', href: '/about/our-team/' },
-      { label: 'Services', href: '/services/' },
-      { label: 'External', href: '/external/' },
-      { label: 'Internal', href: '/internal/' },
-      { label: 'Structural', href: '/external/structural/' },
-      { label: 'Kitchens', href: '/internal/kitchens/' },
-      { label: 'Wet Rooms', href: '/internal/wet-rooms/' },
+      { label: 'Contact us', href: '/contact-us/' },
+      { label: 'Privacy policy', href: '/contact-us/privacy-policy/' },
+      { label: 'Cookies policy', href: '/contact-us/cookies-policy/' },
+      { label: 'Disclaimer', href: '/contact-us/disclaimer/' },
     ],
   },
 ];

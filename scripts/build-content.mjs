@@ -280,6 +280,8 @@ function buildSection(raw, $) {
   return page;
 }
 
+const CASE_STUDY_FIRST = '/case-studies/imperialscience-collage/';
+
 function buildCaseStudies(raw, $) {
   const page = base(raw, 'caseStudies');
   buildIntro(page, $);
@@ -293,6 +295,11 @@ function buildCaseStudies(raw, $) {
       image: image($a.find('img').attr('src'), raw.path, { decorative: true }),
     });
   });
+  // Round 3: the Imperial College case study leads the list; the others keep
+  // their live order.
+  const lead = page.cards.findIndex((card) => card.href === CASE_STUDY_FIRST);
+  if (lead > 0) page.cards.unshift(...page.cards.splice(lead, 1));
+  else if (lead === -1) warn(raw.path, `lead case study not found: ${CASE_STUDY_FIRST}`);
   page.members = members($);
   return page;
 }
@@ -329,7 +336,10 @@ function buildContact(raw, $) {
       .html()
       .split(/<br\s*\/?>|\n/)
       .map((l) => cheerio.load(l).text().trim())
-      .filter(Boolean),
+      .filter(Boolean)
+      // Copy change approved by Steve (round 3): the trading address is the
+      // registered office, "Lordship Lodge". The live page has "Lordship lodge".
+      .map((l) => (l === 'Lordship lodge' ? 'Lordship Lodge' : l)),
     phone: text(block('Phone')),
     email: text(block('Email')),
   };

@@ -30,12 +30,6 @@
   padding: var(--space-lg) var(--gutter) 0;
 }
 
-.sectionHeading {
-  margin-bottom: var(--space-sm);
-  font-size: var(--text-xl);
-  text-align: center;
-}
-
 .row {
   display: grid;
   gap: var(--space-lg);

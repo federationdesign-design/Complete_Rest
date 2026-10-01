@@ -4,9 +4,10 @@ import { useEffect, useRef } from 'react';
 import styles from './Hero.module.css';
 
 // Hero fade on scroll, ported from the LHM site (PrivateHomeClient.tsx,
-// heroScrollOverlay). A black layer between the image and the text goes from
-// transparent to solid as the visitor scrolls from 10% to 65% of the hero's
-// height, so the image fades out behind the heading.
+// heroScrollOverlay). A layer between the image and the text, in the header
+// grey (black on LHM), goes from transparent to solid as the visitor scrolls
+// from 10% to 65% of the hero's height, so the image fades out behind the
+// heading.
 //
 // Changes from LHM: updates are batched with requestAnimationFrame, the
 // distance is measured from the hero itself (this site has a header above
