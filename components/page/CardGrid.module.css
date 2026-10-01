@@ -89,14 +89,11 @@
 }
 
 /* Call to action link ("Learn more"): the card's one link, stretched over
-   the whole card. On phones it is a text link with an arrow, in white, the
-   link colour used on the site's dark backgrounds. From tablet up it keeps
-   the bordered button look. */
+   the whole card. A text link with an arrow at every screen size, in white,
+   the link colour used on the site's dark backgrounds. */
 .cta {
-  min-height: var(--tap);
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
+  display: inline-block;
+  padding: 0.5rem 0;
   border: 0;
   color: inherit;
   font-size: var(--text-base);
@@ -114,8 +111,9 @@
 
 .cta::after {
   content: '\2192';
+  /* inline-block keeps the link's underline from running under the arrow. */
+  display: inline-block;
   margin-left: 0.375rem;
-  text-decoration: none;
 }
 
 .cta:focus-visible {
@@ -229,26 +227,6 @@
 
   .overlay .label {
     border-radius: 0;
-  }
-
-  .cta {
-    display: block;
-    min-height: 0;
-    padding: 0.5rem 1.5rem;
-    border: 1px solid var(--colour-white);
-    font-size: var(--text-sm);
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .cta::after {
-    content: none;
-  }
-
-  .card:hover .cta {
-    background: var(--colour-white);
-    color: var(--colour-text);
   }
 
   .caption .body {

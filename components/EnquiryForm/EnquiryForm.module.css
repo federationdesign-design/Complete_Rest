@@ -149,14 +149,15 @@
 
 .checkboxLabel {
   padding-top: 0.5rem;
-  font-size: calc(var(--text-base) - 2px);
+  /* Never below 14px on phones. */
+  font-size: max(0.875rem, calc(var(--text-base) - 2px));
   line-height: 1.3;
   cursor: pointer;
 }
 
 .notice {
   margin: 0;
-  font-size: calc(var(--text-sm) - 2px);
+  font-size: max(0.875rem, calc(var(--text-sm) - 2px));
   line-height: 1.3;
 }
 

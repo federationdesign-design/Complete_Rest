@@ -302,3 +302,9 @@ Applied from `updates_round2.md`. Copy and label changes apply at every size; st
 7. **Company statement.** The footer now reads exactly as supplied. `LEGAL_ENTITY_NAME`, `COMPANY_NUMBER` and `VAT_NUMBER` are filled in `lib/company.ts` and closed in PLACEHOLDERS.md, so the privacy notice, website terms and the business schema now carry the real values and no placeholder text is left in the schema. `REGISTERED_OFFICE` and `TRADING_ADDRESS` stay open; the registered office placeholder now appears only on the two legal pages, as the new footer wording does not mention it.
 
 Checks: no sideways scroll at 320px or 390px on any page; axe (WCAG 2.2 AA) clean on every page, and on the home and contact pages with form errors showing, at 390px and 1280px. Screenshots at 390px of every page, plus the form with errors, are in `agent/screenshots/round2/`.
+
+### Round 2 follow-up (1 October 2026)
+
+1. The footer company statement ends with "Registered office: [Registered office address]." again, after the VAT number. It fills in from `lib/company.ts` once `REGISTERED_OFFICE` is supplied.
+2. The form's privacy notice and checkbox text are never below 14px on phones (14px at 320px, about 14.2px for the checkbox text at 390px).
+3. "Learn more" is the underlined text link with an arrow at every screen size, on the home service boxes and the home case studies. This replaces the bordered button look that tablet and desktop kept in round 2.

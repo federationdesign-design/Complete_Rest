@@ -6,7 +6,7 @@ Every fact the build needs from Steve. Each one renders on the site as a highlig
 |---|---|---|---|
 | ~~`LEGAL_ENTITY_NAME`~~ | Closed 1 October 2026 | Footer company statement; legal pages; business schema (`lib/company.ts`) | Resolved in round 2: The Complete Restoration Company (Hertford) Limited. |
 | ~~`COMPANY_NUMBER`~~ | Closed 1 October 2026 | Footer company statement; legal pages; business schema (`lib/company.ts`) | Resolved in round 2: 03905618. |
-| `REGISTERED_OFFICE` | Registered office address to publish (brief 10.2) | Privacy notice and website terms | Still open. The footer statement no longer mentions the registered office (round 2 wording), so this placeholder now shows only on the two legal pages. |
+| `REGISTERED_OFFICE` | Registered office address to publish (brief 10.2) | Footer company statement, after the VAT number; privacy notice; website terms (`lib/company.ts`) | Still open. Shows as a highlighted placeholder in all three places until the address is added. |
 | ~~`VAT_NUMBER`~~ | Closed 1 October 2026 | Footer company statement; business schema (`lib/company.ts`) | Resolved in round 2: 749 8815 68. |
 | `FAVICON` | A favicon or a decision to make one from the logo | Browser tab icon (not yet added) | The live favicon returns 404, so there is nothing to carry over. The scaffold's Next.js icon has been removed. |
 | ~~`COMPACT_HEADER_LOGO`~~ | Closed 1 October 2026 | Compact header bar on phones (`components/SiteHeader/SiteHeader.tsx`, `LOGO_SHORT`) | Resolved: Steve supplied `public/images/CR-logo-short.svg`, now used in the compact bar on phones. The header and menu panel on phones use `CR-logo-tall.svg`; tablet and desktop keep the original logo. |
