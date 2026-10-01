@@ -140,7 +140,7 @@ These are bigger than typos and may be worth fixing before launch:
 | `/blog/brass-and-mixed-metals-top-interiors-trend/` | The final sentence stops mid-way: "Get in touch with us today to find out". |
 | `/internal/` | The page title starts with a lower-case letter: "internal Restoration by Complete Restoration". |
 | `/about/` | The browser tab title is "about - Complete restoration company", in lower case. |
-| `/blog/` | Heading "BLog". |
+| `/blog/` | Heading "BLog". Fixed to "Blog" on 1 October 2026; see Follow-up changes. |
 
 ### Typos and grammar on the live site (carried over verbatim)
 
@@ -244,3 +244,8 @@ No visible copy was changed. The only component changes are the header logo's al
    - `BlogPosting` on the 16 blog posts and `Article` on the 4 case studies, with dates and the hero image where the page has one. Author and publisher are the business; the WordPress author accounts were agency logins.
 6. **Open Graph images.** `scripts/build-og.mjs` (`npm run og`) crops each hero to 1200x630 around its focal point into `public/og/` (35 images, 4 MB). Pages with no hero (contact, the legal pages, the case studies and blog archives, and six blog posts) use the home hero. Every page has `og:image` with its width and height, `twitter:card` set to `summary_large_image` and `twitter:image`. One source image, `victorian-img9b.jpg`, is 900x624 and was enlarged to fit.
 7. The contact page address is now also used in the schema. It is listed in `PLACEHOLDERS.md` as `TRADING_ADDRESS` to confirm.
+
+## Follow-up changes (1 October 2026)
+
+1. **Copy change, approved by Steve:** the blog archive (`/blog/`) said "BLog" on the live site. It now says "Blog" in the page heading, in the browser tab title ("Blog Archives - Complete restoration company", was "BLog Archives - ...") and in the breadcrumb schema on the archive and every blog post. This is the only correction made to migrated copy; every other typo listed above is still carried over as it is. The fix is applied in `scripts/build-content.mjs` (`fixArchiveTypo`).
+2. **Header logo alt text reverted** to "The Complete Restoration Company, home" at Steve's request. The WordPress media library alt text ("complete restoration") is no longer used, so the swap listed in the SEO pass above no longer applies and no WordPress alt text is in use anywhere.

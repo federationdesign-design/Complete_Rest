@@ -345,22 +345,26 @@ function buildLegal(raw, $) {
   return page;
 }
 
+// Copy change approved by Steve (NOTES_FOR_STEVE.md): the live archive
+// heading and title tag say "BLog".
+const fixArchiveTypo = (value) => value.replace(/\bBLog\b/g, 'Blog');
+
 async function buildBlogArchive(posts) {
   const html = await readFile(path.join(ROOT, 'content/raw/html/blog.html'), 'utf8');
   const $ = cheerio.load(html);
   const page = base(
     {
       path: '/blog/',
-      title: text($('#row_intro h1').first()),
+      title: fixArchiveTypo(text($('#row_intro h1').first())),
       seo: {
-        title: text($('title')),
+        title: fixArchiveTypo(text($('title'))),
         description: $('meta[name="description"]').attr('content') || null,
         ogImage: null,
       },
     },
     'blogArchive',
   );
-  page.heading = text($('#row_intro h1').first());
+  page.heading = fixArchiveTypo(text($('#row_intro h1').first()));
   $('.fac-news article').each((_, el) => {
     const $a = $(el);
     const href = relativeHref($a.find('a.button').attr('href'));

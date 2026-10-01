@@ -1,14 +1,14 @@
 {
   "path": "/blog/",
   "kind": "blogArchive",
-  "title": "BLog",
+  "title": "Blog",
   "seo": {
-    "title": "BLog Archives - Complete restoration company",
+    "title": "Blog Archives - Complete restoration company",
     "description": null,
     "ogImage": null
   },
   "hero": null,
-  "heading": "BLog",
+  "heading": "Blog",
   "subheading": null,
   "introHtml": null,
   "lead": null,
