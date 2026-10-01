@@ -325,3 +325,9 @@ Checks: no sideways scroll at 320px or 390px on any page; axe (WCAG 2.2 AA) clea
 There are now no placeholder markers on any page or in the schema except the legal pages' own open items (ICO number, dates, email provider, retention periods and transfer safeguards).
 
 Checks: gate passed; axe clean on all 47 pages at 320, 390 and 1280px; no sideways scroll at 320px or 390px. Screenshots at 390px of every page, plus the footer with every menu open, are in `agent/screenshots/round3/`.
+
+### Round 3 follow-up (1 October 2026)
+
+1. **Copy change, approved by Steve:** the case study titled "Imperial Science Collage" on the live site is now "Imperial College of Science" everywhere it is shown: the page heading, its browser tab title ("Imperial College of Science - Complete restoration company"), the cards on the home page and `/case-studies/`, the footer menu, and the schema (Article headline and breadcrumb). The URL is unchanged: `/case-studies/imperialscience-collage/`. The fix is applied in `scripts/build-content.mjs` (`fixImperial`) and `lib/site.ts`. No page, title tag or schema contains the old title any more. The Haileybury slug (`haileybury-collages`) is also unchanged.
+2. The footer Case studies menu now lists Imperial College of Science first, then Haileybury College, Halcyon Gallery and Victorian Residence in their existing order. (That menu's order differs from the home slider and `/case-studies/`, where Halcyon Gallery comes before Haileybury College; both are the orders they already had.)
+3. `/case-studies/` uses the full-image caption cards at every screen size, matching the home page, and its links are named "<title> case study" for screen readers in the same way. The page keeps its listing layout: one column on phones, two from tablet and three from desktop, so the fourth card sits on a second row on desktop.

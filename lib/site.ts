@@ -61,10 +61,10 @@ export const footerMenus: FooterMenu[] = [
     title: 'Case studies',
     href: '/case-studies/',
     links: [
+      { label: 'Imperial College of Science', href: '/case-studies/imperialscience-collage/' },
       { label: 'Haileybury College', href: '/case-studies/haileybury-collages/' },
       { label: 'Halcyon Gallery', href: '/case-studies/halcyon-gallery/' },
       { label: 'Victorian Residence', href: '/case-studies/victorian-residence/' },
-      { label: 'Imperial Science Collage', href: '/case-studies/imperialscience-collage/' },
     ],
   },
   {

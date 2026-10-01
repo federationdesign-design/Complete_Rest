@@ -416,6 +416,18 @@ const postPaths = new Set(pages.filter((p) => p.kind === 'blogPost').map((p) => 
 pages.push(await buildBlogArchive(postPaths));
 pages.sort((a, b) => a.path.localeCompare(b.path));
 
+// Copy change approved by Steve (NOTES_FOR_STEVE.md): the case study titled
+// "Imperial Science Collage" on the live site is shown as "Imperial College
+// of Science" in headings, title tags, cards and schema. Its URL slug is
+// unchanged.
+const fixImperial = (value) => (typeof value === 'string' ? value.replaceAll('Imperial Science Collage', 'Imperial College of Science') : value);
+for (const page of pages) {
+  page.title = fixImperial(page.title);
+  page.heading = fixImperial(page.heading);
+  page.seo.title = fixImperial(page.seo.title);
+  for (const card of page.cards) card.title = fixImperial(card.title);
+}
+
 // Open Graph image: each hero cropped to 1200x630 around its focal point by
 // scripts/build-og.mjs. Pages with no hero use the home page's.
 const ogFor = (hero) => `/og/${path.basename(hero.src).replace(/\.[a-z0-9]+$/i, '')}.jpg`;
