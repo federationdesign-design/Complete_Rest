@@ -73,7 +73,7 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} />
           <div className={styles.container}>
-            <CardGrid cards={page.cards} label={page.title} mobile="slider" phoneStyle="overlay" />
+            <CardGrid cards={page.cards} label={page.title} mobile="slider" phoneStyle="overlayAlways" />
           </div>
         </>
       );
