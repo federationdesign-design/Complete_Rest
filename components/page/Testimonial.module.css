@@ -1,6 +1,10 @@
+/* Phones (mobile round 1, item 17): the quote marks are drawn inside the
+   padding, so they sit inset from the top and bottom of the box, and the
+   text is italic with a 1.3 line-height. */
 .band {
-  padding: var(--space-lg) var(--gutter);
-  background: var(--colour-nav) url('/images/testimonialbackgroundimage.png') center / cover;
+  padding: var(--space-md) var(--gutter);
+  background: var(--colour-nav) url('/images/testimonialbackgroundimage.png') center / 100% 100% no-repeat content-box;
+  background-clip: border-box;
   color: var(--colour-white);
 }
 
@@ -8,8 +12,23 @@
   max-width: 44rem;
   margin: 0 auto;
   font-family: var(--font-serif);
+  padding: var(--space-md) 0;
   font-size: var(--text-xl);
-  line-height: 1.35;
+  font-style: italic;
+  line-height: 1.3;
   text-align: center;
   text-shadow: 0 1px 3px rgb(0 0 0 / 0.6);
+}
+
+@media (min-width: 48em) {
+  .band {
+    padding: var(--space-lg) var(--gutter);
+    background: var(--colour-nav) url('/images/testimonialbackgroundimage.png') center / cover;
+  }
+
+  .text {
+    padding: 0;
+    font-style: normal;
+    line-height: 1.35;
+  }
 }

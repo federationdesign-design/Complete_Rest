@@ -1,7 +1,10 @@
+/* Phones (mobile round 1, item 19): the content that follows has
+   --space-lg of top padding, so pull it up until the gap below the dividing
+   line equals the gap above it (--space-md). */
 .title {
   max-width: var(--content-max);
-  margin: 0 auto;
-  padding: var(--space-lg) var(--gutter) var(--space-sm);
+  margin: 0 auto calc(var(--space-md) - var(--space-lg));
+  padding: var(--space-lg) var(--gutter) 0;
   text-align: center;
 }
 
@@ -24,4 +27,11 @@
   font-family: var(--font-serif);
   font-size: var(--text-lg);
   text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+  .title {
+    margin-bottom: 0;
+    padding-bottom: var(--space-sm);
+  }
 }

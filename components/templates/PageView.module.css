@@ -19,6 +19,11 @@
   text-align: center;
 }
 
+/* Case study pages on phones: paragraph line-height 1.3. */
+.introTight {
+  line-height: 1.3;
+}
+
 .tiles {
   max-width: var(--content-max);
   margin: 0 auto;
@@ -32,6 +37,10 @@
 
 .copy {
   min-width: 0;
+}
+
+.copyTight {
+  line-height: 1.3;
 }
 
 .lead {
@@ -78,6 +87,14 @@
 }
 
 @media (min-width: 48em) {
+  .introTight {
+    line-height: 1.5;
+  }
+
+  .copyTight {
+    line-height: inherit;
+  }
+
   .contact {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

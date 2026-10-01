@@ -38,18 +38,26 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} />
           <div className={styles.tiles}>
-            <CardGrid cards={page.cards} wide />
+            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" />
           </div>
           <ContentRow page={page} />
         </>
       );
     case 'section':
-    case 'caseStudies':
       return (
         <>
           <Intro html={page.introHtml} />
           <div className={styles.container}>
-            <CardGrid cards={page.cards} label={page.title} />
+            <CardGrid cards={page.cards} label={page.title} mobile="slider" phoneStyle="overlay" />
+          </div>
+        </>
+      );
+    case 'caseStudies':
+      return (
+        <>
+          <Intro html={page.introHtml} tight />
+          <div className={styles.container}>
+            <CardGrid cards={page.cards} label={page.title} phoneStyle="caption" />
           </div>
         </>
       );
@@ -87,11 +95,12 @@ function Body({ page }: { page: Page }) {
   }
 }
 
-function Intro({ html }: { html: string | null }) {
+// tight: line-height 1.3 on phones (case study pages, mobile round 1).
+function Intro({ html, tight = false }: { html: string | null; tight?: boolean }) {
   if (!html) return null;
   return (
     <div className={styles.intro}>
-      <Prose html={html} className={styles.introProse} />
+      <Prose html={html} className={tight ? `${styles.introProse} ${styles.introTight}` : styles.introProse} />
     </div>
   );
 }
@@ -103,7 +112,7 @@ function ContentRow({ page }: { page: Page }) {
   return (
     <div className={`${styles.container} ${styles.row}`}>
       {hasCopy && (
-        <div className={styles.copy}>
+        <div className={page.kind === 'caseStudy' ? `${styles.copy} ${styles.copyTight}` : styles.copy}>
           {page.lead && <p className={styles.lead}>{page.lead}</p>}
           {page.bodyHtml && <Prose html={page.bodyHtml} />}
           {page.gallery.length > 0 && (

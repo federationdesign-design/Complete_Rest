@@ -25,6 +25,8 @@
 }
 
 .strip {
+  /* Hidden on phones (mobile round 1, item 2); shown from tablet up. */
+  display: none;
   height: var(--header-strip-height);
   background: var(--colour-white);
   color: var(--colour-text);
@@ -76,49 +78,34 @@
   white-space: normal;
 }
 
-/* Icon only on the narrowest phones; the link keeps its accessible name. */
-.emailText {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-@media (min-width: 23.5em) {
-  .emailText {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-  }
-}
-
 .findUs {
   display: none;
 }
 
 .panel {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   height: var(--header-panel-height);
   padding: 0 var(--space-sm);
   background: var(--colour-brick) url('/images/mobile_completerestoration_header_bricks_bg.svg') center / cover no-repeat;
 }
 
 .logoLink {
-  grid-column: 2;
   display: block;
-  padding: var(--space-xs);
+  padding: 0.25rem 0;
 }
 
+/* Phones use the tall logo; the original logo shows from tablet up. */
 .logo {
-  width: clamp(11.5rem, 58vw, 16rem);
+  display: none;
   height: auto;
+}
+
+.logoTall {
+  width: auto;
+  height: var(--header-logo-height);
 }
 
 .menuButton {
@@ -127,6 +114,9 @@
   align-items: center;
   justify-content: center;
   gap: 0.125rem;
+  /* Fixed width on phones so the menu and close icons sit in exactly the
+     same place (mobile round 1, item 12). */
+  width: 3.25rem;
   min-width: var(--tap);
   min-height: var(--tap);
   padding: 0.25rem;
@@ -140,11 +130,6 @@
   border-color: var(--colour-white);
 }
 
-.panelMenuButton {
-  grid-column: 3;
-  justify-self: end;
-}
-
 .menuIcon {
   width: 1.5rem;
   height: 1.5rem;
@@ -155,6 +140,12 @@
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* "Close" keeps its space on phones, so the X lines up with the menu icon,
+   but is not shown. The button's accessible name is "Close menu". */
+.closeLabel {
+  visibility: hidden;
 }
 
 .nav {
@@ -190,13 +181,14 @@
     visibility 0s;
 }
 
-.compactLogoLink {
+.compactLogoLink,
+.dialogLogo {
   display: block;
   padding: 0.25rem 0;
 }
 
 .compactLogo {
-  width: 9.5rem;
+  display: none;
   height: auto;
 }
 
@@ -225,7 +217,7 @@
   justify-content: space-between;
   min-height: var(--header-compact-height);
   margin-bottom: var(--space-sm);
-  border-bottom: 1px solid rgb(255 255 255 / 0.25);
+  border-bottom: 0 solid rgb(255 255 255 / 0.25);
 }
 
 .dialogList {
@@ -242,7 +234,7 @@
   border-bottom: 1px solid rgb(255 255 255 / 0.15);
   color: inherit;
   font-family: var(--font-serif);
-  font-size: var(--text-xl);
+  font-size: calc(var(--text-xl) - 1px);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -265,7 +257,7 @@
   gap: 0.625rem;
   min-height: var(--tap);
   padding: 0.5rem var(--space-sm);
-  border: 1px solid var(--colour-white);
+  border: 0 solid var(--colour-white);
   color: inherit;
   text-decoration: none;
 }
@@ -279,7 +271,12 @@
    navigation bar replaces the menu button in the full header. */
 
 @media (min-width: 48em) {
+  .strip {
+    display: block;
+  }
+
   .panel {
+    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     background-image: url('/images/header_bricks_bg.svg');
@@ -287,10 +284,24 @@
 
   .logoLink {
     grid-column: 1;
+    padding: var(--space-xs);
   }
 
   .logo {
+    display: block;
     width: clamp(16rem, 30vw, 20rem);
+  }
+
+  .logoTall {
+    display: none;
+  }
+
+  .menuButton {
+    width: auto;
+  }
+
+  .closeLabel {
+    visibility: visible;
   }
 
   .panelMenuButton {
@@ -353,6 +364,7 @@
   }
 
   .compactLogo {
+    display: block;
     width: 11rem;
   }
 
@@ -360,6 +372,18 @@
     width: min(26rem, 100%);
     margin: 0 0 0 auto;
     padding-inline: var(--space-md);
+  }
+
+  .dialogHead {
+    border-bottom-width: 1px;
+  }
+
+  .dialogLink {
+    font-size: var(--text-xl);
+  }
+
+  .dialogAction {
+    border-width: 1px;
   }
 }
 

@@ -249,3 +249,33 @@ No visible copy was changed. The only component changes are the header logo's al
 
 1. **Copy change, approved by Steve:** the blog archive (`/blog/`) said "BLog" on the live site. It now says "Blog" in the page heading, in the browser tab title ("Blog Archives - Complete restoration company", was "BLog Archives - ...") and in the breadcrumb schema on the archive and every blog post. This is the only correction made to migrated copy; every other typo listed above is still carried over as it is. The fix is applied in `scripts/build-content.mjs` (`fixArchiveTypo`).
 2. **Header logo alt text reverted** to "The Complete Restoration Company, home" at Steve's request. The WordPress media library alt text ("complete restoration") is no longer used, so the swap listed in the SEO pass above no longer applies and no WordPress alt text is in use anywhere.
+
+## Mobile updates: round 1 (1 October 2026)
+
+Applied from `updates_mobile_round1.md`. Phone changes apply below 768px. Tablet and desktop were compared pixel for pixel, on all 47 pages at 768px and 1280px, against a build with only the font change: no differences.
+
+**Not done as written:** item 1's compact bar logo. `CR-logo-short.svg` was not in `public/images/` (only `CR-logo-tall.svg` was), so the compact bar on phones uses the tall logo for now. `COMPACT_HEADER_LOGO` stays open in PLACEHOLDERS.md.
+
+1. **Mobile header height.** The phone header uses `CR-logo-tall.svg` at 40px high in a 60px bar (it was 96px plus the 44px strip). The logo is left-aligned so it does not move between the header, the compact bar and the menu panel.
+2. **Top contact strip.** Hidden on phones. The phone number and email are still in the menu and the bottom bar.
+3. **Call and Get a quote.** 8px rounded corners, text 2px smaller.
+4. **Body font, site-wide.** Crimson Text with a `serif` fallback for all text. Lato is no longer loaded. Committed separately (717ace8).
+5. to 9. **Home service boxes.** A swipe slider with the next box peeking in. The brick pattern is gone from the text area (plain grey), the title sits over the image on a dark scrim and is 3px larger, the paragraph is 1px smaller with line-height 1.3, and the Confirm button has rounded corners.
+10. **Quote form.** On phones it is a white box with rounded corners and a soft shadow, rounded inputs with visible labels, wider spacing and a full-width rounded dark button. Fields, notice, marketing checkbox, validation and error handling are untouched. The form is one shared component, so every page with the form gets this on phones, not only home and case studies.
+11. **Proud members of.** A single-row swipe slider on phones, on every page (it is one shared strip).
+12. to 16. **Mobile menu.** The word "Close" is no longer shown; the button's accessible name is "Close menu". The X was measured at exactly the menu icon's position and size, from both the full header and the compact bar. The panel uses `CR-logo-tall.svg`, has no dividing line under the logo, menu items are 1px smaller in Crimson Text, and the phone and email buttons have no outline.
+17. **Testimonial.** The quote marks are drawn inside padding, so they clear the top and bottom edges; the text is italic with line-height 1.3. Applies wherever the band appears (about and four service pages).
+18. **Services list.** The same shared swipe slider and box style as the home, internal and external boxes, as instructed.
+19. **Spacing under the title.** The gap is now 24px above and 24px below the dividing line. This is the shared title block, so contact, legal, blog archive and image-less blog posts get the same fix.
+20. **Case study paragraph text.** Line-height 1.3 on the case studies page intro and on each case study's body text.
+21. **Image captions.** On the case studies page, the grey brick box under each image is gone; the caption is centred over the image on a scrim, 2px larger, with rounded corners.
+22. **Case study quote form.** Same restyle as item 10.
+23. **Internal and external boxes.** In the shared slider, matching the home boxes, with the More button as a rounded button.
+
+Other points:
+
+- The slider is one component (`components/Slider/Slider.tsx`): native scrolling with CSS scroll-snap, no autoplay, no arrows. Tabbing to a box scrolls it into view, and the logo slider can be scrolled with the arrow keys. From tablet up it is the original grid.
+- `--radius: 8px` is the one token for rounded corners (`app/globals.css`).
+- Text over images sits on a dark gradient at least 50% black behind the text, for AA contrast.
+- Checks: no sideways scroll at 320px or 390px on any page; axe (WCAG 2.2 AA) clean on all pages, with the menu open and with form errors showing. Screenshots at 390px of every page, plus the open menu and compact header, are in `agent/screenshots/round1/`.
+- No copy was changed.

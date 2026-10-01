@@ -29,7 +29,9 @@
   gap: 0.5rem;
   min-height: var(--tap);
   border: 1px solid var(--colour-white);
+  border-radius: var(--radius);
   color: var(--colour-white);
+  font-size: calc(var(--text-base) - 2px);
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;

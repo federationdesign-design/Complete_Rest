@@ -40,15 +40,19 @@
   --measure: 40rem;
 
   /* Tap targets */
+  /* Rounded corners for buttons and cards (mobile round 1). */
+  --radius: 8px;
   --tap: 2.75rem; /* 44px */
   --tap-gap: 0.5rem; /* 8px */
 
   /* Header. Heights are fixed so the hero can size itself below the header. */
-  --header-strip-height: 2.75rem;
-  --header-panel-height: 6rem;
+  /* Phones: no contact strip and a short panel holding the tall logo. */
+  --header-strip-height: 0rem;
+  --header-panel-height: 3.75rem;
+  --header-logo-height: 2.5rem;
   --header-nav-height: 0rem;
   --header-full-height: calc(var(--header-strip-height) + var(--header-panel-height) + var(--header-nav-height));
-  --header-compact-height: 3.5rem;
+  --header-compact-height: 3.75rem;
 
   /* Mobile bottom action bar */
   --action-bar-height: 3.75rem;
@@ -60,6 +64,8 @@
 
 @media (min-width: 48em) {
   :root {
+    --header-strip-height: 2.75rem;
+    --header-compact-height: 3.5rem;
     --header-panel-height: 8.5rem;
     --header-nav-height: 3rem;
     --action-bar-space: 0px;

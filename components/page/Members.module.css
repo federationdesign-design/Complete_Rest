@@ -17,15 +17,19 @@
   font-size: var(--text-xl);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
-  gap: var(--space-md) var(--space-sm);
+.logos {
+  --slide-width: 7rem;
+  --slider-gap: var(--space-md);
+  --slider-columns-tablet: repeat(auto-fit, minmax(6.5rem, 1fr));
+  --slider-columns-desktop: repeat(auto-fit, minmax(6.5rem, 1fr));
+  --slider-grid-gap: var(--space-md) var(--space-sm);
   align-items: center;
   justify-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
 }
 
 .logo {

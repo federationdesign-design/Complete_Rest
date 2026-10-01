@@ -12,6 +12,12 @@ import styles from './SiteHeader.module.css';
 // The logo links to the home page, so its alt text names the destination.
 // (The WordPress media library alt, "complete restoration", is not used here.)
 const LOGO = { src: '/images/CompleteRestorationlogo-1.svg', width: 279, height: 60, alt: `${siteName}, home` };
+// Phones (mobile round 1): the tall logo in the header and menu panel.
+const LOGO_TALL = { src: '/images/CR-logo-tall.svg', width: 279, height: 55, alt: LOGO.alt };
+// The compact bar on phones is meant to use CR-logo-short.svg, which has not
+// been supplied yet (PLACEHOLDERS.md, COMPACT_HEADER_LOGO). Until it is, the
+// tall logo is used there too.
+const LOGO_COMPACT_MOBILE = LOGO_TALL;
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
@@ -95,7 +101,7 @@ export default function SiteHeader() {
             <a className={styles.stripLink} href={contact.emailHref}>
               <MailIcon className={styles.stripIcon} />
               <span className="visually-hidden">Email </span>
-              <span className={styles.emailText}>{contact.email}</span>
+              {contact.email}
             </a>
             <Link className={`${styles.stripLink} ${styles.findUs}`} href="/contact-us/">
               <PinIcon className={styles.stripIcon} />
@@ -106,6 +112,14 @@ export default function SiteHeader() {
 
         <div className={styles.panel}>
           <Link className={styles.logoLink} href="/" aria-current={pathname === '/' ? 'page' : undefined}>
+            <Image
+              className={styles.logoTall}
+              src={LOGO_TALL.src}
+              width={LOGO_TALL.width}
+              height={LOGO_TALL.height}
+              alt={LOGO_TALL.alt}
+              priority
+            />
             <Image
               className={styles.logo}
               src={LOGO.src}
@@ -149,6 +163,13 @@ export default function SiteHeader() {
       <div className={styles.compact} data-visible={compact}>
         <Link className={styles.compactLogoLink} href="/">
           <Image
+            className={styles.logoTall}
+            src={LOGO_COMPACT_MOBILE.src}
+            width={LOGO_COMPACT_MOBILE.width}
+            height={LOGO_COMPACT_MOBILE.height}
+            alt={LOGO_COMPACT_MOBILE.alt}
+          />
+          <Image
             className={styles.compactLogo}
             src={LOGO.src}
             width={LOGO.width}
@@ -176,16 +197,30 @@ export default function SiteHeader() {
         onKeyDown={trapFocus}
       >
         <div className={styles.dialogHead}>
-          <Image
-            className={styles.compactLogo}
-            src={LOGO.src}
-            width={LOGO.width}
-            height={LOGO.height}
-            alt=""
-          />
-          <button type="button" className={styles.menuButton} onClick={() => dialogRef.current?.close()}>
+          <span className={styles.dialogLogo}>
+            <Image
+              className={styles.logoTall}
+              src={LOGO_TALL.src}
+              width={LOGO_TALL.width}
+              height={LOGO_TALL.height}
+              alt=""
+            />
+            <Image
+              className={styles.compactLogo}
+              src={LOGO.src}
+              width={LOGO.width}
+              height={LOGO.height}
+              alt=""
+            />
+          </span>
+          <button
+            type="button"
+            className={styles.menuButton}
+            aria-label="Close menu"
+            onClick={() => dialogRef.current?.close()}
+          >
             <CloseIcon className={styles.menuIcon} />
-            <span className={styles.menuLabel}>Close</span>
+            <span className={`${styles.menuLabel} ${styles.closeLabel}`}>Close</span>
           </button>
         </div>
         <nav aria-label="Main">

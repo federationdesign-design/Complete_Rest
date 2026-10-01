@@ -1,9 +1,11 @@
-/* The form sits on the grey brick panel (QuoteSection). Error text uses dark
-   red on white so it meets contrast on the grey background. */
+/* Phones: the form sits in a white quote box (QuoteSection), with rounded
+   inputs and a full-width button. From tablet up it sits on the grey brick
+   panel, where error text uses dark red on white to meet contrast. The
+   tablet-up values are restored in the media query at the end of this file. */
 
 .form {
   display: grid;
-  gap: var(--space-sm);
+  gap: 1.25rem;
   max-width: 36rem;
 }
 
@@ -24,8 +26,8 @@
   width: 100%;
   min-height: var(--tap);
   padding: 0.625rem 0.75rem;
-  border: 2px solid var(--colour-white);
-  border-radius: 0;
+  border: 1px solid var(--colour-text-muted);
+  border-radius: var(--radius);
   background: var(--colour-white);
   color: var(--colour-text);
   font: inherit;
@@ -50,7 +52,7 @@
 .failed {
   justify-self: start;
   margin: 0;
-  padding: 0.25rem 0.5rem;
+  padding: 0;
   background: var(--colour-white);
   color: var(--colour-error);
   font-weight: 700;
@@ -64,6 +66,7 @@
 .summary {
   padding: var(--space-sm);
   border: 4px solid var(--colour-error);
+  border-radius: var(--radius);
   background: var(--colour-white);
   color: var(--colour-text);
 }
@@ -121,13 +124,14 @@
 }
 
 .submit {
-  justify-self: start;
+  width: 100%;
   min-width: 12rem;
-  min-height: var(--tap);
+  min-height: 3rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--colour-white);
-  background: var(--colour-white);
-  color: var(--colour-text);
+  border: 2px solid var(--colour-footer);
+  border-radius: var(--radius);
+  background: var(--colour-footer);
+  color: var(--colour-white);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -135,8 +139,8 @@
 }
 
 .submit:hover {
-  background: transparent;
-  color: var(--colour-white);
+  background: var(--colour-white);
+  color: var(--colour-footer);
 }
 
 .submit:disabled {
@@ -155,8 +159,9 @@
 
 .sent {
   padding: var(--space-sm) var(--space-md);
-  border-left: 5px solid var(--colour-white);
-  background: rgb(0 0 0 / 0.25);
+  border-left: 5px solid var(--colour-footer);
+  border-radius: var(--radius);
+  background: rgb(0 0 0 / 0.06);
 }
 
 .sentHeading {
@@ -166,4 +171,59 @@
 
 .sent p:last-child {
   margin-bottom: 0;
+}
+
+/* Tablet up: the original form on the grey brick panel. */
+
+@media (min-width: 48em) {
+  .form {
+    gap: var(--space-sm);
+  }
+
+  .input {
+    border: 2px solid var(--colour-white);
+    border-radius: 0;
+  }
+
+  .input:focus-visible {
+    border-color: var(--colour-text);
+  }
+
+  .input[aria-invalid='true'] {
+    border-color: var(--colour-error);
+  }
+
+  .error,
+  .failed {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .failed {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .summary {
+    border-radius: 0;
+  }
+
+  .submit {
+    justify-self: start;
+    width: auto;
+    min-height: var(--tap);
+    border: 2px solid var(--colour-white);
+    border-radius: 0;
+    background: var(--colour-white);
+    color: var(--colour-text);
+  }
+
+  .submit:hover {
+    background: transparent;
+    color: var(--colour-white);
+  }
+
+  .sent {
+    border-left-color: var(--colour-white);
+    border-radius: 0;
+    background: rgb(0 0 0 / 0.25);
+  }
 }
