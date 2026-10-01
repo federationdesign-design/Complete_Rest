@@ -12,10 +12,9 @@ type Props = {
   wide?: boolean;
   // On phones: a stacked column, or the shared swipe slider.
   mobile?: 'stack' | 'slider';
-  // On phones: 'overlay' puts the title over the image on a plain box;
-  // 'caption' centres the title over the image with no box below.
-  // 'overlayAlways' and 'captionAlways' use that design at every screen size.
-  phoneStyle?: 'default' | 'overlay' | 'overlayAlways' | 'caption' | 'captionAlways';
+  // 'overlay' puts the title over the image on a scrim, above a plain text
+  // box; 'caption' is a full-image card with the title centred over it.
+  design?: 'default' | 'overlay' | 'caption';
   // From desktop up, keep the slider and show two cards at a time, with
   // previous and next buttons (their accessible names).
   pairs?: { previous: string; next: string };
@@ -39,22 +38,30 @@ export default function CardGrid({
   label,
   wide = false,
   mobile = 'stack',
-  phoneStyle = 'default',
+  design = 'default',
   cta,
   nameSuffix,
   pairs,
 }: Props) {
   const Heading = headingLevel;
-  const cardClass = [
-    styles.card,
-    phoneStyle === 'overlay' && styles.overlay,
-    phoneStyle === 'overlayAlways' && styles.overlayAlways,
-    phoneStyle === 'caption' && styles.caption,
-    phoneStyle === 'captionAlways' && styles.captionAlways,
-  ]
+  const cardClass = [styles.card, design === 'overlay' && styles.overlay, design === 'caption' && styles.caption]
     .filter(Boolean)
     .join(' ');
 
+  const title = (card: Card) => (
+    <Heading className={styles.title}>
+      {cta ? (
+        card.title
+      ) : (
+        <Link className={styles.link} href={card.href} aria-label={nameSuffix ? `${card.title} ${nameSuffix}` : undefined}>
+          {card.title}
+        </Link>
+      )}
+    </Heading>
+  );
+
+  // In the overlay design the title is a sibling of the image, so the two can
+  // share a grid cell; otherwise it sits in the text box.
   const items = cards.map((card) => (
     <li key={card.href} className={cardClass}>
       {card.image && (
@@ -75,20 +82,9 @@ export default function CardGrid({
           />
         </div>
       )}
+      {design === 'overlay' && title(card)}
       <div className={styles.body}>
-        <Heading className={styles.title}>
-          {cta ? (
-            card.title
-          ) : (
-            <Link
-              className={styles.link}
-              href={card.href}
-              aria-label={nameSuffix ? `${card.title} ${nameSuffix}` : undefined}
-            >
-              {card.title}
-            </Link>
-          )}
-        </Heading>
+        {design !== 'overlay' && title(card)}
         {card.excerpt && <p className={styles.excerpt}>{card.excerpt}</p>}
         {cta ? (
           <Link className={`${styles.label} ${styles.cta}`} href={card.href} aria-label={`${cta} about ${card.title}`}>

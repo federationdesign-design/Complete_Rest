@@ -17,6 +17,7 @@ import Testimonial from '../page/Testimonial';
 import styles from './PageView.module.css';
 
 const LEARN_MORE = 'Learn more';
+const CASE_STUDY_ARROWS = { previous: 'Previous case studies', next: 'Next case studies' };
 
 // Renders any page from the content model. Section order follows the live
 // template for each kind of page.
@@ -51,16 +52,16 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} />
           <div className={styles.tiles}>
-            <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlayAlways" cta={LEARN_MORE} />
+            <CardGrid cards={page.cards} wide mobile="slider" design="overlay" cta={LEARN_MORE} />
             {caseStudies && caseStudies.cards.length > 0 && (
               <CardGrid
                 cards={caseStudies.cards}
                 label={caseStudies.title}
                 wide
                 mobile="slider"
-                phoneStyle="captionAlways"
+                design="caption"
                 nameSuffix="case study"
-                pairs={{ previous: 'Previous case studies', next: 'Next case studies' }}
+                pairs={CASE_STUDY_ARROWS}
               />
             )}
           </div>
@@ -73,7 +74,7 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} />
           <div className={styles.container}>
-            <CardGrid cards={page.cards} label={page.title} mobile="slider" phoneStyle="overlayAlways" />
+            <CardGrid cards={page.cards} label={page.title} mobile="slider" design="overlay" />
           </div>
         </>
       );
@@ -82,7 +83,18 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} tight />
           <div className={styles.container}>
-            <CardGrid cards={page.cards} label={page.title} phoneStyle="captionAlways" nameSuffix="case study" wide />
+            {/* The same layout as the home page case studies: swipe slider on
+                phones, two by two on tablet, two at a time with arrows from
+                desktop. */}
+            <CardGrid
+              cards={page.cards}
+              label={page.title}
+              wide
+              mobile="slider"
+              design="caption"
+              nameSuffix="case study"
+              pairs={CASE_STUDY_ARROWS}
+            />
           </div>
         </>
       );

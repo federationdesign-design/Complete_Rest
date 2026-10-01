@@ -387,3 +387,13 @@ Checks: gate passed. axe (WCAG 2.2 AA) and the layout rules are clean on all 47 
 
 1. The Services, Internal and External pages now use the same card design as the home page service boxes from tablet up: title over a tall image on a scrim, plain grey text area with no brick pattern, rounded corners. They keep their own layout (two across on tablet, three on desktop) and their existing "more" label, now a rounded button as on phones. Phones are unchanged.
 2. `agent/screenshots/` is no longer tracked in git. It is listed in `.gitignore` and was removed from the index with `git rm -r --cached`; the files are still on disk. The reference screenshots in `agent/reference/` are still tracked. The screenshots remain in earlier commits' history.
+
+### Card overlay fix and the /case-studies/ slider (1 October 2026)
+
+1. **Card overlay bug.** The cause was Safari-specific. The title's dark overlay was an absolutely positioned box sized with `aspect-ratio`, and WebKit (Safari's engine) leaves the box's padding out of that calculation, so the overlay came out narrower and shorter than the image: 32px short on the right and about 20px at the bottom at 320px, more at larger sizes. Chrome and Firefox drew it correctly, which is why the earlier checks, run in Chromium, did not catch it. It affected the home service cards and the Services, Internal and External cards at every width in Safari, phones included.
+   The title now shares the image's grid cell and is aligned to its bottom, so it is always exactly the image's width and ends on its bottom edge, with no reliance on `aspect-ratio`. Its background is a gradient rising from the bottom and fading to nothing at the top, so there is no hard top edge. Measured on every card on those four pages at 320, 390, 768, 1280, 1920 and 2800px in Chromium, WebKit and Firefox: 360 measurements, overlay flush with the image's left, right and bottom edges in all of them. The whole card is still one link.
+2. **/case-studies/ page.** It now has the same layout as the home page case studies: a swipe slider on phones, two by two on tablet, and from 1024px two cards at a time in a horizontal slider with Previous and Next arrows. Card widths, gutters, rows and arrow behaviour were compared with the home page at 390, 768, 1024, 1280 and 2800px in Chromium and WebKit and match.
+
+From now on the layout checks should include WebKit, not only Chromium. `scripts/a11y-check.mjs` still runs in Chromium; the overlay and slider checks for this fix were run in all three engines.
+
+Housekeeping: the unused phone-only card variants were removed from `components/page/CardGrid`, and its `phoneStyle` option is now `design` ("overlay" or "caption").
