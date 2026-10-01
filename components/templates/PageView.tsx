@@ -82,7 +82,7 @@ function Body({ page }: { page: Page }) {
         <>
           <Intro html={page.introHtml} tight />
           <div className={styles.container}>
-            <CardGrid cards={page.cards} label={page.title} phoneStyle="captionAlways" nameSuffix="case study" />
+            <CardGrid cards={page.cards} label={page.title} phoneStyle="captionAlways" nameSuffix="case study" wide />
           </div>
         </>
       );
