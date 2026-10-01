@@ -334,3 +334,24 @@ Checks: gate passed; axe clean on all 47 pages at 320, 390 and 1280px; no sidewa
 
 4. `/case-studies/` now shows its four cards in a single row of four from desktop up, matching the home page; one column on phones and two on tablet are unchanged.
 5. The footer Case studies menu now matches the page order exactly: Imperial College of Science, Halcyon Gallery, Haileybury College, Victorian Residence. This replaces the order described in point 2 above.
+
+### Home page sliders as one block (1 October 2026)
+
+The service slider and the case studies slider now sit in one wrapper (`.tiles` in `components/templates/PageView.module.css`).
+
+1. One token, `--card-gap`, sets both the gutter between cards and the gap between the two sliders: `--space-sm` on phones, `--space-md` from tablet up.
+2. The vertical gap belongs to the wrapper alone, as its row gap. The sliders add no margin or padding of their own on either side: the room they keep for focus rings is cancelled by an equal negative margin, and their scrollbar, which would add height, is hidden in this block.
+3. Both sliders use the same card width, gutter and left inset, so the cards line up in columns.
+4. Measured in the browser:
+
+   | Width | Gutter between cards | Gap between the sliders | Card width |
+   |---|---|---|---|
+   | 320px | 16px | 16px | 236px |
+   | 390px | 16px | 16px | 291px |
+   | 768px | 28.4px | 28.4px | 345px |
+   | 1024px | 31.5px | 31.5px | 217px |
+   | 1280px | 34.6px | 34.6px | 244px |
+
+   At every width the two sliders' cards have identical left edges and widths.
+
+One consequence on tablet (768px to 1023px): the service boxes are two across there, so the case studies are now two across as well, in a two-by-two grid. Round 2 had them as a single row of four from tablet up, which could not line up with the service boxes. From desktop (1024px) both are a single row of four.

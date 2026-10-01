@@ -128,18 +128,16 @@
 
 /* Swipe slider on phones (shared Slider), the same grid from tablet up. */
 
+/* --card-gap can be set by a parent that needs to match the gutter (the
+   home page block); otherwise the gutter is --space-sm on phones and
+   --space-md from tablet up. */
 .slides {
   --slide-width: 82%;
-  --slider-grid-gap: var(--space-md);
+  --slider-gap: var(--card-gap, var(--space-sm));
+  --slider-grid-gap: var(--card-gap, var(--space-md));
 }
 
 .slidesWide {
-  --slider-columns-desktop: repeat(4, minmax(0, 1fr));
-}
-
-/* A single row of four from tablet up (home page case studies). */
-.slidesRow {
-  --slider-columns-tablet: repeat(4, minmax(0, 1fr));
   --slider-columns-desktop: repeat(4, minmax(0, 1fr));
 }
 

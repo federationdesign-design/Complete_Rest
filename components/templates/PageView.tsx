@@ -43,27 +43,26 @@ export default function PageView({ page }: { page: Page }) {
 function Body({ page }: { page: Page }) {
   switch (page.kind) {
     case 'home': {
-      // The four case studies directly below the service slider, with no
-      // heading, as full-image caption cards like those on /case-studies/.
+      // The service slider and the four case studies (full-image caption
+      // cards, no heading) form one block: same card width, gutter and left
+      // inset, with the gap between the two rows equal to the gutter.
       const caseStudies = getPage('/case-studies/');
       return (
         <>
           <Intro html={page.introHtml} />
           <div className={styles.tiles}>
             <CardGrid cards={page.cards} wide mobile="slider" phoneStyle="overlay" cta={LEARN_MORE} />
-          </div>
-          {caseStudies && caseStudies.cards.length > 0 && (
-            <div className={styles.tiles}>
+            {caseStudies && caseStudies.cards.length > 0 && (
               <CardGrid
                 cards={caseStudies.cards}
                 label={caseStudies.title}
+                wide
                 mobile="slider"
                 phoneStyle="captionAlways"
                 nameSuffix="case study"
-                row
               />
-            </div>
-          )}
+            )}
+          </div>
           <ContentRow page={page} />
         </>
       );

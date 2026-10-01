@@ -8,19 +8,24 @@
     --slider-columns-tablet  grid columns from 48em
     --slider-columns-desktop grid columns from 64em
     --slider-grid-gap        grid gap from 48em
+    --slider-bleed-y         room above and below the slides for focus rings,
+                             cancelled by an equal negative margin so it adds
+                             no space around the slider (default: none above,
+                             a little below for the scrollbar)
+    --slider-scrollbar       scrollbar-width (default thin)
 */
 
 .slider {
   display: flex;
   gap: var(--slider-gap, var(--space-sm));
-  margin: 0 calc(-1 * var(--gutter));
-  padding: 0 var(--gutter) var(--space-xs);
+  margin: calc(-1 * var(--slider-bleed-y, 0px)) calc(-1 * var(--gutter));
+  padding: var(--slider-bleed-y, 0px) var(--gutter) var(--slider-bleed-y, var(--space-xs));
   list-style: none;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: var(--gutter);
-  scrollbar-width: thin;
+  scrollbar-width: var(--slider-scrollbar, thin);
 }
 
 .slider > li {

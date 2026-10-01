@@ -21,10 +21,8 @@ type Props = {
   nameSuffix?: string;
   // Call to action shown instead of the card's own label, e.g. "Learn more".
   // It becomes the card's link, named "Learn more about <title>" so screen
-  // readers do not hear several identical links. Four across from tablet up
-  // when `row` is set.
+  // readers do not hear several identical links.
   cta?: string;
-  row?: boolean;
 };
 
 // One column or a swipe slider on phones, two columns from tablet, three from
@@ -40,7 +38,6 @@ export default function CardGrid({
   mobile = 'stack',
   phoneStyle = 'default',
   cta,
-  row = false,
   nameSuffix,
 }: Props) {
   const Heading = headingLevel;
@@ -99,10 +96,7 @@ export default function CardGrid({
 
   if (mobile === 'slider') {
     return (
-      <Slider
-        className={[styles.slides, wide && styles.slidesWide, row && styles.slidesRow].filter(Boolean).join(' ')}
-        label={label}
-      >
+      <Slider className={wide ? `${styles.slides} ${styles.slidesWide}` : styles.slides} label={label}>
         {items}
       </Slider>
     );

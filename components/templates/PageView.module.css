@@ -24,7 +24,18 @@
   line-height: 1.3;
 }
 
+/* Home page block of two sliders. One token, --card-gap, is both the gutter
+   between cards and the gap between the two rows, and the row gap belongs to
+   this wrapper alone: the sliders add no margin or padding of their own
+   (their focus-ring room is cancelled by an equal negative margin, and the
+   scrollbar, which would add height, is hidden). */
 .tiles {
+  --card-gap: var(--space-sm);
+  --slider-bleed-y: 0.5rem;
+  --slider-scrollbar: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--card-gap);
   max-width: var(--content-max);
   margin: 0 auto;
   padding: var(--space-lg) var(--gutter) 0;
@@ -109,6 +120,10 @@
 
 
 @media (min-width: 48em) {
+  .tiles {
+    --card-gap: var(--space-md);
+  }
+
   .introTight {
     line-height: 1.5;
   }
