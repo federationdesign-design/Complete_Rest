@@ -28,5 +28,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-12-04",
+  "publishedTime": "2019-09-27T10:26:01+00:00",
+  "modifiedTime": "2019-12-04T12:04:58+00:00",
+  "ogImage": {
+    "src": "/og/bigstock-223316395.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Historic domed stone building on a street corner"
+  },
   "date": "2019-09-27T10:26:01"
 }

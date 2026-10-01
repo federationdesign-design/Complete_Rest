@@ -1,6 +1,8 @@
 import { Fragment } from 'react';
 import type { Page } from '../../lib/content';
+import { pageSchema } from '../../lib/schema';
 import EnquiryForm from '../EnquiryForm/EnquiryForm';
+import JsonLd from '../JsonLd/JsonLd';
 import { legalDrafts } from '../legal/drafts';
 import CardGrid from '../page/CardGrid';
 import Gallery from '../page/Gallery';
@@ -17,6 +19,7 @@ import styles from './PageView.module.css';
 export default function PageView({ page }: { page: Page }) {
   return (
     <>
+      <JsonLd data={pageSchema(page)} />
       {page.hero ? (
         <Hero image={page.hero} heading={page.heading} subheading={page.subheading} />
       ) : (

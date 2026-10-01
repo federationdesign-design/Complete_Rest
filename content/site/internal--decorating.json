@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-08"
+  "modified": "2019-04-08",
+  "publishedTime": "2019-03-29T13:39:09+00:00",
+  "modifiedTime": "2019-04-08T16:47:50+00:00",
+  "ogImage": {
+    "src": "/og/decoration-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Paint colour swatches, timber samples and a floor plan laid out for a decorating project"
+  }
 }

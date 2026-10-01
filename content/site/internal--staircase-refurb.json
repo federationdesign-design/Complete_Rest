@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-04"
+  "modified": "2019-04-04",
+  "publishedTime": "2019-03-29T13:32:07+00:00",
+  "modifiedTime": "2019-04-04T23:23:14+00:00",
+  "ogImage": {
+    "src": "/og/staircase-prepped.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Refurbished staircase with an ornate iron balustrade and polished handrail"
+  }
 }

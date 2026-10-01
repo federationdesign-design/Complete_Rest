@@ -47,6 +47,8 @@ for (const m of manifest) {
   for (const v of m.variants || []) bySource.set(v, m);
 }
 
+const altSwaps = new Map();
+
 function image(url, page, { decorative = false } = {}) {
   if (!url) return null;
   const abs = url.trim().replace(/^http:/, 'https:').split('?')[0];
@@ -57,12 +59,16 @@ function image(url, page, { decorative = false } = {}) {
   }
   const name = m.file.replace('/images/', '');
   const text = imageText[name] || {};
-  if (!decorative && text.alt === undefined) warn(page, `no alt text for ${name}`);
+  // Alt text from the WordPress media library wins over alt text written for
+  // the rebuild (content/image-text.json).
+  const wpAlt = m.wpAlt?.trim();
+  if (!decorative && wpAlt && wpAlt !== text.alt) altSwaps.set(name, { wordpress: wpAlt, replaced: text.alt ?? null });
+  if (!decorative && !wpAlt && text.alt === undefined) warn(page, `no alt text for ${name}`);
   return {
     src: m.file,
     width: m.width,
     height: m.height,
-    alt: decorative ? '' : (text.alt ?? ''),
+    alt: decorative ? '' : (wpAlt || (text.alt ?? '')),
     ...(text.focal ? { focal: text.focal } : {}),
   };
 }
@@ -199,6 +205,11 @@ function base(raw, kind) {
     contact: null,
     members: false,
     modified: raw.modified ? raw.modified.slice(0, 10) : null,
+    // Original WordPress publish and modified times. The site ran on UTC, so
+    // the REST "date" and "date_gmt" values are the same.
+    publishedTime: raw.date ? `${raw.date}+00:00` : null,
+    modifiedTime: raw.modified ? `${raw.modified}+00:00` : null,
+    ogImage: null,
   };
 }
 
@@ -391,6 +402,15 @@ const postPaths = new Set(pages.filter((p) => p.kind === 'blogPost').map((p) => 
 pages.push(await buildBlogArchive(postPaths));
 pages.sort((a, b) => a.path.localeCompare(b.path));
 
+// Open Graph image: each hero cropped to 1200x630 around its focal point by
+// scripts/build-og.mjs. Pages with no hero use the home page's.
+const ogFor = (hero) => `/og/${path.basename(hero.src).replace(/\.[a-z0-9]+$/i, '')}.jpg`;
+const homeHero = pages.find((p) => p.path === '/').hero;
+for (const page of pages) {
+  const hero = page.hero ?? homeHero;
+  page.ogImage = { src: ogFor(hero), width: 1200, height: 630, alt: hero.alt };
+}
+
 await rm(OUT, { recursive: true, force: true });
 await mkdir(OUT, { recursive: true });
 const key = (p) => (p === '/' ? 'home' : p.replace(/^\/|\/$/g, '').replace(/\//g, '--'));
@@ -422,6 +442,10 @@ await writeFile(path.join(ROOT, 'content/upload-redirects.json'), JSON.stringify
 console.log(`${pages.length} pages written to content/site/, ${uploadRedirects.length} upload redirects`);
 const counts = pages.reduce((acc, p) => ({ ...acc, [p.kind]: (acc[p.kind] || 0) + 1 }), {});
 console.log(counts);
+if (altSwaps.size) {
+  console.log(`\n${altSwaps.size} alt texts taken from the WordPress media library:`);
+  for (const [name, swap] of altSwaps) console.log(`  ${name}: "${swap.wordpress}" (replaced ${JSON.stringify(swap.replaced)})`);
+}
 if (warnings.length) {
   console.log(`\n${warnings.length} warnings:`);
   for (const w of warnings) console.log(`  ${w}`);

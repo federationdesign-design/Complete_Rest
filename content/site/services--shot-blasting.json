@@ -27,5 +27,13 @@
   "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
   "contact": null,
   "members": true,
-  "modified": "2019-08-07"
+  "modified": "2019-08-07",
+  "publishedTime": "2019-02-14T11:00:35+00:00",
+  "modifiedTime": "2019-08-07T14:55:21+00:00",
+  "ogImage": {
+    "src": "/og/shotblasting-prepped.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": ""
+  }
 }

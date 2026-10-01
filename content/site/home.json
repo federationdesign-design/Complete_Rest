@@ -80,5 +80,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-08-12"
+  "modified": "2019-08-12",
+  "publishedTime": "2019-01-12T16:26:52+00:00",
+  "modifiedTime": "2019-08-12T11:36:22+00:00",
+  "ogImage": {
+    "src": "/og/hoempage-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Builders in hard hats reviewing plans on scaffolding inside a building under restoration"
+  }
 }

@@ -28,5 +28,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-08-12",
+  "publishedTime": "2019-02-14T12:51:13+00:00",
+  "modifiedTime": "2019-08-12T13:02:03+00:00",
+  "ogImage": {
+    "src": "/og/hailbury-img.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Haileybury College Dining Hall with its restored parquet floor"
+  },
   "date": "2019-02-14T12:51:13"
 }

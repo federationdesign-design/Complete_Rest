@@ -22,5 +22,13 @@
   "contact": null,
   "members": true,
   "modified": "2020-01-16",
+  "publishedTime": "2020-01-16T15:02:31+00:00",
+  "modifiedTime": "2020-01-16T15:02:31+00:00",
+  "ogImage": {
+    "src": "/og/hoempage-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Builders in hard hats reviewing plans on scaffolding inside a building under restoration"
+  },
   "date": "2020-01-16T15:02:31"
 }

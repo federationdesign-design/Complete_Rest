@@ -9,7 +9,8 @@ import HeaderSentinel from '../HeaderSentinel/HeaderSentinel';
 import { CloseIcon, MailIcon, MenuIcon, PhoneIcon, PinIcon } from '../icons';
 import styles from './SiteHeader.module.css';
 
-const LOGO = { src: '/images/CompleteRestorationlogo-1.svg', width: 279, height: 60 };
+// The alt text is the one held in the WordPress media library for this logo.
+const LOGO = { src: '/images/CompleteRestorationlogo-1.svg', width: 279, height: 60, alt: 'complete restoration' };
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
@@ -109,7 +110,7 @@ export default function SiteHeader() {
               src={LOGO.src}
               width={LOGO.width}
               height={LOGO.height}
-              alt={`${siteName}, home`}
+              alt={LOGO.alt}
               priority
             />
           </Link>
@@ -151,7 +152,7 @@ export default function SiteHeader() {
             src={LOGO.src}
             width={LOGO.width}
             height={LOGO.height}
-            alt={`${siteName}, home`}
+            alt={LOGO.alt}
           />
         </Link>
         <button

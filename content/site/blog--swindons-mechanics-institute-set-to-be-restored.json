@@ -28,5 +28,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-12-04",
+  "publishedTime": "2019-09-10T13:28:11+00:00",
+  "modifiedTime": "2019-12-04T12:04:08+00:00",
+  "ogImage": {
+    "src": "/og/bigstock-Devastated-Room-In-An-Abandone-292587805.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Derelict room in an abandoned building"
+  },
   "date": "2019-09-10T13:28:11"
 }

@@ -220,3 +220,27 @@ Excerpts on the section index pages end mid-word ("natur...", "histori...", "rem
 4. To review the banner before that, add `?cookie-preview` to any URL on localhost (for example http://localhost:3000/?cookie-preview). It shows every category with a yellow "Preview" note. This only works on localhost.
 5. Tested in the browser: no third-party request and no GA script before a choice or after Reject all; GA loads only after analytics consent (checked with a test measurement ID, since removed); the cookie policy table picks up the GA cookies from the same config; the choice cookie lasts 182 days; withdrawal reloads the page; everything works by keyboard. The step 9 checks were re-run after the port with no problems, and the screenshots were refreshed.
 6. To turn on Google Analytics later: set `NEXT_PUBLIC_GA_ID` in Vercel and update the privacy notice's analytics line. The banner, cookie policy table and script gating follow on their own.
+
+## SEO, schema and Open Graph pass (1 October 2026)
+
+No visible copy was changed. The only component changes are the header logo's alt text and a structured data script on each page.
+
+1. **Alt text from WordPress.** The media library holds alt text for 1 of its 100 items, so there is one swap:
+
+   | Image | WordPress alt text (now used) | Alt text it replaced |
+   |---|---|---|
+   | `CompleteRestorationlogo-1.svg` (header logo, full and compact) | "complete restoration" | "The Complete Restoration Company, home" |
+
+   The other 99 items, including every hero and gallery photo and the footer logo (`CompleteRestorationlogo.svg`, a separate media item), have no alt text in WordPress, so they keep the alt text written in step 4. The build script now always prefers WordPress alt text and lists any swap when it runs (`npm run content`). One thing to weigh: the header logo is the link to the home page, so screen readers now announce that link as "complete restoration" rather than naming the company and saying it goes home. It still passes the automated checks.
+2. **Blog dates.** Every page now carries its original WordPress publish and modified times (`publishedTime`, `modifiedTime` in `content/site/*.json`). The WordPress site ran on UTC, so the times are written with `+00:00`. Blog posts and case studies output them as `article:published_time` and `article:modified_time` and in their schema. No date is shown on the page, as on the live site.
+3. **Canonical tags.** Every page has a canonical tag pointing to https://www.completerestoration.co.uk with the same path and trailing slash (checked on all 47 pages).
+4. **Search Console.** The live home page has `<meta name="google-site-verification" content="NypkqmvX8BOL03OpiNTr6bxG_-LpMSvkfh6tkbtqUGY" />`. It is carried over exactly, on the home page only, as on the live site. No other verification tags (Bing, Pinterest, Facebook) were found.
+5. **JSON-LD** (`lib/schema.ts`), one script per page:
+   - `HomeAndConstructionBusiness` and `WebSite` on every page. The business uses the trading name, the live home page description, the phone number and email from the header, the header logo, and the address published on the contact page. `areaServed` is Hertfordshire, London and the Home Counties, as the home and about pages state.
+   - Unconfirmed facts appear in the schema as `[PLACEHOLDER: LEGAL_ENTITY_NAME]`, `[PLACEHOLDER: VAT_NUMBER]` and `[PLACEHOLDER: COMPANY_NUMBER]`. They fill in automatically when `lib/company.ts` is completed. **These must be filled before launch**, or the placeholder text will be read by search engines.
+   - No `sameAs`: the live site links to no social profiles. No opening hours or price range, as the site states neither. No `aggregateRating` or `Review`.
+   - `BreadcrumbList` on all 46 inner pages. Names are the menu labels for top-level sections and the page titles otherwise, so the blog crumb reads "BLog", the live archive title.
+   - `Service` on the 14 service, internal and external pages (not the three index pages), with the business as provider. The description is the page's meta description, or its strapline where it has none.
+   - `BlogPosting` on the 16 blog posts and `Article` on the 4 case studies, with dates and the hero image where the page has one. Author and publisher are the business; the WordPress author accounts were agency logins.
+6. **Open Graph images.** `scripts/build-og.mjs` (`npm run og`) crops each hero to 1200x630 around its focal point into `public/og/` (35 images, 4 MB). Pages with no hero (contact, the legal pages, the case studies and blog archives, and six blog posts) use the home hero. Every page has `og:image` with its width and height, `twitter:card` set to `summary_large_image` and `twitter:image`. One source image, `victorian-img9b.jpg`, is 900x624 and was enlarged to fit.
+7. The contact page address is now also used in the schema. It is listed in `PLACEHOLDERS.md` as `TRADING_ADDRESS` to confirm.

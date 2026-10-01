@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-03-29"
+  "modified": "2019-03-29",
+  "publishedTime": "2019-02-15T16:02:56+00:00",
+  "modifiedTime": "2019-03-29T11:49:51+00:00",
+  "ogImage": {
+    "src": "/og/team-page-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Members of the team in hard hats studying plans together on site"
+  }
 }

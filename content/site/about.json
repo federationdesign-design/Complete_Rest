@@ -27,5 +27,13 @@
   "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
   "contact": null,
   "members": true,
-  "modified": "2019-04-03"
+  "modified": "2019-04-03",
+  "publishedTime": "2019-02-12T17:46:14+00:00",
+  "modifiedTime": "2019-04-03T11:08:53+00:00",
+  "ogImage": {
+    "src": "/og/about-page-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Three builders in hard hats looking over building plans on site"
+  }
 }

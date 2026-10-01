@@ -104,5 +104,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-12"
+  "modified": "2019-04-12",
+  "publishedTime": "2019-02-12T17:48:59+00:00",
+  "modifiedTime": "2019-04-12T12:39:39+00:00",
+  "ogImage": {
+    "src": "/og/internal-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": ""
+  }
 }

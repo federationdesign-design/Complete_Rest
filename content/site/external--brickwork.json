@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-12"
+  "modified": "2019-04-12",
+  "publishedTime": "2019-03-29T13:20:35+00:00",
+  "modifiedTime": "2019-04-12T12:14:42+00:00",
+  "ogImage": {
+    "src": "/og/shotblasting.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": ""
+  }
 }

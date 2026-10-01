@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-25"
+  "modified": "2019-04-25",
+  "publishedTime": "2019-03-29T13:22:41+00:00",
+  "modifiedTime": "2019-04-25T13:53:31+00:00",
+  "ogImage": {
+    "src": "/og/structual.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Building plans, measuring tools and hard hats on a table"
+  }
 }

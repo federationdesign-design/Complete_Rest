@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-23"
+  "modified": "2019-04-23",
+  "publishedTime": "2019-02-18T14:50:26+00:00",
+  "modifiedTime": "2019-04-23T13:23:54+00:00",
+  "ogImage": {
+    "src": "/og/building-restoration-alt.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Restoration workers clearing rubble inside a period building"
+  }
 }

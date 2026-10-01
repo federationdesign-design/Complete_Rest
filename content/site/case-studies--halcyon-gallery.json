@@ -43,5 +43,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-08-12",
+  "publishedTime": "2019-02-14T12:51:37+00:00",
+  "modifiedTime": "2019-08-12T12:08:16+00:00",
+  "ogImage": {
+    "src": "/og/Halcyon-img3.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "The restored Georgian cantilevered staircase at the Halcyon Gallery, with its iron balustrade and mahogany handrail"
+  },
   "date": "2019-02-14T12:51:37"
 }

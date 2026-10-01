@@ -31,5 +31,13 @@
     "email": "info@completerestoration.co.uk"
   },
   "members": true,
-  "modified": "2023-09-25"
+  "modified": "2023-09-25",
+  "publishedTime": "2019-02-12T17:52:50+00:00",
+  "modifiedTime": "2023-09-25T11:42:08+00:00",
+  "ogImage": {
+    "src": "/og/hoempage-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Builders in hard hats reviewing plans on scaffolding inside a building under restoration"
+  }
 }

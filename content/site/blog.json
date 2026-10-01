@@ -132,5 +132,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": null
+  "modified": null,
+  "publishedTime": null,
+  "modifiedTime": null,
+  "ogImage": {
+    "src": "/og/hoempage-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Builders in hard hats reviewing plans on scaffolding inside a building under restoration"
+  }
 }

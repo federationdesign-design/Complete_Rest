@@ -48,6 +48,9 @@ export type Page = {
   contact: { address: string[]; phone: string; email: string } | null;
   members: boolean;
   modified: string | null; // YYYY-MM-DD, last modified in WordPress
+  publishedTime: string | null; // ISO 8601, original WordPress publish time
+  modifiedTime: string | null; // ISO 8601, original WordPress modified time
+  ogImage: SiteImage; // 1200x630 crop of the hero (public/og/)
   date?: string;
 };
 

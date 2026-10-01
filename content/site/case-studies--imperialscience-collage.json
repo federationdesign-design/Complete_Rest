@@ -43,5 +43,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-09-19",
+  "publishedTime": "2019-02-14T12:52:49+00:00",
+  "modifiedTime": "2019-09-19T15:56:30+00:00",
+  "ogImage": {
+    "src": "/og/imperial-img2.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Restored foyer and staircase at Imperial College, with glazed brick columns and bronze balustrades"
+  },
   "date": "2019-02-14T12:52:49"
 }

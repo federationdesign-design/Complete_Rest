@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-08-07"
+  "modified": "2019-08-07",
+  "publishedTime": "2019-02-14T10:58:55+00:00",
+  "modifiedTime": "2019-08-07T14:49:36+00:00",
+  "ogImage": {
+    "src": "/og/floor-restoration3.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Old floorboards, half of them stripped back to bare wood"
+  }
 }

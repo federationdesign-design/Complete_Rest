@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-25"
+  "modified": "2019-04-25",
+  "publishedTime": "2019-03-29T13:37:20+00:00",
+  "modifiedTime": "2019-04-25T13:54:47+00:00",
+  "ogImage": {
+    "src": "/og/kitchen-image-1.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Bespoke kitchen with a central island under tall arched windows"
+  }
 }

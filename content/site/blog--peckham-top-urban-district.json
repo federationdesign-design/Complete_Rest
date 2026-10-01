@@ -28,5 +28,13 @@
   "contact": null,
   "members": true,
   "modified": "2019-12-04",
+  "publishedTime": "2019-11-05T16:41:43+00:00",
+  "modifiedTime": "2019-12-04T12:04:29+00:00",
+  "ogImage": {
+    "src": "/og/bigstock-OXFORD-UK-OCTOBER-E-187591858-1.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Street of red brick terraced houses"
+  },
   "date": "2019-11-05T16:41:43"
 }

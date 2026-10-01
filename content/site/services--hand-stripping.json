@@ -27,5 +27,13 @@
   "testimonial": null,
   "contact": null,
   "members": true,
-  "modified": "2019-04-04"
+  "modified": "2019-04-04",
+  "publishedTime": "2019-03-29T12:55:39+00:00",
+  "modifiedTime": "2019-04-04T22:55:30+00:00",
+  "ogImage": {
+    "src": "/og/Hand-stripping-prepped.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Gloved hand stripping old finish from a carved timber panel"
+  }
 }

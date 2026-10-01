@@ -27,5 +27,13 @@
   "testimonial": "The Complete Restoration Company brings period beauty back to life, making sure each project or item fits perfectly for contemporary or traditional living and design.",
   "contact": null,
   "members": true,
-  "modified": "2019-08-07"
+  "modified": "2019-08-07",
+  "publishedTime": "2019-03-29T12:44:07+00:00",
+  "modifiedTime": "2019-08-07T15:00:18+00:00",
+  "ogImage": {
+    "src": "/og/stone-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Cleaned natural stone walls in a narrow vaulted passage"
+  }
 }
