@@ -25,13 +25,12 @@
 }
 
 /* Home page block of two sliders. One token, --card-gap, is both the gutter
-   between cards and the gap between the two rows, and the row gap belongs to
-   this wrapper alone: the sliders add no margin or padding of their own
-   (their focus-ring room is cancelled by an equal negative margin, and the
-   scrollbar, which would add height, is hidden). */
+   between cards and the gap between the two rows. The row gap belongs to
+   this wrapper alone: inside it the sliders have no vertical margin or
+   padding at all, and their scrollbar, which would add height, is hidden. */
 .tiles {
   --card-gap: var(--space-sm);
-  --slider-bleed-y: 0.5rem;
+  --slider-bleed-y: 0px;
   --slider-scrollbar: none;
   display: grid;
   grid-template-columns: minmax(0, 1fr);

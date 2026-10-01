@@ -15,10 +15,6 @@
   color: var(--colour-white);
 }
 
-.card:focus-within {
-  box-shadow: var(--focus-ring);
-}
-
 .media {
   position: relative;
   aspect-ratio: 39 / 25;
@@ -55,6 +51,17 @@
 
 .link:focus-visible {
   box-shadow: none;
+}
+
+/* The focus ring is drawn inside the card, on the stretched link, so it is
+   never clipped by a slider and the sliders need no extra room around the
+   cards. White then dark, so it shows on images and on the grey box. */
+.link:focus-visible::after,
+.cta:focus-visible::before {
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 3px var(--colour-white),
+    inset 0 0 0 6px var(--colour-text);
 }
 
 /* Stretch the link over the whole card. */

@@ -8,10 +8,10 @@
     --slider-columns-tablet  grid columns from 48em
     --slider-columns-desktop grid columns from 64em
     --slider-grid-gap        grid gap from 48em
-    --slider-bleed-y         room above and below the slides for focus rings,
-                             cancelled by an equal negative margin so it adds
-                             no space around the slider (default: none above,
-                             a little below for the scrollbar)
+    --slider-bleed-y         vertical padding around the slides, cancelled by
+                             an equal negative margin; 0px for none at all
+                             (default: none above, a little below for the
+                             scrollbar)
     --slider-scrollbar       scrollbar-width (default thin)
 */
 

@@ -355,3 +355,12 @@ The service slider and the case studies slider now sit in one wrapper (`.tiles` 
    At every width the two sliders' cards have identical left edges and widths.
 
 One consequence on tablet (768px to 1023px): the service boxes are two across there, so the case studies are now two across as well, in a two-by-two grid. Round 2 had them as a single row of four from tablet up, which could not line up with the service boxes. From desktop (1024px) both are a single row of four.
+
+### Gap between the home sliders, re-checked (1 October 2026)
+
+Steve reported a gap of roughly 80px at about 400px wide, owned by `div.PageView-module__tiles` measuring 398 x 239.
+
+1. That container is from the build before commit 5f65920. Building the previous commit (06d104d) and measuring at 398px wide reproduces it exactly: the case studies had their own `.tiles` wrapper of 398 x 239, and the gap from the bottom of a service card to the top of a case study card was 48.7px, made of 8px of padding under the service slider and the second wrapper's 40.7px top padding. From commit 5f65920 there is one wrapper holding both sliders (398 x 607 at that width) and the second wrapper no longer exists. If the browser still shows a 239px-high `.tiles`, it is showing the older build: restart `npm run dev`, or hard-refresh, and check `git log -1` shows the latest commit.
+2. To leave nothing else between the cards, the sliders in this block now have no vertical padding or margin at all (before, 8px of padding was cancelled by an 8px negative margin to make room for focus rings, which showed up as spacing in DevTools). The focus ring is now drawn inside the card instead, on every card grid.
+3. Everything between the last service card and the first case study card at 390px, read from the browser: service card margin-bottom 0, services list padding-bottom 0, margin-bottom 0, scrollbar 0, wrapper row-gap 16px (`--card-gap`), case studies list margin-top 0, padding-top 0, case study card margin-top 0. There are no elements between the two lists.
+4. Measured from the bottom edge of a service card to the top edge of a case study card: 16px at 390px and at 398px, in Chromium, WebKit (Safari's engine) and Firefox, against the production build.
